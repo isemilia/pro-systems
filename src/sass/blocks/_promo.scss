@@ -1,6 +1,12 @@
 .promo {
+    position: relative;
     padding: 130px 0;
     background: url('../img/squares-gray-bg.jpg') center center / cover no-repeat;
+    &::before {
+        position: absolute;
+        content: url('../img/triangle-yellow-3.png'); 
+        left: 0;      
+    }
     &__title {
         font-weight: 500;
         font-size: 48px;
