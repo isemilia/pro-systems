@@ -10,3 +10,19 @@
     width: 1180px;
     margin: 0 auto;
 }
+
+.btn {
+    display: inline-block;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    background: #E9660B;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 18px 45px;
+    &:hover {
+        color: #FFFFFF;
+    }
+}
