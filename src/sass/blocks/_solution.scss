@@ -1,0 +1,27 @@
+.solution {
+    padding: 110px 0;
+    &__title {
+        max-width: 780px;
+        margin: 0 auto;
+        margin-bottom: 75px;
+    }
+    &__row {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        width: 340px;
+        &-title {
+            font-family: 'Montserrat';
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 20px;
+            color: #000000;
+            text-align: right;
+        }
+        &-img {
+            
+        }
+    }
+
+}
