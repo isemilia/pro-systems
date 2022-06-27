@@ -7,7 +7,20 @@
     }
     &__row {
         display: flex;
-        justify-content: space-between;
+        &:nth-child(2n) {
+            .solution__item:first-child {
+                margin-right: 190px;
+            }
+        }
+        &:nth-child(2n+1) {
+            justify-content: flex-end;
+            .solution__item:first-child {
+                margin-right: 190px;
+            }
+        }
+        &:not(:last-child) {
+            margin-bottom: 5px;
+        }
     }
     &__item {
         width: 340px;
