@@ -1,0 +1,100 @@
+.footer {
+    padding: 56px 0 32px;
+    background: #37474F;
+    position: relative;
+    overflow: hidden;
+    &__elem {
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 0;
+    }
+    &__row {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        justify-content: space-between;
+        &:first-child {
+            margin-bottom: 69px;
+        }
+        &:nth-child(2) {
+            align-items: flex-end;
+        }
+    }
+    &__nav {
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-rows: repeat(3, auto);
+        row-gap: 20px;
+        column-gap: 190px;
+        &-link {
+            font-family: 'Montserrat';
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 20px;
+            color: #FFFFFF;
+            text-decoration: none;
+            &:hover {
+                color: #FFFFFF;
+            }
+        }
+    }
+    &__search {
+        display: flex;
+        align-items: flex-start;
+        input[type=search] {
+            padding: 18px 0px 18px 20px;
+            width: 225px;
+            background: #FFFFFF;
+            border-radius: 10px 0 0 10px;
+            border: 0;
+            outline: 0;
+            font-family: 'Montserrat';
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 15px;
+            color: #000000;
+        }
+        button {
+            padding: 0 20px;
+            background: #FFFFFF;
+            border: 0;
+            outline: 0;
+            height: 51px;
+            border-radius: 0 10px 10px 0;
+            cursor: pointer;
+        }
+    }
+    &__logo {
+        display: block;
+        margin-bottom: 6px;
+    }
+    &__descr {
+        font-family: 'Montserrat';
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 16px;
+        color: #FFFFFF;
+        margin-bottom: 20px;
+    }
+    &__cr, &__dev, &__dev a {
+        font-family: 'Open Sans';
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        color: #FFFFFF;
+        opacity: 0.5;
+        text-decoration: none;
+    }
+    &__cr {
+        margin-bottom: 5px;
+    }
+    &__social {
+        display: flex;
+        &-link {
+            &:not(:last-child) {
+                margin-right: 10px;
+            }
+        }
+    }
+}
