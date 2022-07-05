@@ -1,0 +1,51 @@
+p{
+    margin: 0;
+}
+.guide {
+    &__home {
+        padding: 100px 0;
+    }
+    &__title {
+        margin-bottom: 74px;
+    }
+    &__button{
+        position: absolute;
+        right: 0;
+    }
+    &-row{
+        display: flex;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        position: relative;
+    }
+    &-bg{
+        height: 100%;
+    }
+    &__content{
+        position: absolute;
+        left: 650px;
+    }
+    &__item{
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+        &-info{
+            font-family: 'Open Sans';
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 27px;
+            color: #000000;
+            margin-left: 10px;
+        }
+    }
+    &_g2{
+        margin-left: 40px;
+    }
+    &_g3{
+        margin-left: 80px;
+    }
+}

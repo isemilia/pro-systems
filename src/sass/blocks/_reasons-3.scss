@@ -1,0 +1,44 @@
+.reasons {
+    background: #0C478B;
+    position: relative;
+    padding: 80px 0;
+    &__elem {
+        position: absolute;
+        bottom: 0; 
+        left: 0;
+    }
+    &__el2{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    &__title {
+        color: #FFFFFF;
+        margin-bottom: 74px;
+    }
+    &__grid {
+        display: grid;
+        place-content: center;
+        row-gap: 65px;
+        &_4c {
+            grid-template-columns: repeat(3, 310px);
+            column-gap: 165px;
+        }
+    }
+    &__item {
+        display: grid;
+        justify-content: center;
+        justify-items: center;
+        &-icon {
+            margin-bottom: 25px;
+        }
+        &-title {
+            font-family: 'Open Sans';
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 22px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+    }
+}

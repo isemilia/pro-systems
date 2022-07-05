@@ -1,0 +1,45 @@
+.promo {
+    position: relative;
+    padding: 150px 0;
+    margin-bottom: 110px;
+    background: url('../img/clothes-bg.png') center center / cover no-repeat;
+    &::before {
+        position: absolute;
+        content: url('../img/triangle-yellow-3.png'); 
+        left: 0;      
+    }
+    &__title {
+        font-weight: 600;
+        font-size: 42px;
+        line-height: 51px;
+        color: #0C478B;
+    }
+    &__subtitle {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 33px;
+        color: #000000;
+    }
+    &__descr {
+        font-family: 'Open Sans';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        margin-bottom: 45px;
+    }
+    &__title, &__subtitle, &__descr {
+        max-width: 600px;
+    }
+    &__title, &__subtitle {
+        font-family: 'Montserrat';
+        margin-bottom: 30px;
+    }
+    &__row {
+        position: relative;
+    }
+    &__img {
+        position: absolute;
+        top: -100px;
+        right: -100px;
+    }
+}
