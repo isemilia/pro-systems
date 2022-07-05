@@ -1,0 +1,38 @@
+.setprisma {
+    position: relative;
+    padding: 90px 0;
+    min-height: 610px;
+    background: url('../img/setprisma-bg.png') left center / contain no-repeat;
+    &__wrapper {
+        height: 100%;
+        display: grid;
+        justify-content: end;
+        justify-items: end;
+    }
+    &__text {
+        font-family: 'Open Sans';
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 27px;
+        color: #000000;
+        &:nth-child(1) {
+            max-width: 340px;
+            margin-right: 400px;
+        }
+        &:nth-child(2) {
+            max-width: 400px;
+            margin-right: 230px;
+        }
+        &:nth-child(3) {
+            max-width: 510px;
+            margin-right: 30px;
+        }
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+    &__elem {
+        position: absolute;
+        bottom: 0;
+    }
+}
