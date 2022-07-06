@@ -336,8 +336,77 @@
                 </div>
             </div>
         </section>
+
+        <section class="oppties oppties_home"> <!-- opportunities -->
+            <div class="container">
+                <h2 class="title oppties__title oppties__title_sp"><span style="color: #0C478B; font-weight: 600;">3 режима работы</span> для синхронизации  информации с кассового узла и видеозаписей</h2>
+                <div class="oppties__grid">
+                    <div class="oppties__item">
+                        <div class="oppties__item-icon oppties__item-icon_numbered"><img src="icons/cctv.png" alt=""></div>
+                        <div class="oppties__item-title">Оперативный режим контроль кассовой линии в реальном времени</div>
+                        <div class="oppties__item-descr">Оператор онлайн наблюдает за людьми, подозреваемыми в краже или подмене ценника, до кассового узла. Если товар не пробит, вызывает охрану. Следит за тем, чтобы все товары в тележке были оплачены и её не провезли мимо кассы без расчёта.</div>
+                    </div>
+                    <div class="oppties__item">
+                        <div class="oppties__item-icon oppties__item-icon_numbered"><img src="icons/search.png" alt=""></div>
+                        <div class="oppties__item-title">Архивный режим для быстрого поиска инцидентов</div>
+                        <div class="oppties__item-descr">Поиск товаров или событий в видеоархиве по данным из чека. Позволяет оперативно разобраться c проблемными покупателями.</div>
+                    </div>
+                    <div class="oppties__item">
+                        <div class="oppties__item-icon oppties__item-icon_numbered"><img src="icons/programing.png" alt=""></div>
+                        <div class="oppties__item-title">Режим отчётов — для выгрузки данных по заданным условиям</div>
+                        <div class="oppties__item-descr">Удобный интерфейс и гибкие фильтры позволяют выгружать необходимые для оператора данные. Формат документа — Excel.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="autom autom_home"> <!-- automation -->
+            <div class="container">
+                <h2 class="title autom__title">Примеры кассовых нарушений </h2>
+                <div class="autom__row">
+                    <div class="autom__img"><img src="img/setprisma-autom.png" alt="computer"></div>
+                    <div class="autom__switch">
+                        <div class="autom__text">
+                            <div class="autom__descr autom__descr_active" data-switch-descr>
+                                <p>Кассир аннулирует оплаченный покупателем чек на сумму 584, 11 рублей. Просмотр приложенного видеофрагмента подтвердил: покупатель ушёл с товаром, но товар повторно не пробивается. Выявлено экономическое нарушение.</p>
+                            </div>
+                            <div class="autom__descr" data-switch-descr>
+                                <p>Система зафиксировала: кассир пробивает в чек 1 шт. «Пудинг Эрмигурт 3,2 % 100 гр». Видеозапись показала, что покупателю отдают спайку из 4 штук.</p> 
+                            </div>
+                            <div class="autom__descr" data-switch-descr>
+                                <p>Система выявила, что кассир пропустил при сканировании и не пробил в чек «Фисташки 320 гр» стоимостью 502 рубля. Видео подтвердило, что товар отдан покупателю.</p>
+                            </div>
+                            <div class="autom__descr" data-switch-descr>
+                                <p>Кассир работает с открытым сигаретным диспенсером. Штраф за нарушение правил реализации табачной продукции - от 30 до 50 тысяч рублей согласно №15 ФЗ от 23.02.2013 г.</p>
+                            </div>
+                            <div class="autom__descr" data-switch-descr>
+                                <p>Кассир хранит товар на полу рядом с кассой - это пример нарушения санитарных правил и норм (СанПиН).</p>
+                            </div>
+                            <div class="autom__descr" data-switch-descr>
+                                <p>Система зафиксировала: кассир удаляет в чеке товар «Молоко 365 дней», при этом, товар у покупателя не изымается.</p>
+                            </div>
+                            <div class="autom__descr" data-switch-descr>
+                                <p>Кассир пробивает в чек товар с заниженным весом - 0,08 кг, фактический вес товара - 0,8 кг</p>
+                            </div>
+                        </div>
+                        <ul class="autom__list autom__list_reversed">
+                            <li class="autom__list-item autom__list-item_active" data-switch-title>Кассир аннулирует чек</li>
+                            <li class="autom__list-item" data-switch-title>Ошибки по невнимательности</li>
+                            <li class="autom__list-item" data-switch-title>Пропуск товара</li>
+                            <li class="autom__list-item" data-switch-title>Открытый диспенсер</li>
+                            <li class="autom__list-item" data-switch-title>Хранение товара у кассы</li>
+                            <li class="autom__list-item" data-switch-title>Ошибка при удалении товара</li>
+                            <li class="autom__list-item" data-switch-title>Продажа весового товара с малым весом</li>
+                        </ul>
+                    </div>
+                </div>
+                <a href="#" class="telegram autom__telegram">
+                    <img src="icons/telegram.png" alt="telegram">
+                </a>
+            </div>
+        </section>
     
-        <section class="case case_home">
+        <section class="case case_sp">
             <div class="container">
                 <h2 class="title case__title">Успешные кейсы наших партнеров</h2>
                 <div class="case__wrapper">
@@ -459,7 +528,6 @@
 
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/case.js"></script>
-    <script src="js/clients.js"></script>
     <script src="js/header.js"></script>
     <script src="js/autom.js"></script>
 </body>

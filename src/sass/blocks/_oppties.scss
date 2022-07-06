@@ -4,6 +4,11 @@
     }
     &__title {
         margin-bottom: 30px;
+        &_sp {
+            max-width: 870px;
+            margin: 0 auto;
+            margin-bottom: 100px;
+        }
     }
     &__subtitle {
         font-family: 'Montserrat';
@@ -36,6 +41,23 @@
             img {
                 transform: rotate(-45deg);
             }
+            &_numbered {
+                position: relative;
+                &::before {
+                    position: absolute;
+                    counter-increment: opptItem;
+                    content: counter(opptItem);
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 32px;
+                    line-height: 39px;
+                    color: #E9660B;
+                    transform: rotate(-45deg);
+                    top: 26px;
+                    left: -41px;
+                }
+            }
         }
         &-title {
             font-family: 'Montserrat';
@@ -56,4 +78,8 @@
             text-align: center;
         }
     }
+}
+
+body {
+    counter-reset: opptItem;
 }
