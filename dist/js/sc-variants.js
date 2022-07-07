@@ -10,11 +10,6 @@ window.addEventListener('DOMContentLoaded', () => {
         centeredSlides: true,
         slideActiveClass: 'sc-variants__swiper-slide_active',
         slidesPerGroup: 1,
-      
-        // And if we need scrollbar
-        scrollbar: {
-          el: '.swiper-scrollbar',
-        },
         breakpoints: {
             1440: {
                 slidesPerView: 3,
