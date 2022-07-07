@@ -2,12 +2,13 @@ window.addEventListener('DOMContentLoaded', () => {
     const swiper = new Swiper('#clientsSlider', {
         // Optional parameters
         direction: 'horizontal',
-        loop: true,
+        loop: false,
         // Navigation arrows
         navigation: {
           nextEl: '#clientsSliderNext',
           prevEl: '#clientsSliderPrev',
         },
+        centerInsufficientSlides: true,
         slidesPerView: 1,
         breakpoints: {
             // when window width is >= 1440px
