@@ -1,0 +1,105 @@
+.autom {
+    position: relative;
+    background: #F5F5F5;
+    &::before {
+        position: absolute;
+        content: url('../img/triangle-blue-yellow.png');
+        left: 0;
+        top: 90px;
+    }
+    &::after {
+        position: absolute;
+        content: url('../img/selfcheckout-autom-elem.svg');
+        bottom: 45px;
+        right: 145px;
+    }
+    &_home {
+        padding: 80px 0;
+        min-height: 680px;
+    }
+    &__title {
+        max-width: 750px;
+        margin: 0 auto;
+        margin-bottom: 33px;
+    }
+    &__subtitle {
+        font-family: 'Montserrat';
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        color: #000000;
+        margin-bottom: 95px;
+    }
+    &__row {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__switch {
+        display: grid;
+        grid-template-columns: 290px 300px;
+        column-gap: 130px;
+    }
+    &__list {
+        position: relative;
+        list-style-type: none;
+        &::after {
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 1px;
+            background-color: #000000;
+            right: -75px;
+            max-height: 330px;
+            top: 0;
+        }
+        &-item {
+            position: relative;
+            font-family: 'Montserrat';
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 20px;
+            color: #000000;
+            cursor: pointer;
+            &:not(:last-child) {
+                margin-bottom: 30px;
+            }
+            &_active {
+                font-weight: 600;
+                color: #E9660B;
+                &::before {
+                    position: absolute;
+                    content: '';
+                    width: 11px;
+                    height: 11px;
+                    top: 3px;
+                    left: -22px;
+                    background: #E9660B;
+                    border-radius: 1.7px;
+                    transform: rotate(45deg);
+                }
+            }
+        }
+    }
+    &__descr {
+        height: 100%;
+        position: relative;
+        display: none;
+        font-family: 'Open Sans';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        color: #000000;
+        &_active {
+            display: block;
+        }
+    }
+    &__btn {
+        position: absolute;
+        bottom: 0;
+    }
+    &__telegram {
+        bottom: 112px;
+        right: 27px;
+    }
+}
