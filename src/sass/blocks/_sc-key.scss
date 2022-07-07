@@ -1,0 +1,32 @@
+.sc-key {
+    padding: 10px 0;
+    &__row {
+        padding: 90px 0 80px;
+        min-height: 610px;
+        background: url('../img/sc-key-bg.png') right center / contain no-repeat;
+    }
+    &__text {
+        max-width: 640px;
+        font-family: 'Open Sans';
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 25px;
+        color: #838383;
+        ul {
+            padding-left: 35px;
+            list-style: none;
+            li {
+                position: relative;
+                &::before {
+                    position: absolute;
+                    content: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='12.1133' y='-1' width='18.5451' height='18.5451' rx='3.05005' transform='rotate(45 12.1133 -1)' fill='%23FDCE25'/%3E%3C/svg%3E%0A");
+                    top: 0;
+                    left: -35px;
+                }
+                &:not(:last-child) {
+                    margin-bottom: 40px;
+                }
+            }
+        }
+    }
+}
