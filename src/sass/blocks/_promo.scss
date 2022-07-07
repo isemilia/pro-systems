@@ -41,6 +41,11 @@
         font-family: 'Montserrat';
         margin-bottom: 30px;
     }
+    &__title {
+        &_fisc {
+            margin-bottom: 50px;
+        }
+    }
     &__row {
         position: relative;
     }
