@@ -17,22 +17,23 @@
     &__title {
         margin-bottom: 74px;
     }
-}
-
-.swiper {
-    &-button {
-        &-prev {
-            right: auto;
-            left: -30px;
-        }
-        &-next {
-            left: auto;
-            right: -30px;
-        }
-        &-prev, &-next {
-            &::after {
-                display: none;
+    .swiper {
+        &-button {
+            &-prev {
+                right: auto;
+                left: -30px;
+            }
+            &-next {
+                left: auto;
+                right: -30px;
+            }
+            &-prev, &-next {
+                &::after {
+                    display: none;
+                }
             }
         }
     }
 }
+
+
