@@ -18,6 +18,10 @@
             grid-template-columns: repeat(4, 1fr);
             column-gap: 110px;
         }
+        &_3c {
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 180px;
+        }
     }
     &__item {
         display: grid;
