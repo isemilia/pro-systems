@@ -1,0 +1,39 @@
+.bs-product {
+    background: #F5F5F5;
+    padding: 82px 0 50px;
+    &__subtitle {
+        font-family: 'Open Sans';
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 27px;
+        color: #838383;
+    }
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(4, 265px);
+        grid-auto-rows: auto;
+        column-gap: 40px;
+        place-content: center;
+        margin-bottom: 45px;
+    }
+    &__text {
+        font-family: 'Montserrat';
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        color: #000000;
+    }
+    &__subtitle, &__text {
+        max-width: 620px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    &__title, &__subtitle, &__text {
+        margin-bottom: 30px;
+    }
+    &__btn {
+        display: block;
+        max-width: fit-content;
+        margin: 0 auto;
+    }
+}
