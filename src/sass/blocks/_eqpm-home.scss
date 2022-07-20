@@ -1,6 +1,6 @@
 .promo {
     position: relative;
-    padding: 110px 0 0 0;
+    padding: 110px 0 70px 0;
     &:before {
         position: absolute;
         content: url('../img/triangle-blue.png');  
@@ -26,14 +26,15 @@
         font-weight: 400;
         font-size: 16px;
         line-height: 22px;
-        margin-bottom: 45px;
+        margin-top: 65px;
+        margin-bottom: 30px;
     }
     &__title, &__descr {
         color: #000000;
         max-width: 510px;
     }
     &-row{
-        margin: 50px 0 75px;
+       margin-top: 15px;
     }
     &__grid {
         display: grid;
@@ -65,19 +66,17 @@
     &__slider {
         width: 430px;
     }
-    &__slide {
-        width: 430px !important;
-        height: 430px;
-    }
     .swiper{
         &-pagination{
             width: 100%;
-            bottom: 100px;
+            bottom: 0;
         }
     }
     .swiper-pagination-bullet {
+        width: 12px;
+        height: 12px;
         background: #FFFFFF;
-        border: 1px solid #0C478B;
+        border: 2px solid #0C478B;
     }
     .swiper-pagination-bullet-active {
     background-color: #0C478B;
