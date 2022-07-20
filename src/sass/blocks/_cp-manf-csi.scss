@@ -59,7 +59,10 @@
     &__slide {
         width: 145px;
         display: grid;
-        place-content: center;
+        place-content: center; 
+        img {
+            max-width: 150px;
+        }
     }
     &__wrapper2 {
         position: relative;
