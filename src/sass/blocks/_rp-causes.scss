@@ -1,0 +1,96 @@
+.causes {
+    background: #F5F5F5;
+    position: relative;
+    .container{
+        position: relative;
+    }
+    &__home{
+        min-height: 780px;
+    }
+    &-row{
+        margin-top: 50px;
+    }
+    &__grid {
+        display: grid;
+        place-content: center;
+        row-gap: 40px;
+        &_2c {
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 100px;
+        }
+    }
+    &__top {
+        position: relative;
+        background: url('../icons/rp-causes-top.svg') center center / cover no-repeat;
+        height: 310px;
+        p{
+            font-family: 'Open Sans';
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 141.7%;
+            color: #FFFFFF;
+            margin-top: 40px;
+        }
+        &-logo{
+            position: absolute;
+            background: url('../../img/rp-causes-logo.png') center center / cover no-repeat;
+            height: 245px;
+            width: 245px;
+            top: 30px;
+            right: 0;
+            transition: background 0.2s;
+            &:hover{
+                background: url('../../img/rp-causes-logo-hover.png') center center / cover no-repeat;
+            }
+        }
+    }
+    &__title{
+        font-family: 'Montserrat';
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 34px;
+        color: #FFFFFF;
+        text-align: left;
+        padding-top: 70px;
+        span{
+            color: #FDCE25;
+        }
+    }
+    &__item{
+        display: flex;
+        &-icon{
+            margin-right: 20px;
+        }
+        &-title{
+            font-family: 'Montserrat';
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 20px;
+            color: #838383;
+        }
+        &-txt{
+            font-family: 'Open Sans';
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+            color: #838383;
+        }
+    }
+    &__present{
+        margin-top: 75px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__subtitle{
+        font-family: 'Montserrat';
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        color: #000000;
+    }
+    &__btn{
+        background: #0C478B;
+        border-radius: 10px;
+    }
+}
