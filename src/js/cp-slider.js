@@ -2,7 +2,8 @@ window.addEventListener('DOMContentLoaded', () => {
     const swiper = new Swiper('#cpsSlider', {
         // Optional parameters
         direction: 'horizontal',
-        loop: true,
+        loop: false,
+        centerInsufficientSlides: true,
         // Navigation arrows
         navigation: {
           nextEl: '#cpsSliderNext',
