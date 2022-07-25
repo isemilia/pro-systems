@@ -1,0 +1,44 @@
+.ic-promo {
+    background: url('../img/1c-bg.jpg') center center / cover no-repeat;
+    min-height: 740px;
+    padding: 120px 0;
+    position: relative;
+    &__elem {
+        position: absolute;
+        right: 0;
+        top: 200px;
+    }
+    &__row {
+        position: relative;
+        z-index: 1;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+    &__title {
+        font-family: 'Montserrat';
+        font-weight: 600;
+        font-size: 42px;
+        line-height: 59px;
+        color: #0C478B;
+        margin-bottom: 55px;
+    }
+    &__text {
+        font-family: 'Open Sans';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        color: #000000;
+        margin-bottom: 45px;
+    }
+    &__img {
+        position: relative;
+        align-self: center;
+        &::before {
+            position: absolute;
+            content: url('../img/1c-elem.png');
+            top: -120px;
+            left: -200px;
+        }
+    }
+}

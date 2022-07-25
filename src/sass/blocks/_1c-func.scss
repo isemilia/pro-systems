@@ -1,0 +1,94 @@
+.ic-func {
+    padding: 80px 0 100px;
+    &__row {
+        display: grid;
+        grid-template-columns: 1fr 270px;
+        column-gap: 150px;
+    }
+    &__title {
+        margin-bottom: 70px;
+    }
+    &__display {
+        display: none;
+        &_active {
+            display: unset;
+        }
+    }
+    &__list {
+        position: relative;
+        list-style-type: none;
+        &::before {
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 1px;
+            background-color: #000000;
+            left: -70px;
+            top: 0;
+        }
+        &-item {
+            position: relative;
+            font-family: 'Montserrat';
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 20px;
+            color: #000000;
+            cursor: pointer;
+            &:not(:last-child) {
+                margin-bottom: 30px;
+            }
+            &_active {
+                font-weight: 600;
+                color: #E9660B;
+                &::before {
+                    position: absolute;
+                    content: '';
+                    width: 11px;
+                    height: 11px;
+                    top: 3px;
+                    left: -22px;
+                    background: #E9660B;
+                    border-radius: 1.7px;
+                    transform: rotate(45deg);
+                }
+            }
+        }
+    }
+    &__text {
+        font-family: 'Open Sans';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        color: #838383;
+        &-more {
+            display: none;
+            &_visible {
+                display: block;
+            }
+        }
+    }
+    &__more {
+        font-weight: 600;
+        text-decoration: none;
+        color: #0C478B;
+    }
+    &__slider {
+        margin-bottom: 30px;
+    }
+    .swiper {
+        width: 650px;
+        &-pagination {
+            bottom: 0px;
+            &-bullet {
+                width: 10px;
+                height: 10px;
+                border: 1px solid #FFFFFF;
+                background: transparent;
+                opacity: 1;
+                &-active {
+                    background: #FFF;
+                }
+            }
+        }
+    }
+}
