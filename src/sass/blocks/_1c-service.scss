@@ -1,0 +1,80 @@
+.ic-service {
+    padding: 110px 0 280px;
+    position: relative;
+    &__elem {
+        position: absolute;
+        top: 0;
+        left: 140px;
+    }
+    &__row {
+        position: relative;
+        display: flex;
+    }
+    &__title {
+        margin-bottom: 74px;
+    }
+    &__item {
+        // background:  left center / contain no-repeat;
+        min-width: 380px;
+        min-height: 270px;
+        display: grid;
+        justify-items: center;
+        // justify-content: flex-end;
+        // align-items: center;
+        transition: background .3s ease;
+        &:nth-child(1) {
+            margin-right: 230px;
+        }
+        &:nth-child(2) {
+            position: absolute;
+            top: 180px;
+            left: 260px;
+        } 
+        &:nth-child(4) {
+            position: absolute;
+            top: 180px;
+            right: 0;
+        } 
+        &:hover {
+            // background:  left center / contain no-repeat;
+        }
+        &-title {
+            font-family: 'Montserrat';
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 20px;
+            color: #000000; 
+            text-decoration: none;
+            max-width: 220px;
+            margin-left: auto;
+            text-align: left;
+            &:hover {
+                color: currentColor;
+            }
+        }
+        &-img {
+            position: relative;
+            &::before {
+                position: absolute;
+                content: url("data:image/svg+xml,%3Csvg width='273' height='273' viewBox='0 0 273 273' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='136.421' y='-5' width='200' height='200' rx='12.6803' transform='rotate(45 136.421 -5)' fill='%23F5F5F5'/%3E%3C/svg%3E%0A");
+                top: -39px;
+                left: -88px;
+                z-index: -1;
+            }
+            &::after {
+                opacity: 0;
+                position: absolute;
+                content: url("data:image/svg+xml,%3Csvg width='273' height='273' viewBox='0 0 273 273' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='136.421' y='-5' width='200' height='200' rx='12.6803' transform='rotate(45 136.421 -5)' fill='%23FECB00'/%3E%3C/svg%3E%0A");
+                top: -39px;
+                left: -88px;
+                z-index: -1;
+                transition: all .3s;
+            }
+            &:hover {
+                &::after {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

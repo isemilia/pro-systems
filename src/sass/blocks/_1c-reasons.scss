@@ -1,0 +1,41 @@
+.ic-reasons {
+    padding: 110px 0;
+    &__title {
+        margin-bottom: 120px;
+    }
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(3, 290px);
+        grid-auto-rows: auto;
+        place-content: center;
+        column-gap: 160px;
+        row-gap: 60px;
+    }
+    &__item {
+        display: grid;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        grid-template-rows: 125px auto;
+        row-gap: 13px;
+        &-icon {
+            position: relative;
+            &::before {
+                position: absolute;
+                content: url("data:image/svg+xml,%3Csvg width='114' height='114' viewBox='0 0 114 114' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='57.0703' y='-5' width='87.7782' height='87.7782' rx='13.9131' transform='rotate(45 57.0703 -5)' fill='%230C478B'/%3E%3C/svg%3E%0A");
+                z-index: -1;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+        &-text {
+            font-family: 'Montserrat';
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+            text-align: center;
+            color: #000000;
+        }
+    }
+}
