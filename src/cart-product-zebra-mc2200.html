@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <meta name="title" content="">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">  
+    <link rel="stylesheet" href="css/cart-product-zebra-mc2200.min.css">
+</head>
+<body>
+    
+    <header class="header">
+        <div class="container">
+            <div class="header__flex">
+                <div class="header__logo">
+                    <img src="icons/logo.png" alt="Про Системы">
+                </div>
+                <nav class="menu">
+                    <div class="menu__item">
+                        <a href="#" class="menu__link">Интернет магазин</a>
+                    </div>
+                    <div class="menu__item">
+                        <a href="#" class="menu__link" data-menu-link>
+                            Услуги 
+                            <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.00015 5.9165C4.89048 5.91713 4.78176 5.89611 4.68023 5.85464C4.5787 5.81317 4.48635 5.75206 4.40849 5.67483L1.07515 2.3415C0.997456 2.2638 0.935822 2.17155 0.893772 2.07004C0.851721 1.96852 0.830078 1.85971 0.830078 1.74983C0.830078 1.63995 0.851721 1.53114 0.893772 1.42962C0.935822 1.3281 0.997456 1.23586 1.07515 1.15816C1.15285 1.08046 1.2451 1.01883 1.34661 0.976779C1.44813 0.934728 1.55694 0.913086 1.66682 0.913086C1.7767 0.913086 1.88551 0.934728 1.98703 0.976779C2.08855 1.01883 2.18079 1.08046 2.25849 1.15816L5.00015 3.9165L7.75016 1.2665C7.82682 1.18125 7.92024 1.11275 8.02458 1.06526C8.12893 1.01777 8.24195 0.992322 8.35657 0.990506C8.4712 0.98869 8.58497 1.01054 8.69077 1.0547C8.79656 1.09886 8.89211 1.16438 8.97143 1.24715C9.05075 1.32992 9.11214 1.42816 9.15176 1.53574C9.19138 1.64332 9.20838 1.75792 9.20169 1.87236C9.195 1.98681 9.16477 2.09865 9.11288 2.20088C9.061 2.30311 8.98858 2.39353 8.90016 2.4665L5.56682 5.68316C5.41443 5.83009 5.21182 5.91352 5.00015 5.9165Z" fill="#0C478B"/>
+                            </svg>
+                        </a>
+                        <div class="menu__dropdown" data-menu-dropdown>
+                            <div class="menu__dropdown-grid">
+                                <div class="menu__dropdown-list">
+                                    <a href="page3.html" class="menu__dropdown-link">
+                                        <img src="icons/food.png" alt="">
+                                        <div class="menu__dropdown-text">Автоматизация продуктового магазина</div>
+                                    </a>
+                                    <a href="page4.html" class="menu__dropdown-link">
+                                        <img src="icons/medicine.png" alt="">
+                                        <div class="menu__dropdown-text">Автоматизация аптеки</div>
+                                    </a>
+                                </div>
+                                <div class="menu__dropdown-list">
+                                    <a href="page5.html" class="menu__dropdown-link">
+                                        <img src="icons/shirt.png" alt="">
+                                        <div class="menu__dropdown-text">Автоматизация магазина одежды</div>
+                                    </a>
+                                    <a href="page2.html" class="menu__dropdown-link">
+                                        <img src="icons/headphones.png" alt="">
+                                        <div class="menu__dropdown-text">Техническая поддержка и сопровождение 1C</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu__item">
+                        <a href="#" class="menu__link" data-menu-link>
+                            Программы
+                            <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.00015 5.9165C4.89048 5.91713 4.78176 5.89611 4.68023 5.85464C4.5787 5.81317 4.48635 5.75206 4.40849 5.67483L1.07515 2.3415C0.997456 2.2638 0.935822 2.17155 0.893772 2.07004C0.851721 1.96852 0.830078 1.85971 0.830078 1.74983C0.830078 1.63995 0.851721 1.53114 0.893772 1.42962C0.935822 1.3281 0.997456 1.23586 1.07515 1.15816C1.15285 1.08046 1.2451 1.01883 1.34661 0.976779C1.44813 0.934728 1.55694 0.913086 1.66682 0.913086C1.7767 0.913086 1.88551 0.934728 1.98703 0.976779C2.08855 1.01883 2.18079 1.08046 2.25849 1.15816L5.00015 3.9165L7.75016 1.2665C7.82682 1.18125 7.92024 1.11275 8.02458 1.06526C8.12893 1.01777 8.24195 0.992322 8.35657 0.990506C8.4712 0.98869 8.58497 1.01054 8.69077 1.0547C8.79656 1.09886 8.89211 1.16438 8.97143 1.24715C9.05075 1.32992 9.11214 1.42816 9.15176 1.53574C9.19138 1.64332 9.20838 1.75792 9.20169 1.87236C9.195 1.98681 9.16477 2.09865 9.11288 2.20088C9.061 2.30311 8.98858 2.39353 8.90016 2.4665L5.56682 5.68316C5.41443 5.83009 5.21182 5.91352 5.00015 5.9165Z" fill="#0C478B"/>
+                            </svg>
+                        </a>
+                        <div class="menu__dropdown" data-menu-dropdown>
+                            <div class="menu__dropdown-grid">
+                                <div class="menu__dropdown-list">
+                                    <a href="#" class="menu__dropdown-link">
+                                        <img src="icons/shopping-cart.png" alt="">
+                                        <div class="menu__dropdown-text">Set Retail: <br> Управление торговлей</div>
+                                    </a>
+                                    <a href="#" class="menu__dropdown-link">
+                                        <img src="icons/cash-register.png" alt="">
+                                        <div class="menu__dropdown-text">Set Prisma: <br> Контроль кассовых операций</div>
+                                    </a>
+                                </div>
+                                <div class="menu__dropdown-list">
+                                    <a href="#" class="menu__dropdown-link">
+                                        <img src="icons/medication.png" alt="">
+                                        <div class="menu__dropdown-text">1C Аптека</div>
+                                    </a>
+                                    <a href="#" class="menu__dropdown-link">
+                                        <img src="icons/profit.png" alt="">
+                                        <div class="menu__dropdown-text">1C Управление торговлей</div>
+                                    </a>
+                                    <a href="#" class="menu__dropdown-link">
+                                        <img src="icons/process.png" alt="">
+                                        <div class="menu__dropdown-text">1C Косплексная автоматизация</div>
+                                    </a>
+                                    <a href="#" class="menu__dropdown-link">
+                                        <img src="icons/accounting.png" alt="">
+                                        <div class="menu__dropdown-text">1C Бухгалтерия</div>
+                                    </a>
+                                    <a href="#" class="menu__dropdown-link">
+                                        <img src="icons/shopping.png" alt="">
+                                        <div class="menu__dropdown-text">1C Розница</div>
+                                    </a>
+                                </div>
+                                <div class="menu__dropdown-list">
+                                    <a href="#" class="menu__dropdown-link">
+                                        <img src="icons/viral-marketing.png" alt="">
+                                        <div class="menu__dropdown-text">Онлайн-касса “Программный фискализатор”</div>
+                                    </a>
+                                    <a href="#" class="menu__dropdown-link">
+                                        <img src="icons/g10.png" alt="">
+                                        <div class="menu__dropdown-text">Управление рекламным монитором ADMO.media</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu__item">
+                        <a href="#" class="menu__link" data-menu-link>
+                            Оборудование
+                            <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.00015 5.9165C4.89048 5.91713 4.78176 5.89611 4.68023 5.85464C4.5787 5.81317 4.48635 5.75206 4.40849 5.67483L1.07515 2.3415C0.997456 2.2638 0.935822 2.17155 0.893772 2.07004C0.851721 1.96852 0.830078 1.85971 0.830078 1.74983C0.830078 1.63995 0.851721 1.53114 0.893772 1.42962C0.935822 1.3281 0.997456 1.23586 1.07515 1.15816C1.15285 1.08046 1.2451 1.01883 1.34661 0.976779C1.44813 0.934728 1.55694 0.913086 1.66682 0.913086C1.7767 0.913086 1.88551 0.934728 1.98703 0.976779C2.08855 1.01883 2.18079 1.08046 2.25849 1.15816L5.00015 3.9165L7.75016 1.2665C7.82682 1.18125 7.92024 1.11275 8.02458 1.06526C8.12893 1.01777 8.24195 0.992322 8.35657 0.990506C8.4712 0.98869 8.58497 1.01054 8.69077 1.0547C8.79656 1.09886 8.89211 1.16438 8.97143 1.24715C9.05075 1.32992 9.11214 1.42816 9.15176 1.53574C9.19138 1.64332 9.20838 1.75792 9.20169 1.87236C9.195 1.98681 9.16477 2.09865 9.11288 2.20088C9.061 2.30311 8.98858 2.39353 8.90016 2.4665L5.56682 5.68316C5.41443 5.83009 5.21182 5.91352 5.00015 5.9165Z" fill="#0C478B"/>
+                            </svg>
+                        </a>
+                        <div class="menu__dropdown" data-menu-dropdown>
+                            <div class="menu__dropdown-grid">
+                                <div class="menu__dropdown-list">
+                                    <a href="#" class="menu__dropdown-link">
+                                        <img src="icons/cashbox.svg" alt="">
+                                        <div class="menu__dropdown-text">Кассы самообслуживания</div>
+                                    </a>
+                                    <a href="#" class="menu__dropdown-link">
+                                        <img src="icons/pos.svg" alt="">
+                                        <div class="menu__dropdown-text">Сенсорные POS системы</div>
+                                    </a>
+                                    <a href="#" class="menu__dropdown-link">
+                                        <img src="icons/g10.png" alt="">
+                                        <div class="menu__dropdown-text">Фискальные регистраторы</div>
+                                    </a>
+                                    <a href="#" class="menu__dropdown-link">
+                                        <img src="icons/portable-printer.png" alt="">
+                                        <div class="menu__dropdown-text">Принтеры чеков</div>
+                                    </a>
+                                </div>
+                                <div class="menu__dropdown-list">
+                                    <a href="#" class="menu__dropdown-link">
+                                        <img src="icons/printer.png" alt="">
+                                        <div class="menu__dropdown-text">Принтеры этикеток</div>
+                                    </a>
+                                    <a href="#" class="menu__dropdown-link">
+                                        <img src="icons/barcode.png" alt="">
+                                        <div class="menu__dropdown-text">Сканеры штрихкодов</div>
+                                    </a>
+                                    <a href="#" class="menu__dropdown-link">
+                                        <img src="icons/point-of-service.png" alt="">
+                                        <div class="menu__dropdown-text">Терминалы сбора данных</div>
+                                    </a>
+                                    <a href="#" class="menu__dropdown-link">
+                                        <img src="icons/tv-monitor.png" alt="">
+                                        <div class="menu__dropdown-text">Дисплеи покупателя</div>
+                                    </a>
+                                </div>
+                                <div class="menu__dropdown-list">
+                                    <a href="#" class="menu__dropdown-link">
+                                        <img src="icons/tablet.png" alt="">
+                                        <div class="menu__dropdown-text">Прайс-чекеры</div>
+                                    </a>
+                                    <a href="#" class="menu__dropdown-link">
+                                        <img src="icons/scale.png" alt="">
+                                        <div class="menu__dropdown-text">Весы электронные</div>
+                                    </a>
+                                    <a href="#" class="menu__dropdown-link">
+                                        <img src="icons/zakat.png" alt="">
+                                        <div class="menu__dropdown-text">Денежные ящики</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu__item">
+                        <a href="#" class="menu__link" data-menu-link>
+                            О нас
+                            <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.00015 5.9165C4.89048 5.91713 4.78176 5.89611 4.68023 5.85464C4.5787 5.81317 4.48635 5.75206 4.40849 5.67483L1.07515 2.3415C0.997456 2.2638 0.935822 2.17155 0.893772 2.07004C0.851721 1.96852 0.830078 1.85971 0.830078 1.74983C0.830078 1.63995 0.851721 1.53114 0.893772 1.42962C0.935822 1.3281 0.997456 1.23586 1.07515 1.15816C1.15285 1.08046 1.2451 1.01883 1.34661 0.976779C1.44813 0.934728 1.55694 0.913086 1.66682 0.913086C1.7767 0.913086 1.88551 0.934728 1.98703 0.976779C2.08855 1.01883 2.18079 1.08046 2.25849 1.15816L5.00015 3.9165L7.75016 1.2665C7.82682 1.18125 7.92024 1.11275 8.02458 1.06526C8.12893 1.01777 8.24195 0.992322 8.35657 0.990506C8.4712 0.98869 8.58497 1.01054 8.69077 1.0547C8.79656 1.09886 8.89211 1.16438 8.97143 1.24715C9.05075 1.32992 9.11214 1.42816 9.15176 1.53574C9.19138 1.64332 9.20838 1.75792 9.20169 1.87236C9.195 1.98681 9.16477 2.09865 9.11288 2.20088C9.061 2.30311 8.98858 2.39353 8.90016 2.4665L5.56682 5.68316C5.41443 5.83009 5.21182 5.91352 5.00015 5.9165Z" fill="#0C478B"/>
+                            </svg>
+                        </a>
+                        <div class="menu__dropdown" data-menu-dropdown>
+                            <div class="menu__dropdown-grid">
+                                <div class="menu__dropdown-list">
+                                    <a href="#" class="menu__dropdown-link">
+                                        <img src="icons/suitcase.png" alt="">
+                                        <div class="menu__dropdown-text">О компании</div>
+                                    </a>
+                                    <a href="#" class="menu__dropdown-link">
+                                        <img src="icons/blog.png" alt="">
+                                        <div class="menu__dropdown-text">Блог</div>
+                                    </a>
+                                </div>
+                                <div class="menu__dropdown-list">
+                                    <a href="#" class="menu__dropdown-link">
+                                        <img src="icons/goal.png" alt="">
+                                        <div class="menu__dropdown-text">Карьера</div>
+                                    </a>
+                                    <a href="#" class="menu__dropdown-link">
+                                        <img src="icons/contact.png" alt="">
+                                        <div class="menu__dropdown-text">Контакты</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <div class="header__phone">
+                    <a href="tel:" class="header__phone-link">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.4998 17.3333C10.0976 17.3289 6.83593 15.9754 4.43017 13.5696C2.02441 11.1638 0.670914 7.90219 0.666504 4.49993C0.666504 3.48327 1.07037 2.50825 1.78926 1.78936C2.50815 1.07047 3.48317 0.666599 4.49984 0.666599C4.71512 0.664959 4.93004 0.684498 5.1415 0.724932C5.34593 0.755183 5.54689 0.805424 5.7415 0.874932C5.87838 0.922957 6.00035 1.00588 6.09535 1.11549C6.19035 1.22511 6.25509 1.35762 6.28317 1.49993L7.42484 6.49993C7.45561 6.63565 7.4519 6.77692 7.41406 6.91084C7.37621 7.04475 7.30543 7.16706 7.20817 7.2666C7.09984 7.38327 7.0915 7.3916 6.0665 7.92493C6.88733 9.72565 8.3275 11.1717 10.1248 11.9999C10.6665 10.9666 10.6748 10.9583 10.7915 10.8499C10.891 10.7527 11.0133 10.6819 11.1473 10.644C11.2812 10.6062 11.4225 10.6025 11.5582 10.6333L16.5582 11.7749C16.6959 11.8069 16.8233 11.8734 16.9282 11.9681C17.0332 12.0629 17.1123 12.1828 17.1582 12.3166C17.2285 12.5144 17.2815 12.7179 17.3165 12.9249C17.35 13.1344 17.3668 13.3462 17.3665 13.5583C17.3511 14.5706 16.9359 15.5357 16.2115 16.243C15.487 16.9502 14.5122 17.3422 13.4998 17.3333ZM4.49984 2.33327C3.92588 2.33546 3.37605 2.56444 2.9702 2.97029C2.56434 3.37615 2.33537 3.92597 2.33317 4.49993C2.33538 7.46084 3.51257 10.2998 5.60625 12.3935C7.69993 14.4872 10.5389 15.6644 13.4998 15.6666C14.0738 15.6644 14.6236 15.4354 15.0295 15.0296C15.4353 14.6237 15.6643 14.0739 15.6665 13.4999V13.2249L11.7998 12.3333L11.5582 12.7916C11.1832 13.5166 10.9082 14.0416 10.2082 13.7583C8.82724 13.264 7.57375 12.4683 6.53878 11.429C5.50381 10.3897 4.71336 9.13292 4.22484 7.74993C3.92484 7.09993 4.4915 6.79993 5.20817 6.42493L5.6665 6.19993L4.77484 2.33327H4.49984Z" fill="#0C478B"/>
+                        </svg>
+                        +7 (747) 094 9988
+                    </a>
+                    <a href="tel:" class="header__phone-link">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.4998 17.3333C10.0976 17.3289 6.83593 15.9754 4.43017 13.5696C2.02441 11.1638 0.670914 7.90219 0.666504 4.49993C0.666504 3.48327 1.07037 2.50825 1.78926 1.78936C2.50815 1.07047 3.48317 0.666599 4.49984 0.666599C4.71512 0.664959 4.93004 0.684498 5.1415 0.724932C5.34593 0.755183 5.54689 0.805424 5.7415 0.874932C5.87838 0.922957 6.00035 1.00588 6.09535 1.11549C6.19035 1.22511 6.25509 1.35762 6.28317 1.49993L7.42484 6.49993C7.45561 6.63565 7.4519 6.77692 7.41406 6.91084C7.37621 7.04475 7.30543 7.16706 7.20817 7.2666C7.09984 7.38327 7.0915 7.3916 6.0665 7.92493C6.88733 9.72565 8.3275 11.1717 10.1248 11.9999C10.6665 10.9666 10.6748 10.9583 10.7915 10.8499C10.891 10.7527 11.0133 10.6819 11.1473 10.644C11.2812 10.6062 11.4225 10.6025 11.5582 10.6333L16.5582 11.7749C16.6959 11.8069 16.8233 11.8734 16.9282 11.9681C17.0332 12.0629 17.1123 12.1828 17.1582 12.3166C17.2285 12.5144 17.2815 12.7179 17.3165 12.9249C17.35 13.1344 17.3668 13.3462 17.3665 13.5583C17.3511 14.5706 16.9359 15.5357 16.2115 16.243C15.487 16.9502 14.5122 17.3422 13.4998 17.3333ZM4.49984 2.33327C3.92588 2.33546 3.37605 2.56444 2.9702 2.97029C2.56434 3.37615 2.33537 3.92597 2.33317 4.49993C2.33538 7.46084 3.51257 10.2998 5.60625 12.3935C7.69993 14.4872 10.5389 15.6644 13.4998 15.6666C14.0738 15.6644 14.6236 15.4354 15.0295 15.0296C15.4353 14.6237 15.6643 14.0739 15.6665 13.4999V13.2249L11.7998 12.3333L11.5582 12.7916C11.1832 13.5166 10.9082 14.0416 10.2082 13.7583C8.82724 13.264 7.57375 12.4683 6.53878 11.429C5.50381 10.3897 4.71336 9.13292 4.22484 7.74993C3.92484 7.09993 4.4915 6.79993 5.20817 6.42493L5.6665 6.19993L4.77484 2.33327H4.49984Z" fill="#0C478B"/>
+                        </svg>
+                        +7 (727) 270 0800
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="promo promo__home">
+            <div class="promo__head">
+                <img src="icons/cp-home-title.svg" alt="" class="promo__img">
+                <div class="container">
+                    <div class="promo__nav">
+                        <a href="equipment.html">Терминалы сбора данных</a>
+                        <i class="arrow right"></i>
+                        <a href="cart-product.html">Zebra MC2200/MC2700</a>
+                    </div>
+                    <h2 class="title promo__title">Терминал сбора данных <span>Zebra MC2200/MC2700</span></h2>
+                </div>
+            </div>
+            <div class="promo__content">
+                <div class="container">
+                    <div class="tabs">
+                        <div class="tabs__nav">
+                            <button class="tabs__nav-btn" type="button" data-tab="#tab_1">Описание</button>
+                            <button class="tabs__nav-btn" type="button" data-tab="#tab_2">Технические характеристики</button>
+                        </div>
+                        <div class="tabs__content">
+                            <div class="tabs__item" id="tab_1">
+                                <div class="tabs__wrapp">
+                                    <div class="promo__img promo__img_home">
+                                        <!-- Slider main container -->
+                                        <div class="swiper promo__slider" id="promoSlider">
+                                            <!-- Additional required wrapper -->
+                                            <div class="swiper-wrapper">
+                                                <!-- Slides -->
+                                                <div class="swiper-slide promo__slide">
+                                                    <img src="img/5.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-pagination">
+                                        </div>
+                                    </div>
+                                    <div class="promo__row">
+                                        <div class="promo__switch">
+                                            <ul class="promo__list">
+                                                <li class="promo__list-item promo__list-item_active" data-switch-title>Удобное использование</li>
+                                                <li class="promo__list-item" data-switch-title>Расширенная емкость аккумулятора</li>
+                                                <li class="promo__list-item" data-switch-title>Мощный корпус</li>
+                                            </ul>
+                                            <div class="promo__text">
+                                                <div class="promo__descr promo__descr_active" data-switch-descr>
+                                                    <p>
+                                                        Конструкция компьютеров MC2200 и MC2700 переработана для максимального комфорта и удобства использования. Размер, форма, расположение и цвет клавиш, форма, сужающаяся к низу, отдельные выступы для пальцев, которые позволяют работать с клавиатурой и дисплеем одной рукой, съемная триггерная рукоятка и многое другое.
+                                                    </p>
+                                                </div>
+                                                <div class="promo__descr" data-switch-descr>
+                                                    <p>Li-Ion съемный аккумулятор</p>
+                                                    <p>Стандартная емкость 3500 mAh</p>    
+                                                    <p>Расширенная емкость 4900 mAh</p>    
+                                                </div>
+                                                <div class="promo__descr" data-switch-descr>
+                                                    <p>
+                                                        Оборудование с классом защиты IP65. Выдерживает многократные падения с высоты 1,52 м. Готово к работе при температурном диапазоне от -20°C до +50°C
+                                                    </p> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="btn promo__btn">Узнать стоимость</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tabs__item" id="tab_2">
+                                <div class="tabs__wrapp2">
+                                    <div class="promo__slider2">
+                                        <!-- Slider main container -->
+                                        <div class="swiper promo__slider" id="promoSlider2">
+                                            <!-- Additional required wrapper -->
+                                            <div class="swiper-wrapper">
+                                                <!-- Slides -->
+                                                <div class="swiper-slide promo__slide">
+                                                    <img src="img/5.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-pagination2">
+                                        </div>
+                                    </div>
+                                    <table class="promo__table">
+                                        <tbody>
+                                            <tr class="table__tr">
+                                                <td class="table__cell-title">Модель</td>
+                                                <td class="table__cell-info">Терминал сбора данных Zebra MC2200/2700</td>
+                                            </tr>
+                                            <tr class="table__tr">
+                                                <td class="table__cell-title">Процессор</td>
+                                                <td class="table__cell-info">octa-core Qualcomm Snapdragon 660, 1.8 GHz</td>
+                                            </tr>
+                                            <tr class="table__tr">
+                                                <td class="table__cell-title">Операционная система</td>
+                                                <td class="table__cell-info">MC2200: Android 11; с возможностью обновления до Android 14<br><br>
+                                                    MC2700: Android 11; с возможностью обновления до Android 14</td>
+                                            </tr>
+                                            <tr class="table__tr">
+                                                <td class="table__cell-title">Питание</td>
+                                                <td class="table__cell-info">Стандартная емкость: 3500 мА-ч/12,60 Вт-ч<br>
+                                                    Увеличенная емкость: 4900 мА-ч/17,64 Вт-ч</td>
+                                            </tr>
+                                            <tr class="table__tr">
+                                                <td class="table__cell-title">Сетевые подключения</td>
+                                                <td class="table__cell-info">MC2200/MC2700: WLAN (WiFi), WPAN (Bluetooth),
+                                                    Высокоскоростной USB 2.0 (сервер или клиент),
+                                                    Только MC2700: WWAN (сотовая связь)</td>
+                                            </tr>
+                                            <tr class="table__tr">
+                                                <td class="table__cell-title">Модуль сканирования</td>
+                                                <td class="table__cell-info">Модуль SE4100 для сканирования одно- и двухмерных штрихкодов в стандартном диапазоне</td>
+                                            </tr>
+                                            <tr class="table__tr">
+                                                <td class="table__cell-title">Габариты</td>
+                                                <td class="table__cell-info">60.9мм*34.1мм*171.7мм, 0.228 г</td>
+                                            </tr>
+                                            <tr class="table__tr">
+                                                <td class="table__cell-title">Камера</td>
+                                                <td class="table__cell-info">13 MP</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                
+                                <div class="promo__buttons">
+                                    <p class="promo__download">Получите подробную спецификацию и инструкцию</p>
+                                    <button class="btn promo__download-btn">Скачать</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="s-slider">
+            <div class="container">
+                <h2 class="title s-slider__title">Терминал сбора данных <span style="font-weight: 600; color: #0C478B;">Zebra MC2200/MC2700</span></h2>
+                <div class="s-slider__subtitle">
+                    MC2200 и MC2700 — это бескомпромиссное решение по доступной цене, когда малому или среднему <br>предприятию необходимо предоставить своим сотрудникам оптимальное мобильное устройство для работы. 
+                </div>
+
+                <div class="s-slider__wrapper">
+                    <!-- Slider main container -->
+                    <div class="swiper s-slider__slider" id="ssSlider">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide s-slider__swiper-slide">
+                                <div class="s-slider__item">
+                                    <div class="s-slider__img">
+                                        <img src="img/4.png" alt="" data-ss-img>
+                                    </div>
+                                    <a href="#" class="s-slider__zoom" data-ss-zoom>
+                                        <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M33.8313 31.1688L27.4563 24.8125C29.5131 22.1921 30.6292 18.9562 30.625 15.625C30.625 12.6583 29.7453 9.75819 28.097 7.29145C26.4488 4.82472 24.1061 2.90213 21.3653 1.76681C18.6244 0.631499 15.6084 0.334449 12.6987 0.913228C9.78894 1.49201 7.11619 2.92062 5.0184 5.0184C2.92062 7.11619 1.49201 9.78894 0.913228 12.6987C0.334449 15.6084 0.631499 18.6244 1.76681 21.3653C2.90213 24.1061 4.82472 26.4488 7.29145 28.097C9.75819 29.7453 12.6583 30.625 15.625 30.625C18.9562 30.6292 22.1921 29.5131 24.8125 27.4563L31.1688 33.8313C31.3431 34.007 31.5504 34.1465 31.7789 34.2417C32.0074 34.3369 32.2525 34.3859 32.5 34.3859C32.7475 34.3859 32.9926 34.3369 33.2211 34.2417C33.4496 34.1465 33.6569 34.007 33.8313 33.8313C34.007 33.6569 34.1465 33.4496 34.2417 33.2211C34.3369 32.9926 34.3859 32.7475 34.3859 32.5C34.3859 32.2525 34.3369 32.0074 34.2417 31.7789C34.1465 31.5504 34.007 31.3431 33.8313 31.1688ZM4.37501 15.625C4.37501 13.4 5.03481 11.2249 6.27097 9.37484C7.50714 7.52479 9.26415 6.08285 11.3198 5.23136C13.3755 4.37988 15.6375 4.15709 17.8198 4.59117C20.0021 5.02526 22.0066 6.09671 23.58 7.67006C25.1533 9.2434 26.2248 11.248 26.6588 13.4302C27.0929 15.6125 26.8701 17.8745 26.0187 19.9302C25.1672 21.9859 23.7252 23.7429 21.8752 24.979C20.0251 26.2152 17.85 26.875 15.625 26.875C12.6413 26.875 9.77984 25.6897 7.67006 23.58C5.56027 21.4702 4.37501 18.6087 4.37501 15.625Z" fill="#0C478B"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide s-slider__swiper-slide">
+                                <div class="s-slider__item">
+                                    <div class="s-slider__img">
+                                        <img src="img/1.png" alt="" data-ss-img>
+                                    </div>
+                                    <a href="#" class="s-slider__zoom" data-ss-zoom>
+                                        <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M33.8313 31.1688L27.4563 24.8125C29.5131 22.1921 30.6292 18.9562 30.625 15.625C30.625 12.6583 29.7453 9.75819 28.097 7.29145C26.4488 4.82472 24.1061 2.90213 21.3653 1.76681C18.6244 0.631499 15.6084 0.334449 12.6987 0.913228C9.78894 1.49201 7.11619 2.92062 5.0184 5.0184C2.92062 7.11619 1.49201 9.78894 0.913228 12.6987C0.334449 15.6084 0.631499 18.6244 1.76681 21.3653C2.90213 24.1061 4.82472 26.4488 7.29145 28.097C9.75819 29.7453 12.6583 30.625 15.625 30.625C18.9562 30.6292 22.1921 29.5131 24.8125 27.4563L31.1688 33.8313C31.3431 34.007 31.5504 34.1465 31.7789 34.2417C32.0074 34.3369 32.2525 34.3859 32.5 34.3859C32.7475 34.3859 32.9926 34.3369 33.2211 34.2417C33.4496 34.1465 33.6569 34.007 33.8313 33.8313C34.007 33.6569 34.1465 33.4496 34.2417 33.2211C34.3369 32.9926 34.3859 32.7475 34.3859 32.5C34.3859 32.2525 34.3369 32.0074 34.2417 31.7789C34.1465 31.5504 34.007 31.3431 33.8313 31.1688ZM4.37501 15.625C4.37501 13.4 5.03481 11.2249 6.27097 9.37484C7.50714 7.52479 9.26415 6.08285 11.3198 5.23136C13.3755 4.37988 15.6375 4.15709 17.8198 4.59117C20.0021 5.02526 22.0066 6.09671 23.58 7.67006C25.1533 9.2434 26.2248 11.248 26.6588 13.4302C27.0929 15.6125 26.8701 17.8745 26.0187 19.9302C25.1672 21.9859 23.7252 23.7429 21.8752 24.979C20.0251 26.2152 17.85 26.875 15.625 26.875C12.6413 26.875 9.77984 25.6897 7.67006 23.58C5.56027 21.4702 4.37501 18.6087 4.37501 15.625Z" fill="#0C478B"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev" id="ssPrev">
+                        <svg width="14" height="22" viewBox="0 0 14 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.947 21.8334C10.6551 21.8322 10.3665 21.7722 10.0984 21.6568C9.83036 21.5413 9.58837 21.373 9.38699 21.1617L1.02365 12.495C0.626663 12.09 0.404297 11.5455 0.404297 10.9784C0.404297 10.4112 0.626663 9.86671 1.02365 9.4617L9.69032 0.795035C9.89234 0.593019 10.1322 0.432771 10.3961 0.32344C10.6601 0.214109 10.943 0.157837 11.2287 0.157837C11.5144 0.157837 11.7973 0.214109 12.0612 0.32344C12.3251 0.432771 12.565 0.593019 12.767 0.795035C12.969 0.997052 13.1293 1.23688 13.2386 1.50083C13.3479 1.76478 13.4042 2.04767 13.4042 2.33337C13.4042 2.61906 13.3479 2.90196 13.2386 3.16591C13.1293 3.42986 12.969 3.66968 12.767 3.8717L5.61699 11L12.507 18.15C12.9105 18.556 13.137 19.1051 13.137 19.6775C13.137 20.2499 12.9105 20.7991 12.507 21.205C12.302 21.4084 12.0583 21.5688 11.7904 21.6767C11.5225 21.7846 11.2358 21.8379 10.947 21.8334Z" fill="#0C478B"/>
+                        </svg>
+                    </div>
+                    <div class="swiper-button-next" id="ssNext">
+                        <svg width="14" height="22" viewBox="0 0 14 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.05301 21.8334C3.34487 21.8322 3.6335 21.7722 3.90157 21.6568C4.16964 21.5413 4.41163 21.373 4.61301 21.1617L12.9763 12.495C13.3733 12.09 13.5957 11.5455 13.5957 10.9784C13.5957 10.4112 13.3733 9.86671 12.9763 9.4617L4.30968 0.795035C4.10766 0.593019 3.86783 0.432771 3.60388 0.32344C3.33993 0.214109 3.05704 0.157837 2.77134 0.157837C2.48565 0.157837 2.20275 0.214109 1.9388 0.32344C1.67485 0.432771 1.43503 0.593019 1.23301 0.795035C1.03099 0.997052 0.870743 1.23688 0.761413 1.50083C0.652081 1.76478 0.595809 2.04767 0.595809 2.33337C0.595809 2.61906 0.652081 2.90196 0.761413 3.16591C0.870743 3.42986 1.03099 3.66968 1.23301 3.8717L8.38301 11L1.49301 18.15C1.08947 18.556 0.862959 19.1051 0.862959 19.6775C0.862959 20.2499 1.08947 20.7991 1.49301 21.205C1.69803 21.4084 1.94166 21.5688 2.20956 21.6767C2.47746 21.7846 2.76423 21.8379 3.05301 21.8334Z" fill="#0C478B"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="video video__home">
+            <div class="container">
+                <h2 class="title video__title">Терминал сбора данных Zebra MC2200/MC2700</h2>
+                <!-- <iframe class="video__frame" src="https://www.youtube.com/embed/YXXE8uOpyr4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                <div class="video__wrp">
+                    <video class="video__frame" src="" controls loop></video>
+                </div>
+            </div>
+        </section>
+    
+        <div class="product__shop">
+            <div class="container">
+                <img src="img/clover.png" alt="img" class="product__shop-top">
+                <img src="icons/triangles.png" alt="img" class="product__shop-bottom">
+                <div class="product__shop-title">Клеверенс <span>- решение для бизнеса</span></div>
+                <div class="product__shop-subtitle"></div>
+                
+                <div class="product__shop-grid">
+                    <div class="product__shop-item">
+                        <div class="product__shop-icon"><img src="icons/clock.png"></div>
+                        <div class="product__shop-heading">Сокращение в 10 раз времени на<br>
+                            выполнение рутинных операций<br>
+                            в магазине
+                        </div>
+                    </div>
+                    <div class="product__shop-item">
+                        <div class="product__shop-icon"><img src="icons/idea1.png"></div>
+                        <div class="product__shop-heading">Решения по мобильной <br>
+                            автоматизации магазинов
+                        </div>
+                    </div>
+                    <div class="product__shop-item">
+                        <div class="product__shop-icon"><img src="icons/list.png"></div>
+                        <div class="product__shop-heading">Сокращение в 5 раз времени на <br>
+                            проведение ревизии
+                        </div>
+                    </div>
+                    <div class="product__shop-item">
+                        <div class="product__shop-icon"><img src="icons/box.png"></div>
+                        <div class="product__shop-heading">Внедрение коробочного решение без<br>
+                            доработок
+                        </div>
+                    </div>
+                    <div class="product__shop-item">
+                        <div class="product__shop-icon"><img src="icons/label.png"></div>
+                        <div class="product__shop-heading">Проведение переоценки товаров<br>
+                            за 1 день
+                        </div>
+                    </div>
+                </div>
+                <div class="product__shop-buttons">
+                    <p>Получите подробную информацию про Клеверенс</p>
+                    <a href="" class="btn product__shop-btn">Получить</a>
+                </div>
+            </div>
+        </div>
+
+        <section class="manufacturer manufacturer__home">
+            <div class="container">
+                <div class="manufacturer__wrapper">
+                    <div class="manufacturer__info">
+                        <h2 class="title manufacturer__title">О производителе</h2>
+                        <p class="manufacturer__desc">
+                           <span>Zebra</span> - производитель мобильных компьютеров, сканеров штрихкода, термопринтеров и расходных материалов к ним.
+                            <br><br>
+                            Компания Zebra как настоящий новатор в бизнесе обслуживает тысячи клиентов,<br>
+                            в число которых входят многие ведущие мировые компании. Создают и <br>
+                            предоставляют передовые технологии, которые позволяют оптимальным <br>
+                            образом организовывать взаимосвязь активов, данных и сотрудников. 
+                        </p>
+                        <div class="manufacturer__wrapper2">
+                            <!-- Slider main container -->
+                            <div class="swiper manufacturer__slider" id="manfCSISlider">
+                                <!-- Additional required wrapper -->
+                                <div class="swiper-wrapper">
+                                    <!-- Slides -->
+                                    <div class="swiper-slide manufacturer__slide">
+                                        <img src="img/cp-zebra-manf1.png" alt="img">
+                                    </div>
+                                    <div class="swiper-slide manufacturer__slide">
+                                        <img src="img/cp-zebra-manf2.png" alt="img">
+                                    </div>
+                                    <div class="swiper-slide manufacturer__slide">
+                                        <img src="img/cp-zebra-manf3.png" alt="img">
+                                    </div>
+                                    <div class="swiper-slide manufacturer__slide">
+                                        <img src="img/cp-zebra-manf0.png" alt="img">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-prev" id="manfCSISliderPrev">
+                                <svg width="14" height="22" viewBox="0 0 14 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.9465 21.8333C10.6546 21.8322 10.366 21.7721 10.0979 21.6567C9.82987 21.5413 9.58789 21.3729 9.3865 21.1616L1.02317 12.495C0.626174 12.09 0.403809 11.5454 0.403809 10.9783C0.403809 10.4112 0.626174 9.86665 1.02317 9.46164L9.68983 0.794974C9.89185 0.592958 10.1317 0.43271 10.3956 0.323379C10.6596 0.214048 10.9425 0.157776 11.2282 0.157776C11.5139 0.157776 11.7968 0.214048 12.0607 0.323379C12.3247 0.43271 12.5645 0.592958 12.7665 0.794974C12.9685 0.996991 13.1288 1.23682 13.2381 1.50077C13.3474 1.76472 13.4037 2.04761 13.4037 2.33331C13.4037 2.619 13.3474 2.9019 13.2381 3.16585C13.1288 3.4298 12.9685 3.66962 12.7665 3.87164L5.6165 11L12.5065 18.15C12.91 18.5559 13.1366 19.1051 13.1366 19.6775C13.1366 20.2499 12.91 20.799 12.5065 21.205C12.3015 21.4084 12.0579 21.5688 11.79 21.6767C11.5221 21.7846 11.2353 21.8378 10.9465 21.8333Z" fill="#0C478B"/>
+                                </svg>
+                            </div>
+                            <div class="swiper-button-next" id="manfCSISliderNext">
+                                <svg width="14" height="22" viewBox="0 0 14 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.0535 21.8333C3.34536 21.8322 3.63398 21.7721 3.90206 21.6567C4.17013 21.5413 4.41211 21.3729 4.6135 21.1616L12.9768 12.495C13.3738 12.09 13.5962 11.5454 13.5962 10.9783C13.5962 10.4112 13.3738 9.86665 12.9768 9.46164L4.31017 0.794974C4.10815 0.592958 3.86832 0.43271 3.60437 0.323379C3.34042 0.214048 3.05753 0.157776 2.77183 0.157776C2.48614 0.157776 2.20324 0.214048 1.93929 0.323379C1.67534 0.43271 1.43551 0.592958 1.2335 0.794974C1.03148 0.996991 0.871232 1.23682 0.761901 1.50077C0.65257 1.76472 0.596297 2.04761 0.596297 2.33331C0.596297 2.619 0.65257 2.9019 0.761901 3.16585C0.871232 3.4298 1.03148 3.66962 1.2335 3.87164L8.3835 11L1.4935 18.15C1.08995 18.5559 0.863447 19.1051 0.863447 19.6775C0.863447 20.2499 1.08995 20.799 1.4935 21.205C1.69852 21.4084 1.94214 21.5688 2.21004 21.6767C2.47795 21.7846 2.76472 21.8378 3.0535 21.8333Z" fill="#0C478B"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="manufacturer__pic">
+                        <img src="img/zebra2.png" alt="" class="manufacturer__bg">
+                    </div>
+                </div>
+                <div class="manufacturer__present">
+                    <p class="manufacturer__subtitle">Получите презентацию торгового оборудования бренда</p>
+                    <div class="manufacturer__button">
+                        <a href="#" class="btn manufacturer__btn">Получить презентацию</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="choice choice_home">
+            <div class="container">
+                <h2 class="title choice__title">С этим оборудованием в комплекте<br> часто покупают:</h2>
+                <div class="choice__wrapper">
+                    <!-- Slider main container -->
+                    <div class="swiper choice__slider" id="choiceSlider">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide choice__slide">
+                                <img src="img/cp-choice1.png" alt="">
+                                <p>Сканеры штрихкодов</p>
+                            </div>
+                            <div class="swiper-slide choice__slide">
+                                <img src="img/cp-choice2.png" alt="">
+                                <p>Принтеры чеков</p>
+                            </div>
+                            <div class="swiper-slide choice__slide">
+                                <img src="img/cp-choice3.png" alt="">
+                                <p>Денежные ящики</p>
+                            </div>
+                            <div class="swiper-slide choice__slide">
+                                <img src="img/cp-choice4.png" alt="">
+                                <p>Терминалы сбора данных</p>
+                            </div>
+                            <div class="swiper-slide choice__slide">
+                                <img src="img/cp-choice5.png" alt="">
+                                <p>Весы электронные</p>
+                            </div>
+                            <div class="swiper-slide choice__slide">
+                                <img src="img/cp-choice6.png" alt="">
+                                <p>Принтеры этикеток</p>
+                            </div>
+                            <div class="swiper-slide choice__slide">
+                                <img src="img/cp-choice7.png" alt="">
+                                <p>Прайс чекеры</p>
+                            </div>
+                            <div class="swiper-slide choice__slide">
+                                <img src="img/cp-choice8.png" alt="">
+                                <p>Кассы самообслуживания</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev" id="choiceSliderPrev">
+                        <svg width="14" height="22" viewBox="0 0 14 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.9465 21.8333C10.6546 21.8322 10.366 21.7721 10.0979 21.6567C9.82987 21.5413 9.58789 21.3729 9.3865 21.1616L1.02317 12.495C0.626174 12.09 0.403809 11.5454 0.403809 10.9783C0.403809 10.4112 0.626174 9.86665 1.02317 9.46164L9.68983 0.794974C9.89185 0.592958 10.1317 0.43271 10.3956 0.323379C10.6596 0.214048 10.9425 0.157776 11.2282 0.157776C11.5139 0.157776 11.7968 0.214048 12.0607 0.323379C12.3247 0.43271 12.5645 0.592958 12.7665 0.794974C12.9685 0.996991 13.1288 1.23682 13.2381 1.50077C13.3474 1.76472 13.4037 2.04761 13.4037 2.33331C13.4037 2.619 13.3474 2.9019 13.2381 3.16585C13.1288 3.4298 12.9685 3.66962 12.7665 3.87164L5.6165 11L12.5065 18.15C12.91 18.5559 13.1366 19.1051 13.1366 19.6775C13.1366 20.2499 12.91 20.799 12.5065 21.205C12.3015 21.4084 12.0579 21.5688 11.79 21.6767C11.5221 21.7846 11.2353 21.8378 10.9465 21.8333Z" fill="#0C478B"/>
+                        </svg>
+                    </div>
+                    <div class="swiper-button-next" id="choiceSliderNext">
+                        <svg width="14" height="22" viewBox="0 0 14 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.0535 21.8333C3.34536 21.8322 3.63398 21.7721 3.90206 21.6567C4.17013 21.5413 4.41211 21.3729 4.6135 21.1616L12.9768 12.495C13.3738 12.09 13.5962 11.5454 13.5962 10.9783C13.5962 10.4112 13.3738 9.86665 12.9768 9.46164L4.31017 0.794974C4.10815 0.592958 3.86832 0.43271 3.60437 0.323379C3.34042 0.214048 3.05753 0.157776 2.77183 0.157776C2.48614 0.157776 2.20324 0.214048 1.93929 0.323379C1.67534 0.43271 1.43551 0.592958 1.2335 0.794974C1.03148 0.996991 0.871232 1.23682 0.761901 1.50077C0.65257 1.76472 0.596297 2.04761 0.596297 2.33331C0.596297 2.619 0.65257 2.9019 0.761901 3.16585C0.871232 3.4298 1.03148 3.66962 1.2335 3.87164L8.3835 11L1.4935 18.15C1.08995 18.5559 0.863447 19.1051 0.863447 19.6775C0.863447 20.2499 1.08995 20.799 1.4935 21.205C1.69852 21.4084 1.94214 21.5688 2.21004 21.6767C2.47795 21.7846 2.76472 21.8378 3.0535 21.8333Z" fill="#0C478B"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__row">
+                <nav class="footer__nav">
+                    <a href="#" class="footer__nav-link">О нас</a>
+                    <a href="#" class="footer__nav-link">Карьера</a>
+                    <a href="#" class="footer__nav-link">Блог</a>
+                    <a href="#" class="footer__nav-link">Сайт ПРОСИСТЕМЫ Кыргызстан</a>
+                    <a href="#" class="footer__nav-link">ADMO.media</a>
+                </nav>
+                <div class="footer__search">
+                    <input type="search" placeholder="Поиск" name="q">
+                    <button>
+                        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.71 16.29L14.31 12.9C15.407 11.5025 16.0022 9.77666 16 8C16 6.41775 15.5308 4.87103 14.6518 3.55544C13.7727 2.23985 12.5233 1.21447 11.0615 0.608967C9.59966 0.00346625 7.99113 -0.15496 6.43928 0.153721C4.88743 0.462403 3.46197 1.22433 2.34315 2.34315C1.22433 3.46197 0.462403 4.88743 0.153721 6.43928C-0.15496 7.99113 0.00346625 9.59966 0.608967 11.0615C1.21447 12.5233 2.23985 13.7727 3.55544 14.6518C4.87103 15.5308 6.41775 16 8 16C9.77666 16.0022 11.5025 15.407 12.9 14.31L16.29 17.71C16.383 17.8037 16.4936 17.8781 16.6154 17.9289C16.7373 17.9797 16.868 18.0058 17 18.0058C17.132 18.0058 17.2627 17.9797 17.3846 17.9289C17.5064 17.8781 17.617 17.8037 17.71 17.71C17.8037 17.617 17.8781 17.5064 17.9289 17.3846C17.9797 17.2627 18.0058 17.132 18.0058 17C18.0058 16.868 17.9797 16.7373 17.9289 16.6154C17.8781 16.4936 17.8037 16.383 17.71 16.29ZM2 8C2 6.81332 2.3519 5.65328 3.01119 4.66658C3.67047 3.67989 4.60755 2.91085 5.7039 2.45673C6.80026 2.0026 8.00666 1.88378 9.17055 2.11529C10.3344 2.3468 11.4035 2.91825 12.2426 3.75736C13.0818 4.59648 13.6532 5.66558 13.8847 6.82946C14.1162 7.99335 13.9974 9.19975 13.5433 10.2961C13.0892 11.3925 12.3201 12.3295 11.3334 12.9888C10.3467 13.6481 9.18669 14 8 14C6.4087 14 4.88258 13.3679 3.75736 12.2426C2.63214 11.1174 2 9.5913 2 8Z" fill="black"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="footer__row">
+                <div class="footer__about">
+                    <a href="#" class="footer__logo"><img src="icons/logo-white.svg" alt="pro systemy"></a>
+                    <div class="footer__descr">Автоматизируем и сопровождаем розничную торговлю</div>
+                    <div class="footer__cr">© 2011-2022 ТОО ПРОСИСТЕМЫ</div>
+                    <div class="footer__dev">Сайт разработан <a href="https://webdigital.kz">WebDigital.kz</a></div>
+                </div>
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link">
+                        <img src="icons/instagram.png" alt="instagram">
+                    </a>
+                    <a href="#" class="footer__social-link">
+                        <img src="icons/youtube.png" alt="youtube">
+                    </a>
+                    <a href="#" class="footer__social-link">
+                        <img src="icons/facebook.png" alt="facebook">
+                    </a>
+                    <a href="#" class="footer__social-link">
+                        <img src="icons/telegram-footer.png" alt="telegram">
+                    </a>
+                    <a href="#" class="footer__social-link">
+                        <img src="icons/vk.png" alt="vk">
+                    </a>
+                </div>
+            </div>
+            <div class="footer__elem"><img src="img/footer-elem.png" alt=""></div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/cp-promo-switch.js"></script>
+    <script src="js/cp-tabs-swiper.js"></script>
+    <script src="js/cp-promo-slider.js"></script>
+    <script src="js/cp-promo-tabs.js"></script>
+    <script src="js/s-slider.js"></script>
+    <script src="js/cp-manf.js"></script>
+    <script src="js/cp-about.js"></script>
+    <script src="js/cp-choice.js"></script>
+    <script src="js/header.js"></script>
+</body>
+</html>
