@@ -1,0 +1,152 @@
+.tabs {
+    padding: 60px 0 80px;
+    &__nav {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        place-content: center;
+        margin-bottom: 70px;
+        &-btn {
+            position: relative;
+            font-family: 'Montserrat';
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            color: #838383;
+            text-align: center;
+            text-decoration: none;
+            &_active {
+                color: #0C478B;
+            }
+            &::before {
+                position: absolute;
+                content: '';
+                background: currentColor;
+                height: 2px;
+                width: 100%;
+                top: -22px;
+                left: 0;
+            }
+            &:hover {
+                color: #0C478B;
+            }
+        }
+    }
+    &__tab {
+        display: none;
+        &_active {
+            display: block;
+        }
+    }
+    &__autom {
+        display: grid;
+        grid-template-columns: repeat(2, 480px);
+        place-content: center;
+        grid-auto-rows: 250px;
+        gap: 20px;
+        &-item {
+            position: relative;
+            padding: 8px 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+        &-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            border-radius: 30px;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        &-wrap {
+            padding: 20px;
+            background: rgba(12, 71, 139, 0.7);
+            border-radius: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 80px;
+            transition: height .5s;
+            &:hover {
+                height: 234px;
+                .tabs__autom-link {
+                    position: static;
+                    visibility: visible;
+                    opacity: 1;
+                }
+            }
+        }
+        &-title {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+            text-align: center;
+            color: #FFFFFF;
+            max-width: 265px;
+        }
+        &-link {
+            position: absolute;
+            visibility: hidden;
+            opacity: 0;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 17px;
+            text-align: center;
+            text-decoration: underline;
+            color: #FFFFFF;
+            margin-top: 20px;
+            transition: opacity .7s ease-out;
+            &:hover {
+                color: #FFFFFF;
+            }
+        }
+    }
+    &__prog {
+        display: grid;
+        grid-template-columns: repeat(4, 280px);
+        grid-auto-rows: minmax(216px, auto);
+        gap: 20px;
+        &-item {
+            border: 2px solid #FDCE25;
+            border-radius: 30px;
+            padding: 14px;
+            padding-bottom: 10px;
+            display: grid;
+            grid-template-rows: 150px auto;
+            row-gap: 9px;
+            place-content: center;
+            justify-items: center;
+            align-items: center;
+            transition: background .3s;
+            &:hover {
+                background: #FDCE25;
+            }
+        }
+        &-img {
+            max-width: fit-content;
+        }
+        &-link {
+            font-family: 'Montserrat';
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 18px;
+            text-decoration: none;
+            text-align: center;
+            color: #000000;
+            &:hover {
+                color: #000000;
+            }
+        }
+    }
+}

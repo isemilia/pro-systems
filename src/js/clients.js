@@ -1,8 +1,5 @@
 window.addEventListener('DOMContentLoaded', () => {
     const swiper = new Swiper('#clientsSlider', {
-        // Optional parameters
-        direction: 'horizontal',
-        loop: false,
         // Navigation arrows
         navigation: {
           nextEl: '#clientsSliderNext',

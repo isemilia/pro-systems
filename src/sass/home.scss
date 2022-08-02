@@ -1,0 +1,19 @@
+@import 'libs/bootstrap-reboot.min';
+
+@import 'base/variables';
+@import 'base/mixins';
+
+@import 'blocks/general';
+@import 'blocks/header';
+
+@import 'blocks/home/promo';
+@import 'blocks/home/tabs';
+// @import 'blocks/oppties';
+// @import 'blocks/autom';
+// @import 'blocks/solution';
+// @import 'blocks/reasons';
+
+@import 'blocks/clients';
+@import 'blocks/case';
+@import 'blocks/offer';
+@import 'blocks/footer';
