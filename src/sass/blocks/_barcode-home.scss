@@ -3,7 +3,7 @@
     padding: 110px 0 0 0;
     &:before {
         position: absolute;
-        content: url('../img/triangle-blue.png');  
+        content: url('../img/triangle-yellow-3.png');  
         left: 0;      
     }
     &__bg{
@@ -30,7 +30,6 @@
     }
     &__title, &__descr {
         color: #000000;
-        max-width: 510px;
     }
     &-row{
         margin: 50px 0 75px;
