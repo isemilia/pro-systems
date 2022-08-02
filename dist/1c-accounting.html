@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <meta name="title" content="">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">  
+    <link rel="stylesheet" href="css/1c-page.min.css">
+</head>
+<body>
+    
+    <header class="header">
+        <div class="container">
+            <div class="header__flex">
+                <div class="header__logo">
+                    <img src="icons/logo.png" alt="Про Системы">
+                </div>
+                <nav class="menu">
+                    <div class="menu__item">
+                        <a href="#" class="menu__link">Интернет магазин</a>
+                    </div>
+                    <div class="menu__item">
+                        <a href="#" class="menu__link" data-menu-link>
+                            Услуги 
+                            <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.00015 5.9165C4.89048 5.91713 4.78176 5.89611 4.68023 5.85464C4.5787 5.81317 4.48635 5.75206 4.40849 5.67483L1.07515 2.3415C0.997456 2.2638 0.935822 2.17155 0.893772 2.07004C0.851721 1.96852 0.830078 1.85971 0.830078 1.74983C0.830078 1.63995 0.851721 1.53114 0.893772 1.42962C0.935822 1.3281 0.997456 1.23586 1.07515 1.15816C1.15285 1.08046 1.2451 1.01883 1.34661 0.976779C1.44813 0.934728 1.55694 0.913086 1.66682 0.913086C1.7767 0.913086 1.88551 0.934728 1.98703 0.976779C2.08855 1.01883 2.18079 1.08046 2.25849 1.15816L5.00015 3.9165L7.75016 1.2665C7.82682 1.18125 7.92024 1.11275 8.02458 1.06526C8.12893 1.01777 8.24195 0.992322 8.35657 0.990506C8.4712 0.98869 8.58497 1.01054 8.69077 1.0547C8.79656 1.09886 8.89211 1.16438 8.97143 1.24715C9.05075 1.32992 9.11214 1.42816 9.15176 1.53574C9.19138 1.64332 9.20838 1.75792 9.20169 1.87236C9.195 1.98681 9.16477 2.09865 9.11288 2.20088C9.061 2.30311 8.98858 2.39353 8.90016 2.4665L5.56682 5.68316C5.41443 5.83009 5.21182 5.91352 5.00015 5.9165Z" fill="#0C478B"/>
+                            </svg>
+                        </a>
+                        <div class="menu__dropdown" data-menu-dropdown>
+                            <div class="menu__dropdown-grid">
+                                <div class="menu__dropdown-list">
+                                    <a href="page3.html" class="menu__dropdown-link">
+                                        <img src="icons/food.png" alt="">
+                                        <div class="menu__dropdown-text">Автоматизация продуктового магазина</div>
+                                    </a>
+                                    <a href="page4.html" class="menu__dropdown-link">
+                                        <img src="icons/medicine.png" alt="">
+                                        <div class="menu__dropdown-text">Автоматизация аптеки</div>
+                                    </a>
+                                </div>
+                                <div class="menu__dropdown-list">
+                                    <a href="page5.html" class="menu__dropdown-link">
+                                        <img src="icons/shirt.png" alt="">
+                                        <div class="menu__dropdown-text">Автоматизация магазина одежды</div>
+                                    </a>
+                                    <a href="page2.html" class="menu__dropdown-link">
+                                        <img src="icons/headphones.png" alt="">
+                                        <div class="menu__dropdown-text">Техническая поддержка и сопровождение 1C</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu__item">
+                        <a href="#" class="menu__link" data-menu-link>
+                            Программы
+                            <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.00015 5.9165C4.89048 5.91713 4.78176 5.89611 4.68023 5.85464C4.5787 5.81317 4.48635 5.75206 4.40849 5.67483L1.07515 2.3415C0.997456 2.2638 0.935822 2.17155 0.893772 2.07004C0.851721 1.96852 0.830078 1.85971 0.830078 1.74983C0.830078 1.63995 0.851721 1.53114 0.893772 1.42962C0.935822 1.3281 0.997456 1.23586 1.07515 1.15816C1.15285 1.08046 1.2451 1.01883 1.34661 0.976779C1.44813 0.934728 1.55694 0.913086 1.66682 0.913086C1.7767 0.913086 1.88551 0.934728 1.98703 0.976779C2.08855 1.01883 2.18079 1.08046 2.25849 1.15816L5.00015 3.9165L7.75016 1.2665C7.82682 1.18125 7.92024 1.11275 8.02458 1.06526C8.12893 1.01777 8.24195 0.992322 8.35657 0.990506C8.4712 0.98869 8.58497 1.01054 8.69077 1.0547C8.79656 1.09886 8.89211 1.16438 8.97143 1.24715C9.05075 1.32992 9.11214 1.42816 9.15176 1.53574C9.19138 1.64332 9.20838 1.75792 9.20169 1.87236C9.195 1.98681 9.16477 2.09865 9.11288 2.20088C9.061 2.30311 8.98858 2.39353 8.90016 2.4665L5.56682 5.68316C5.41443 5.83009 5.21182 5.91352 5.00015 5.9165Z" fill="#0C478B"/>
+                            </svg>
+                        </a>
+                        <div class="menu__dropdown" data-menu-dropdown>
+                            <div class="menu__dropdown-grid">
+                                <div class="menu__dropdown-list">
+                                    <a href="#" class="menu__dropdown-link">
+                                        <img src="icons/shopping-cart.png" alt="">
+                                        <div class="menu__dropdown-text">Set Retail: <br> Управление торговлей</div>
+                                    </a>
+                                    <a href="#" class="menu__dropdown-link">
+                                        <img src="icons/cash-register.png" alt="">
+                                        <div class="menu__dropdown-text">Set Prisma: <br> Контроль кассовых операций</div>
+                                    </a>
+                                </div>
+                                <div class="menu__dropdown-list">
+                                    <a href="#" class="menu__dropdown-link">
+                                        <img src="icons/medication.png" alt="">
+                                        <div class="menu__dropdown-text">1C Аптека</div>
+                                    </a>
+                                    <a href="#" class="menu__dropdown-link">
+                                        <img src="icons/profit.png" alt="">
+                                        <div class="menu__dropdown-text">1C Управление торговлей</div>
+                                    </a>
+                                    <a href="#" class="menu__dropdown-link">
+                                        <img src="icons/process.png" alt="">
+                                        <div class="menu__dropdown-text">1C Косплексная автоматизация</div>
+                                    </a>
+                                    <a href="#" class="menu__dropdown-link">
+                                        <img src="icons/accounting.png" alt="">
+                                        <div class="menu__dropdown-text">1C Бухгалтерия</div>
+                                    </a>
+                                    <a href="#" class="menu__dropdown-link">
+                                        <img src="icons/shopping.png" alt="">
+                                        <div class="menu__dropdown-text">1C Розница</div>
+                                    </a>
+                                </div>
+                                <div class="menu__dropdown-list">
+                                    <a href="#" class="menu__dropdown-link">
+                                        <img src="icons/viral-marketing.png" alt="">
+                                        <div class="menu__dropdown-text">Онлайн-касса “Программный фискализатор”</div>
+                                    </a>
+                                    <a href="#" class="menu__dropdown-link">
+                                        <img src="icons/g10.png" alt="">
+                                        <div class="menu__dropdown-text">Управление рекламным монитором ADMO.media</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu__item">
+                        <a href="#" class="menu__link" data-menu-link>
+                            Оборудование
+                            <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.00015 5.9165C4.89048 5.91713 4.78176 5.89611 4.68023 5.85464C4.5787 5.81317 4.48635 5.75206 4.40849 5.67483L1.07515 2.3415C0.997456 2.2638 0.935822 2.17155 0.893772 2.07004C0.851721 1.96852 0.830078 1.85971 0.830078 1.74983C0.830078 1.63995 0.851721 1.53114 0.893772 1.42962C0.935822 1.3281 0.997456 1.23586 1.07515 1.15816C1.15285 1.08046 1.2451 1.01883 1.34661 0.976779C1.44813 0.934728 1.55694 0.913086 1.66682 0.913086C1.7767 0.913086 1.88551 0.934728 1.98703 0.976779C2.08855 1.01883 2.18079 1.08046 2.25849 1.15816L5.00015 3.9165L7.75016 1.2665C7.82682 1.18125 7.92024 1.11275 8.02458 1.06526C8.12893 1.01777 8.24195 0.992322 8.35657 0.990506C8.4712 0.98869 8.58497 1.01054 8.69077 1.0547C8.79656 1.09886 8.89211 1.16438 8.97143 1.24715C9.05075 1.32992 9.11214 1.42816 9.15176 1.53574C9.19138 1.64332 9.20838 1.75792 9.20169 1.87236C9.195 1.98681 9.16477 2.09865 9.11288 2.20088C9.061 2.30311 8.98858 2.39353 8.90016 2.4665L5.56682 5.68316C5.41443 5.83009 5.21182 5.91352 5.00015 5.9165Z" fill="#0C478B"/>
+                            </svg>
+                        </a>
+                        <div class="menu__dropdown" data-menu-dropdown>
+                            <div class="menu__dropdown-grid">
+                                <div class="menu__dropdown-list">
+                                    <a href="#" class="menu__dropdown-link">
+                                        <img src="icons/cashbox.svg" alt="">
+                                        <div class="menu__dropdown-text">Кассы самообслуживания</div>
+                                    </a>
+                                    <a href="#" class="menu__dropdown-link">
+                                        <img src="icons/pos.svg" alt="">
+                                        <div class="menu__dropdown-text">Сенсорные POS системы</div>
+                                    </a>
+                                    <a href="#" class="menu__dropdown-link">
+                                        <img src="icons/g10.png" alt="">
+                                        <div class="menu__dropdown-text">Фискальные регистраторы</div>
+                                    </a>
+                                    <a href="#" class="menu__dropdown-link">
+                                        <img src="icons/portable-printer.png" alt="">
+                                        <div class="menu__dropdown-text">Принтеры чеков</div>
+                                    </a>
+                                </div>
+                                <div class="menu__dropdown-list">
+                                    <a href="#" class="menu__dropdown-link">
+                                        <img src="icons/printer.png" alt="">
+                                        <div class="menu__dropdown-text">Принтеры этикеток</div>
+                                    </a>
+                                    <a href="#" class="menu__dropdown-link">
+                                        <img src="icons/barcode.png" alt="">
+                                        <div class="menu__dropdown-text">Сканеры штрихкодов</div>
+                                    </a>
+                                    <a href="#" class="menu__dropdown-link">
+                                        <img src="icons/point-of-service.png" alt="">
+                                        <div class="menu__dropdown-text">Терминалы сбора данных</div>
+                                    </a>
+                                    <a href="#" class="menu__dropdown-link">
+                                        <img src="icons/tv-monitor.png" alt="">
+                                        <div class="menu__dropdown-text">Дисплеи покупателя</div>
+                                    </a>
+                                </div>
+                                <div class="menu__dropdown-list">
+                                    <a href="#" class="menu__dropdown-link">
+                                        <img src="icons/tablet.png" alt="">
+                                        <div class="menu__dropdown-text">Прайс-чекеры</div>
+                                    </a>
+                                    <a href="#" class="menu__dropdown-link">
+                                        <img src="icons/scale.png" alt="">
+                                        <div class="menu__dropdown-text">Весы электронные</div>
+                                    </a>
+                                    <a href="#" class="menu__dropdown-link">
+                                        <img src="icons/zakat.png" alt="">
+                                        <div class="menu__dropdown-text">Денежные ящики</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu__item">
+                        <a href="#" class="menu__link" data-menu-link>
+                            О нас
+                            <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.00015 5.9165C4.89048 5.91713 4.78176 5.89611 4.68023 5.85464C4.5787 5.81317 4.48635 5.75206 4.40849 5.67483L1.07515 2.3415C0.997456 2.2638 0.935822 2.17155 0.893772 2.07004C0.851721 1.96852 0.830078 1.85971 0.830078 1.74983C0.830078 1.63995 0.851721 1.53114 0.893772 1.42962C0.935822 1.3281 0.997456 1.23586 1.07515 1.15816C1.15285 1.08046 1.2451 1.01883 1.34661 0.976779C1.44813 0.934728 1.55694 0.913086 1.66682 0.913086C1.7767 0.913086 1.88551 0.934728 1.98703 0.976779C2.08855 1.01883 2.18079 1.08046 2.25849 1.15816L5.00015 3.9165L7.75016 1.2665C7.82682 1.18125 7.92024 1.11275 8.02458 1.06526C8.12893 1.01777 8.24195 0.992322 8.35657 0.990506C8.4712 0.98869 8.58497 1.01054 8.69077 1.0547C8.79656 1.09886 8.89211 1.16438 8.97143 1.24715C9.05075 1.32992 9.11214 1.42816 9.15176 1.53574C9.19138 1.64332 9.20838 1.75792 9.20169 1.87236C9.195 1.98681 9.16477 2.09865 9.11288 2.20088C9.061 2.30311 8.98858 2.39353 8.90016 2.4665L5.56682 5.68316C5.41443 5.83009 5.21182 5.91352 5.00015 5.9165Z" fill="#0C478B"/>
+                            </svg>
+                        </a>
+                        <div class="menu__dropdown" data-menu-dropdown>
+                            <div class="menu__dropdown-grid">
+                                <div class="menu__dropdown-list">
+                                    <a href="#" class="menu__dropdown-link">
+                                        <img src="icons/suitcase.png" alt="">
+                                        <div class="menu__dropdown-text">О компании</div>
+                                    </a>
+                                    <a href="#" class="menu__dropdown-link">
+                                        <img src="icons/blog.png" alt="">
+                                        <div class="menu__dropdown-text">Блог</div>
+                                    </a>
+                                </div>
+                                <div class="menu__dropdown-list">
+                                    <a href="#" class="menu__dropdown-link">
+                                        <img src="icons/goal.png" alt="">
+                                        <div class="menu__dropdown-text">Карьера</div>
+                                    </a>
+                                    <a href="#" class="menu__dropdown-link">
+                                        <img src="icons/contact.png" alt="">
+                                        <div class="menu__dropdown-text">Контакты</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <div class="header__phone">
+                    <a href="tel:" class="header__phone-link">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.4998 17.3333C10.0976 17.3289 6.83593 15.9754 4.43017 13.5696C2.02441 11.1638 0.670914 7.90219 0.666504 4.49993C0.666504 3.48327 1.07037 2.50825 1.78926 1.78936C2.50815 1.07047 3.48317 0.666599 4.49984 0.666599C4.71512 0.664959 4.93004 0.684498 5.1415 0.724932C5.34593 0.755183 5.54689 0.805424 5.7415 0.874932C5.87838 0.922957 6.00035 1.00588 6.09535 1.11549C6.19035 1.22511 6.25509 1.35762 6.28317 1.49993L7.42484 6.49993C7.45561 6.63565 7.4519 6.77692 7.41406 6.91084C7.37621 7.04475 7.30543 7.16706 7.20817 7.2666C7.09984 7.38327 7.0915 7.3916 6.0665 7.92493C6.88733 9.72565 8.3275 11.1717 10.1248 11.9999C10.6665 10.9666 10.6748 10.9583 10.7915 10.8499C10.891 10.7527 11.0133 10.6819 11.1473 10.644C11.2812 10.6062 11.4225 10.6025 11.5582 10.6333L16.5582 11.7749C16.6959 11.8069 16.8233 11.8734 16.9282 11.9681C17.0332 12.0629 17.1123 12.1828 17.1582 12.3166C17.2285 12.5144 17.2815 12.7179 17.3165 12.9249C17.35 13.1344 17.3668 13.3462 17.3665 13.5583C17.3511 14.5706 16.9359 15.5357 16.2115 16.243C15.487 16.9502 14.5122 17.3422 13.4998 17.3333ZM4.49984 2.33327C3.92588 2.33546 3.37605 2.56444 2.9702 2.97029C2.56434 3.37615 2.33537 3.92597 2.33317 4.49993C2.33538 7.46084 3.51257 10.2998 5.60625 12.3935C7.69993 14.4872 10.5389 15.6644 13.4998 15.6666C14.0738 15.6644 14.6236 15.4354 15.0295 15.0296C15.4353 14.6237 15.6643 14.0739 15.6665 13.4999V13.2249L11.7998 12.3333L11.5582 12.7916C11.1832 13.5166 10.9082 14.0416 10.2082 13.7583C8.82724 13.264 7.57375 12.4683 6.53878 11.429C5.50381 10.3897 4.71336 9.13292 4.22484 7.74993C3.92484 7.09993 4.4915 6.79993 5.20817 6.42493L5.6665 6.19993L4.77484 2.33327H4.49984Z" fill="#0C478B"/>
+                        </svg>
+                        +7 (747) 094 9988
+                    </a>
+                    <a href="tel:" class="header__phone-link">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.4998 17.3333C10.0976 17.3289 6.83593 15.9754 4.43017 13.5696C2.02441 11.1638 0.670914 7.90219 0.666504 4.49993C0.666504 3.48327 1.07037 2.50825 1.78926 1.78936C2.50815 1.07047 3.48317 0.666599 4.49984 0.666599C4.71512 0.664959 4.93004 0.684498 5.1415 0.724932C5.34593 0.755183 5.54689 0.805424 5.7415 0.874932C5.87838 0.922957 6.00035 1.00588 6.09535 1.11549C6.19035 1.22511 6.25509 1.35762 6.28317 1.49993L7.42484 6.49993C7.45561 6.63565 7.4519 6.77692 7.41406 6.91084C7.37621 7.04475 7.30543 7.16706 7.20817 7.2666C7.09984 7.38327 7.0915 7.3916 6.0665 7.92493C6.88733 9.72565 8.3275 11.1717 10.1248 11.9999C10.6665 10.9666 10.6748 10.9583 10.7915 10.8499C10.891 10.7527 11.0133 10.6819 11.1473 10.644C11.2812 10.6062 11.4225 10.6025 11.5582 10.6333L16.5582 11.7749C16.6959 11.8069 16.8233 11.8734 16.9282 11.9681C17.0332 12.0629 17.1123 12.1828 17.1582 12.3166C17.2285 12.5144 17.2815 12.7179 17.3165 12.9249C17.35 13.1344 17.3668 13.3462 17.3665 13.5583C17.3511 14.5706 16.9359 15.5357 16.2115 16.243C15.487 16.9502 14.5122 17.3422 13.4998 17.3333ZM4.49984 2.33327C3.92588 2.33546 3.37605 2.56444 2.9702 2.97029C2.56434 3.37615 2.33537 3.92597 2.33317 4.49993C2.33538 7.46084 3.51257 10.2998 5.60625 12.3935C7.69993 14.4872 10.5389 15.6644 13.4998 15.6666C14.0738 15.6644 14.6236 15.4354 15.0295 15.0296C15.4353 14.6237 15.6643 14.0739 15.6665 13.4999V13.2249L11.7998 12.3333L11.5582 12.7916C11.1832 13.5166 10.9082 14.0416 10.2082 13.7583C8.82724 13.264 7.57375 12.4683 6.53878 11.429C5.50381 10.3897 4.71336 9.13292 4.22484 7.74993C3.92484 7.09993 4.4915 6.79993 5.20817 6.42493L5.6665 6.19993L4.77484 2.33327H4.49984Z" fill="#0C478B"/>
+                        </svg>
+                        +7 (727) 270 0800
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="ic-promo">
+            <img src="img/triangle-blue-right.png" alt="" class="ic-promo__elem">
+            <div class="container">
+                <div class="ic-promo__row">
+                    <div class="ic-promo__img">
+                        <img src="img/1c-accounting.png" alt="">
+                    </div>
+
+                    <div class="ic-promo__main">
+                        <h1 class="ic-promo__title">1C: Бухгалтерия 8
+                            для Казахстана</h1>
+                        <div class="ic-promo__text">
+                            <p>1С:Бухгалтерия 8 для Казахстана предназначена для автоматизации бухгалтерского и налогового учета на предприятиях Республики Казахстан, в соответствии с действующим законодательством, а также для подготовки форм обязательной (регламентированной) отчетности в организациях, осуществляющих любые виды коммерческой деятельности: оптовую и розничную торговлю, оказание услуг, производство и т.д.</p>
+                        </div>
+                        <a href="#" class="btn ic-promo__btn">Записаться на презентацию</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section class="ic-func">
+            <div class="container">
+                <h2 class="ic-func__title title">Широкий функционал</h2>
+                <div class="ic-func__row">
+
+                    <div class="ic-func__left">
+
+                        <div class="ic-func__display ic-func__display_active" data-icfunc-display>
+                            <div class="ic-func__slider">
+
+                                <div class="swiper" id="icFuncSlider">
+                                    <!-- Additional required wrapper -->
+                                    <div class="swiper-wrapper">
+
+                                      <div class="swiper-slide">
+                                        <div class="ic-func__img"><img src="img/1c-accounting-1.png" alt=""></div>
+                                      </div>
+                                      <div class="swiper-slide">
+                                        <div class="ic-func__img"><img src="img/ic-func-1.png" alt=""></div>
+                                      </div>
+                                      <div class="swiper-slide">
+                                        <div class="ic-func__img"><img src="img/ic-func-1.png" alt=""></div>
+                                      </div>
+
+                                    </div>
+                                    <div class="swiper-pagination" id="icFuncPag"></div>
+                                  </div>
+    
+                            </div>
+                            <div class="ic-func__text">
+                                Для организации учета ТМЗ поддерживаются следующие способы оценки материально-производственных запасов при их выбытии: <br>
+                                • по средней себестоимости <br>
+                                • по методу ФИФО (по себестоимости первых по времени приобретения материально-производственных запасов) <br><a href="" class="ic-func__more" data-icfunc-more>Подробнее</a>
+                                <div class="ic-func__text-more" data-icfunc-text-more>
+                                    <p>• по методу ЛИФО (по себестоимости последних по времени приобретения материально-производственных запасов) <br>
+                                        Для поддержки способов оценки ФИФО и ЛИФО на счетах учета материально-производственных запасов ведется партионный учет. Для разных счетов учета ТМЗ могут применяться различные способы оценки себестоимости.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ic-func__display" data-icfunc-display>
+                            <div class="ic-func__slider">
+
+                                <div class="swiper" id="icFuncSlider">
+                                    <!-- Additional required wrapper -->
+                                    <div class="swiper-wrapper">
+
+                                      <div class="swiper-slide">
+                                        <div class="ic-func__img"><img src="img/1c-accounting-2.png" alt=""></div>
+                                      </div>
+
+                                    </div>
+                                    <div class="swiper-pagination" id="icFuncPag"></div>
+                                  </div>
+    
+                            </div>
+                            <div class="ic-func__text">
+                                В программе автоматизирован учет операций поступления и реализации товаров и услуг. Все операции по оптовой торговле учитываются в разрезе договоров с покупателями и поставщиками. <br>
+                                При продаже товаров можно выписать счет на оплату, оформить расходную накладную и счет-фактуру.  <a href="" class="ic-func__more" data-icfunc-more>Подробнее</a>
+                                <div class="ic-func__text-more" data-icfunc-text-more>
+                                    <p> А в случае возврата товаров поставщику или от покупателя - отразить этот факт в «1С:Бухгалтерии 8 для Казахстана» специальными документами. Для оформления операции поступления импортных товаров в программе предусмотрен специализированный документ «Поступление ТМЗ и услуг» с видом операции «Импорт». <br>
+                                        В «1С:Бухгалтерии 8 для Казахстана» поддерживается использование нескольких типов цен, например: оптовая, мелкооптовая, розничная, закупочная и т.п., что позволяет упростить отражение операций поступления и реализации.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ic-func__display" data-icfunc-display>
+                            <div class="ic-func__slider">
+
+                                <div class="swiper" id="icFuncSlider">
+                                    <!-- Additional required wrapper -->
+                                    <div class="swiper-wrapper">
+
+                                      <div class="swiper-slide">
+                                        <div class="ic-func__img"><img src="img/1c-accounting-3.png" alt=""></div>
+                                      </div>
+
+                                    </div>
+                                    <div class="swiper-pagination" id="icFuncPag"></div>
+                                  </div>
+    
+                            </div>
+                            <div class="ic-func__text">
+                                УЧЕТ БАНКОВСКИХ И КАССОВЫХ ОПЕРАЦИЙ. <br>
+                                В программе реализован учет движения наличных и безналичных денежных средств и валютных операций. Поддерживается ввод и печать платежных поручений, приходных и расходных кассовых ордеров<a href="" class="ic-func__more" data-icfunc-more>Подробнее</a>
+                                <div class="ic-func__text-more" data-icfunc-text-more>
+                                    <p> Автоматизированы операции: <br>
+                                        • по расчетам с поставщиками, покупателями и подотчетными лицами <br>
+                                        • внесения наличных на расчетный счет и получения наличных по денежному чеку <br>
+                                        • приобретения и продажи иностранной валюты. <br>
+                                        При отражении операций суммы платежей автоматически разбиваются на аванс и оплату. </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ic-func__display" data-icfunc-display>
+                            <div class="ic-func__slider">
+
+                                <div class="swiper" id="icFuncSlider">
+                                    <!-- Additional required wrapper -->
+                                    <div class="swiper-wrapper">
+
+                                      <div class="swiper-slide">
+                                        <div class="ic-func__img"><img src="img/1c-accounting-4.png" alt=""></div>
+                                      </div>
+
+                                    </div>
+                                    <div class="swiper-pagination" id="icFuncPag"></div>
+                                  </div>
+    
+                            </div>
+                            <div class="ic-func__text">
+                                В программе автоматизированы все основные операции по учету ОС и НМА, такие как: <br>
+                                • поступление <br>
+                                • принятие к учету <br>
+                                • начисление амортизации<a href="" class="ic-func__more" data-icfunc-more>Подробнее</a>
+                                <div class="ic-func__text-more" data-icfunc-text-more>
+                                    <p> • модернизация <br>
+                                        • передача и списание <br>
+                                        Возможно распределить сумму амортизации, начисленную за месяц, между несколькими счетами или объектами аналитического учета. <br>
+                                        Для основных средств, которые эксплуатируются сезонно, можно применять графики начисления амортизации.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ic-func__display" data-icfunc-display>
+                            <div class="ic-func__slider">
+
+                                <div class="swiper" id="icFuncSlider">
+                                    <!-- Additional required wrapper -->
+                                    <div class="swiper-wrapper">
+
+                                      <div class="swiper-slide">
+                                        <div class="ic-func__img"><img src="img/1c-accounting-5.png" alt=""></div>
+                                      </div>
+
+                                    </div>
+                                    <div class="swiper-pagination" id="icFuncPag"></div>
+                                  </div>
+    
+                            </div>
+                            <div class="ic-func__text">
+                                УЧЕТ ОСНОВНОГО И ВСПОМОГАТЕЛЬНОГО ПРОИЗВОДСТВА <br>
+                                «1С:Бухгалтерия 8 для Казахстана» автоматизирует расчет себестоимости продукции и услуг, выпускаемых основным и вспомогательным производством, а также учет переработки давальческого сырья.<a href="" class="ic-func__more" data-icfunc-more>Подробнее</a>
+                                <div class="ic-func__text-more" data-icfunc-text-more>
+                                    <p>В течение месяца учет выпущенной готовой продукции ведется по плановой себестоимости, а в конце месяца рассчитывается фактическая себестоимость выпущенной продукции и оказанных услуг.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ic-func__display" data-icfunc-display>
+                            <div class="ic-func__slider">
+
+                                <div class="swiper" id="icFuncSlider">
+                                    <!-- Additional required wrapper -->
+                                    <div class="swiper-wrapper">
+
+                                      <div class="swiper-slide">
+                                        <div class="ic-func__img"><img src="img/1c-accounting-6.png" alt=""></div>
+                                      </div>
+
+                                      <div class="swiper-slide">
+                                        <div class="ic-func__img"><img src="img/1c-accounting-6.png" alt=""></div>
+                                      </div>
+
+                                    </div>
+                                    <div class="swiper-pagination" id="icFuncPag"></div>
+                                  </div>
+    
+                            </div>
+                            <div class="ic-func__text">
+                                В программе автоматизировано начисление заработной платы по месячной и часовой тарифным ставкам, а также фиксированной суммой и процентом от указанной базы. <br>
+                                С помощью «1С:Бухгалтерии 8 для Казахстана» вы сможете рассчитать заработную плату «от обратного», а также произвести расчеты по среднему заработку для больничных выплат и отпускных.<a href="" class="ic-func__more" data-icfunc-more>Подробнее</a>
+                                <div class="ic-func__text-more" data-icfunc-text-more></div>
+                            </div>
+                        </div>
+
+                        <div class="ic-func__display" data-icfunc-display>
+                            <div class="ic-func__slider">
+
+                                <div class="swiper" id="icFuncSlider">
+                                    <!-- Additional required wrapper -->
+                                    <div class="swiper-wrapper">
+
+                                      <div class="swiper-slide">
+                                        <div class="ic-func__img"><img src="img/1c-accounting-7.png" alt=""></div>
+                                      </div>
+
+                                    </div>
+                                    <div class="swiper-pagination" id="icFuncPag"></div>
+                                  </div>
+    
+                            </div>
+                            <div class="ic-func__text">
+                                УЧЕТ НДС <br>
+                                Автоматизирован учет налога на добавленную стоимость, уплаченного поставщикам и подрядчикам, в том числе по операциям, в которых НДС не разрешен к зачету и включается в стоимость приобретаемых товаров, работ, услуг.  <a href="" class="ic-func__more" data-icfunc-more>Подробнее</a>
+                                <div class="ic-func__text-more" data-icfunc-text-more>
+                                    <p>Автоматизирован учет начисленного НДС, в том числе по услугам, приобретенным у нерезидентов РК.
+                                        Для целей учета НДС поддерживаются методы определения налога, принимаемого к зачету, раздельным и пропорциональным методами. Автоматизировано заполнение форм налоговой отчетности по НДС.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ic-func__display" data-icfunc-display>
+                            <div class="ic-func__slider">
+
+                                <div class="swiper" id="icFuncSlider">
+                                    <!-- Additional required wrapper -->
+                                    <div class="swiper-wrapper">
+
+                                      <div class="swiper-slide">
+                                        <div class="ic-func__img"><img src="img/1c-accounting-8.png" alt=""></div>
+                                      </div>
+
+                                    </div>
+                                    <div class="swiper-pagination" id="icFuncPag"></div>
+                                  </div>
+    
+                            </div>
+                            <div class="ic-func__text">
+                                РЕГЛАМЕНТНЫЕ ОПЕРАЦИИ ПО ОКОНЧАНИИ МЕСЯЦА <br>
+                                В программе автоматизированы основные регламентные операции, которые проводятся по окончании месяца: <br>
+                                • начисление амортизации <a href="" class="ic-func__more" data-icfunc-more>Подробнее</a>
+                                <div class="ic-func__text-more" data-icfunc-text-more>
+                                    <p>• закрытие производственных счетов <br>
+                                        • переоценка валюты <br>
+                                        • списание расходов будущих периодов <br>
+                                        • реформация баланса <br>
+                                        • ряд других операций.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ic-func__display" data-icfunc-display>
+                            <div class="ic-func__slider">
+
+                                <div class="swiper" id="icFuncSlider">
+                                    <!-- Additional required wrapper -->
+                                    <div class="swiper-wrapper">
+
+                                      <div class="swiper-slide">
+                                        <div class="ic-func__img"><img src="img/ic-func-2.png" alt=""></div>
+                                      </div>
+
+                                    </div>
+                                    <div class="swiper-pagination" id="icFuncPag"></div>
+                                  </div>
+    
+                            </div>
+                            <div class="ic-func__text">
+                                В «1С:Бухгалтерию 8 для Казахстана» включен набор стандартных отчетов, предназначенных для анализа данных по остаткам и оборотам счетов и проводкам в самых различных разрезах. В их числе: <br>
+                                • оборотно-сальдовая ведомость<a href="" class="ic-func__more" data-icfunc-more>Подробнее</a>
+                                <div class="ic-func__text-more" data-icfunc-text-more>
+                                    <p>• шахматная ведомость <br>
+                                        • оборотно-сальдовая ведомость по счету <br>
+                                        • обороты счета <br>
+                                        • карточка счета <br>
+                                        • анализ счета</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="ic-func__right">
+
+                        <ul class="ic-func__list">
+                            <li class="ic-func__list-item ic-func__list-item_active" data-icfunc-title>Учет товарно-материальных запасов и складской учет</li>
+                            <li class="ic-func__list-item" data-icfunc-title>Учет торговых операций</li>
+                            <li class="ic-func__list-item" data-icfunc-title>Учет денежных средств 
+                                и расчетов с контрагентами</li>
+                            <li class="ic-func__list-item" data-icfunc-title>Учет основных средств 
+                                и нематериальных активов</li>
+                            <li class="ic-func__list-item" data-icfunc-title>Учет производства, полуфабрикатов и косвенных расходов</li>
+                            <li class="ic-func__list-item" data-icfunc-title>Учет заработной платы 
+                                и кадровый учет</li>
+                            <li class="ic-func__list-item" data-icfunc-title>Налоговый учет</li>
+                            <li class="ic-func__list-item" data-icfunc-title>Завершающие операции 
+                                месяца, типовые операции</li>
+                            <li class="ic-func__list-item" data-icfunc-title>Отчетность</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="ic-reasons">
+            <div class="container">
+                <h2 class="title ic-reasons__title">Почему стоит приобрести программу 1С у нас?</h2>
+
+                <div class="ic-reasons__grid">
+
+                    <div class="ic-reasons__item">
+                        <div class="ic-reasons__item-icon">
+                            <img src="icons/ic-reasons-1.png" alt="">
+                        </div>
+                        <div class="ic-reasons__item-text">Опыт в автоматизации розничного ритейла с 2011 г</div>
+                    </div>
+
+                    <div class="ic-reasons__item">
+                        <div class="ic-reasons__item-icon">
+                            <img src="icons/ic-reasons-2.png" alt="">
+                        </div>
+                        <div class="ic-reasons__item-text">Комплексный подход -  от выбора ПО до внедрения  и установки</div>
+                    </div>
+
+                    <div class="ic-reasons__item">
+                        <div class="ic-reasons__item-icon">
+                            <img src="icons/ic-reasons-3.png" alt="">
+                        </div>
+                        <div class="ic-reasons__item-text">Автоматизировали более 200 торговых объектов</div>
+                    </div>
+
+                    <div class="ic-reasons__item">
+                        <div class="ic-reasons__item-icon">
+                            <img src="icons/ic-reasons-4.png" alt="">
+                        </div>
+                        <div class="ic-reasons__item-text">Безопасность</div>
+                    </div>
+
+                    <div class="ic-reasons__item">
+                        <div class="ic-reasons__item-icon">
+                            <img src="icons/ic-reasons-5.png" alt="">
+                        </div>
+                        <div class="ic-reasons__item-text">Качественная квалифицированная помощь наших специалистов</div>
+                    </div>
+
+                    <div class="ic-reasons__item">
+                        <div class="ic-reasons__item-icon">
+                            <img src="icons/ic-reasons-6.png" alt="">
+                        </div>
+                        <div class="ic-reasons__item-text">Специальные предложения на другие продукты и услуги компании</div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="ic-integ">
+            <div class="ic-integ__elem"><img src="img/ic-integ-elem-1.png" alt=""></div>
+            <div class="ic-integ__elem"><img src="img/ic-integ-elem-2.png" alt=""></div>
+            <div class="container">
+                <h2 class="title ic-integ__title">Внедрение и сопровождение</h2>
+
+                <div class="ic-integ__grid">
+
+                    <div class="ic-integ__item">
+                        <div class="ic-integ__item-icon">
+                            <img src="icons/ic-integ-1.png" alt="">
+                        </div>
+                        <div class="ic-integ__item-bottom">
+                            <div class="ic-integ__item-title">Внедрение</div>
+                            <div class="ic-integ__item-text">Типовое и проектное внедрение: автоматизация «под ключ»</div>
+                        </div>
+                    </div>
+
+                    <div class="ic-integ__item">
+                        <div class="ic-integ__item-icon">
+                            <img src="icons/ic-integ-2.png" alt="">
+                        </div>
+                        <div class="ic-integ__item-bottom">
+                            <div class="ic-integ__item-title">Настройка (доработка)</div>
+                            <div class="ic-integ__item-text">Доработка, адаптация типовых возможностей 1С</div>
+                        </div>
+                    </div>
+
+                    <div class="ic-integ__item">
+                        <div class="ic-integ__item-icon">
+                            <img src="icons/ic-integ-3.png" alt="">
+                        </div>
+                        <div class="ic-integ__item-bottom">
+                            <div class="ic-integ__item-title">Обновление</div>
+                            <div class="ic-integ__item-text">Обновление конфигураций 1С</div>
+                        </div>
+                    </div>
+
+                    <div class="ic-integ__item">
+                        <div class="ic-integ__item-icon">
+                            <img src="icons/ic-integ-4.png" alt="">
+                        </div>
+                        <div class="ic-integ__item-bottom">
+                            <div class="ic-integ__item-title">Консультации</div>
+                            <div class="ic-integ__item-text">Консультации</div>
+                        </div>
+                    </div>
+
+                    <div class="ic-integ__item">
+                        <div class="ic-integ__item-icon">
+                            <img src="icons/ic-integ-5.png" alt="">
+                        </div>
+                        <div class="ic-integ__item-bottom">
+                            <div class="ic-integ__item-title">ИТС</div>
+                        <div    class="ic-integ__item-text">Информационное сопровождение и поддержка программ 1С</div>
+                        </div>
+                    </div>
+
+                    <div class="ic-integ__item">
+                        <div class="ic-integ__item-icon">
+                            <img src="icons/ic-integ-6.png" alt="">
+                        </div>
+                        <div class="ic-integ__item-bottom">
+                            <div class="ic-integ__item-title">Обслуживание</div>
+                        <div class="ic-integ__item-text">Комплексное    техническое обслуживание и поддержка розничного бизнеса</div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="ic-integ__row">
+                    <div class="ic-integ__text">Получите предложение по подбору и внедрению программы 1С</div>
+                    <a href="#" class="btn ic-integ__btn">Связаться с нами</a>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="ic-guide">
+            <div class="container">
+                <div class="ic-guide__row">
+
+                    <div class="ic-guide__img">
+                        <img src="img/ic-guide-1.png" alt="">
+                    </div>
+
+                    <div class="ic-guide__block">
+                        <h2 class="title ic-guide__title">Информационно-техническое сопровождение <span>программ 1С</span></h2>
+                        <div class="ic-guide__text">Программа 1С работает согласно бизнес требованиям клиента, соответсвует налоговому законодательству и позволяет вести эффективный и быстрый учет.</div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="ic-more">
+            <div class="container">
+
+                <div class="ic-more__wrapper">
+                    <div class="ic-more__grid">
+
+                        <div class="ic-more__item">
+                            <div class="ic-more__item-icon">
+                                <img src="icons/ic-more-1.png" alt="">
+                            </div>
+                            <div class="ic-more__item-bottom">
+                                <div class="ic-more__item-title">Настройка программ 1С</div>
+                                <div class="ic-more__item-text">
+                                    <ul>
+                                        <li> Доработка, адаптация конфигурации 1С (программирование)</li>
+                                        <li>Настройка 1С штатными средствами (без изменения конфигурации)</li>
+                                        <li>Разработка внешних отчетов и печатных форм (без изменения конфигурации)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="ic-more__item">
+                            <div class="ic-more__item-icon">
+                                <img src="icons/ic-more-2.png" alt="">
+                            </div>
+                            <div class="ic-more__item-bottom">
+                                <div class="ic-more__item-title">Консультирование пользователей 1С</div>
+                                <div class="ic-more__item-text">Консультации по текущему функционалу работы программы и формированию форм отчетов. Помощь в групповой обработке/ загрузке данных.</div>
+                            </div>
+                        </div>
+    
+                        <div class="ic-more__item">
+                            <div class="ic-more__item-icon">
+                                <img src="icons/ic-more-3.png" alt="">
+                            </div>
+                            <div class="ic-more__item-bottom">
+                                <div class="ic-more__item-title">Обновление типовых и доработанных программ 1С</div>
+                                <div class="ic-more__item-text"></div>
+                            </div>
+                        </div>
+    
+                        <div class="ic-more__item">
+                            <div class="ic-more__item-icon">
+                                <img src="icons/ic-more43.png" alt="">
+                            </div>
+                            <div class="ic-more__item-bottom">
+                                <div class="ic-more__item-title">Установка/переустановка, профилактика и администрирование 1С</div>
+                                <div class="ic-more__item-text"></div>
+                            </div>
+                        </div>
+    
+                    </div>
+    
+                    <a href="#" class="btn ic-more__btn">Узнать подробнее</a>
+                </div>
+
+                <div class="ic-more__img">
+                    <img src="img/ic-more-img.png" alt="">
+                </div>
+
+            </div>
+        </section>
+
+        <section class="case case_ic">
+            <div class="container">
+                <h2 class="title case__title">Успешные кейсы наших партнеров</h2>
+                <div class="case__wrapper">
+                    <!-- Slider main container -->
+                    <div class="swiper case__slider" id="caseSlider">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide case__slide">
+                                <div class="case__item">
+                                    <div class="case__item-img"><img src="img/case-img.jpg" alt=""></div>
+                                    <div class="case__item-text">
+                                        <div class="case__item-title">Заголовок статьи</div>
+                                        <div class="case__item-excerpt">Значимость этих проблем настолько очевидна, что консультация с широким активом позволяет выполнить важные задания по разработке своевременного выполнения сверхзадачи. Как принято считать, действия представителей оппозиции смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности.</div>
+                                        <a href="#" class="case__item-link">Читать далее</a>
+                                   </div>
+                                </div>
+                            </div>
+    
+                            <div class="swiper-slide case__slide">
+                                <div class="case__item">
+                                    <div class="case__item-img"><img src="img/case-img.jpg" alt=""></div>
+                                    <div class="case__item-text">
+                                        <div class="case__item-title">Заголовок статьи</div>
+                                        <div class="case__item-excerpt">Значимость этих проблем настолько очевидна, что консультация с широким активом позволяет выполнить важные задания по разработке своевременного выполнения сверхзадачи. Как принято считать, действия представителей оппозиции смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности.</div>
+                                        <a href="#" class="case__item-link">Читать далее</a>
+                                   </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide case__slide">
+                                <div class="case__item">
+                                    <div class="case__item-img"><img src="img/case-img.jpg" alt=""></div>
+                                    <div class="case__item-text">
+                                        <div class="case__item-title">Заголовок статьи</div>
+                                        <div class="case__item-excerpt">Значимость этих проблем настолько очевидна, что консультация с широким активом позволяет выполнить важные задания по разработке своевременного выполнения сверхзадачи. Как принято считать, действия представителей оппозиции смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности.</div>
+                                        <a href="#" class="case__item-link">Читать далее</a>
+                                   </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev" id="caseSliderPrev">
+                        <svg width="14" height="22" viewBox="0 0 14 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.9465 21.8333C10.6546 21.8322 10.366 21.7721 10.0979 21.6567C9.82987 21.5413 9.58789 21.3729 9.3865 21.1616L1.02317 12.495C0.626174 12.09 0.403809 11.5454 0.403809 10.9783C0.403809 10.4112 0.626174 9.86665 1.02317 9.46164L9.68983 0.794974C9.89185 0.592958 10.1317 0.43271 10.3956 0.323379C10.6596 0.214048 10.9425 0.157776 11.2282 0.157776C11.5139 0.157776 11.7968 0.214048 12.0607 0.323379C12.3247 0.43271 12.5645 0.592958 12.7665 0.794974C12.9685 0.996991 13.1288 1.23682 13.2381 1.50077C13.3474 1.76472 13.4037 2.04761 13.4037 2.33331C13.4037 2.619 13.3474 2.9019 13.2381 3.16585C13.1288 3.4298 12.9685 3.66962 12.7665 3.87164L5.6165 11L12.5065 18.15C12.91 18.5559 13.1366 19.1051 13.1366 19.6775C13.1366 20.2499 12.91 20.799 12.5065 21.205C12.3015 21.4084 12.0579 21.5688 11.79 21.6767C11.5221 21.7846 11.2353 21.8378 10.9465 21.8333Z" fill="#0C478B"/>
+                        </svg>
+                    </div>
+                    <div class="swiper-button-next" id="caseSliderNext">
+                        <svg width="14" height="22" viewBox="0 0 14 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.0535 21.8333C3.34536 21.8322 3.63398 21.7721 3.90206 21.6567C4.17013 21.5413 4.41211 21.3729 4.6135 21.1616L12.9768 12.495C13.3738 12.09 13.5962 11.5454 13.5962 10.9783C13.5962 10.4112 13.3738 9.86665 12.9768 9.46164L4.31017 0.794974C4.10815 0.592958 3.86832 0.43271 3.60437 0.323379C3.34042 0.214048 3.05753 0.157776 2.77183 0.157776C2.48614 0.157776 2.20324 0.214048 1.93929 0.323379C1.67534 0.43271 1.43551 0.592958 1.2335 0.794974C1.03148 0.996991 0.871231 1.23682 0.761901 1.50077C0.65257 1.76472 0.596297 2.04761 0.596297 2.33331C0.596297 2.619 0.65257 2.9019 0.761901 3.16585C0.871231 3.4298 1.03148 3.66962 1.2335 3.87164L8.3835 11L1.4935 18.15C1.08995 18.5559 0.863447 19.1051 0.863447 19.6775C0.863447 20.2499 1.08995 20.799 1.4935 21.205C1.69852 21.4084 1.94214 21.5688 2.21004 21.6767C2.47795 21.7846 2.76472 21.8378 3.0535 21.8333Z" fill="#0C478B"/>
+                        </svg>
+                    </div>
+                </div>
+                <a href="#" class="telegram case__telegram">
+                    <img src="icons/telegram.png" alt="telegram">
+                </a>
+            </div>
+        </section>
+    
+        <section class="offer offer_home">
+            <div class="container">
+                <div class="offer__grid">
+                    <div class="offer__img"><img src="img/offer-img.png" alt=""></div>
+                    <div class="offer__wrapper">
+                        <div class="offer__text">Остались вопросы? <br> <br>
+                        Оставьте ваши контакты и наш менеджер свяжется с вами в ближайшее время</div>
+                        <a href="#" class="btn offer__btn">Получить презентацию</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="ic-other">
+            <div class="container">
+                <h2 class="title ic-other__title"></h2>
+
+                <div class="ic-other__row">
+
+                    <div class="ic-other__item">
+                        <a href class="ic-other__item-title">1С: Аптека</a>
+                        <div class="ic-other__item-img">
+                            <img src="img/ic-other-1.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="ic-other__item">
+                        <a href class="ic-other__item-title">1С: Управление торговлей</a>
+                        <div class="ic-other__item-img">
+                            <img src="img/ic-other-2.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="ic-other__item">
+                        <a href class="ic-other__item-title">1С: Комплексная автоматизация</a>
+                        <div class="ic-other__item-img">
+                            <img src="img/ic-other-3.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="ic-other__item">
+                        <a href class="ic-other__item-title">1С: Бухгалтерия <br> для Казахстана</a>
+                        <div class="ic-other__item-img">
+                            <img src="img/ic-other-4.png" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="choice choice_home">
+            <div class="container">
+                <h2 class="title choice__title">Рекомендуем посмотреть:</h2>
+                <div class="choice__wrapper">
+                    <!-- Slider main container -->
+                    <div class="swiper choice__slider" id="choiceSlider">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide choice__slide">
+                                <img src="img/cp-choice1.png" alt="">
+                                <p>Сканеры штрихкодов</p>
+                            </div>
+                            <div class="swiper-slide choice__slide">
+                                <img src="img/cp-choice2.png" alt="">
+                                <p>Принтеры чеков</p>
+                            </div>
+                            <div class="swiper-slide choice__slide">
+                                <img src="img/cp-choice3.png" alt="">
+                                <p>Денежные ящики</p>
+                            </div>
+                            <div class="swiper-slide choice__slide">
+                                <img src="img/cp-choice4.png" alt="">
+                                <p>Терминалы сбора данных</p>
+                            </div>
+                            <div class="swiper-slide choice__slide">
+                                <img src="img/cp-choice5.png" alt="">
+                                <p>Весы электронные</p>
+                            </div>
+                            <div class="swiper-slide choice__slide">
+                                <img src="img/cp-choice6.png" alt="">
+                                <p>Принтеры этикеток</p>
+                            </div>
+                            <div class="swiper-slide choice__slide">
+                                <img src="img/cp-choice7.png" alt="">
+                                <p>Прайс чекеры</p>
+                            </div>
+                            <div class="swiper-slide choice__slide">
+                                <img src="img/cp-choice8.png" alt="">
+                                <p>Кассы самообслуживания</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev" id="choiceSliderPrev">
+                        <svg width="14" height="22" viewBox="0 0 14 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.9465 21.8333C10.6546 21.8322 10.366 21.7721 10.0979 21.6567C9.82987 21.5413 9.58789 21.3729 9.3865 21.1616L1.02317 12.495C0.626174 12.09 0.403809 11.5454 0.403809 10.9783C0.403809 10.4112 0.626174 9.86665 1.02317 9.46164L9.68983 0.794974C9.89185 0.592958 10.1317 0.43271 10.3956 0.323379C10.6596 0.214048 10.9425 0.157776 11.2282 0.157776C11.5139 0.157776 11.7968 0.214048 12.0607 0.323379C12.3247 0.43271 12.5645 0.592958 12.7665 0.794974C12.9685 0.996991 13.1288 1.23682 13.2381 1.50077C13.3474 1.76472 13.4037 2.04761 13.4037 2.33331C13.4037 2.619 13.3474 2.9019 13.2381 3.16585C13.1288 3.4298 12.9685 3.66962 12.7665 3.87164L5.6165 11L12.5065 18.15C12.91 18.5559 13.1366 19.1051 13.1366 19.6775C13.1366 20.2499 12.91 20.799 12.5065 21.205C12.3015 21.4084 12.0579 21.5688 11.79 21.6767C11.5221 21.7846 11.2353 21.8378 10.9465 21.8333Z" fill="#0C478B"/>
+                        </svg>
+                    </div>
+                    <div class="swiper-button-next" id="choiceSliderNext">
+                        <svg width="14" height="22" viewBox="0 0 14 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.0535 21.8333C3.34536 21.8322 3.63398 21.7721 3.90206 21.6567C4.17013 21.5413 4.41211 21.3729 4.6135 21.1616L12.9768 12.495C13.3738 12.09 13.5962 11.5454 13.5962 10.9783C13.5962 10.4112 13.3738 9.86665 12.9768 9.46164L4.31017 0.794974C4.10815 0.592958 3.86832 0.43271 3.60437 0.323379C3.34042 0.214048 3.05753 0.157776 2.77183 0.157776C2.48614 0.157776 2.20324 0.214048 1.93929 0.323379C1.67534 0.43271 1.43551 0.592958 1.2335 0.794974C1.03148 0.996991 0.871232 1.23682 0.761901 1.50077C0.65257 1.76472 0.596297 2.04761 0.596297 2.33331C0.596297 2.619 0.65257 2.9019 0.761901 3.16585C0.871232 3.4298 1.03148 3.66962 1.2335 3.87164L8.3835 11L1.4935 18.15C1.08995 18.5559 0.863447 19.1051 0.863447 19.6775C0.863447 20.2499 1.08995 20.799 1.4935 21.205C1.69852 21.4084 1.94214 21.5688 2.21004 21.6767C2.47795 21.7846 2.76472 21.8378 3.0535 21.8333Z" fill="#0C478B"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__row">
+                <nav class="footer__nav">
+                    <a href="#" class="footer__nav-link">О нас</a>
+                    <a href="#" class="footer__nav-link">Карьера</a>
+                    <a href="#" class="footer__nav-link">Блог</a>
+                    <a href="#" class="footer__nav-link">Сайт ПРОСИСТЕМЫ Кыргызстан</a>
+                    <a href="#" class="footer__nav-link">ADMO.media</a>
+                </nav>
+                <div class="footer__search">
+                    <input type="search" placeholder="Поиск" name="q">
+                    <button>
+                        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.71 16.29L14.31 12.9C15.407 11.5025 16.0022 9.77666 16 8C16 6.41775 15.5308 4.87103 14.6518 3.55544C13.7727 2.23985 12.5233 1.21447 11.0615 0.608967C9.59966 0.00346625 7.99113 -0.15496 6.43928 0.153721C4.88743 0.462403 3.46197 1.22433 2.34315 2.34315C1.22433 3.46197 0.462403 4.88743 0.153721 6.43928C-0.15496 7.99113 0.00346625 9.59966 0.608967 11.0615C1.21447 12.5233 2.23985 13.7727 3.55544 14.6518C4.87103 15.5308 6.41775 16 8 16C9.77666 16.0022 11.5025 15.407 12.9 14.31L16.29 17.71C16.383 17.8037 16.4936 17.8781 16.6154 17.9289C16.7373 17.9797 16.868 18.0058 17 18.0058C17.132 18.0058 17.2627 17.9797 17.3846 17.9289C17.5064 17.8781 17.617 17.8037 17.71 17.71C17.8037 17.617 17.8781 17.5064 17.9289 17.3846C17.9797 17.2627 18.0058 17.132 18.0058 17C18.0058 16.868 17.9797 16.7373 17.9289 16.6154C17.8781 16.4936 17.8037 16.383 17.71 16.29ZM2 8C2 6.81332 2.3519 5.65328 3.01119 4.66658C3.67047 3.67989 4.60755 2.91085 5.7039 2.45673C6.80026 2.0026 8.00666 1.88378 9.17055 2.11529C10.3344 2.3468 11.4035 2.91825 12.2426 3.75736C13.0818 4.59648 13.6532 5.66558 13.8847 6.82946C14.1162 7.99335 13.9974 9.19975 13.5433 10.2961C13.0892 11.3925 12.3201 12.3295 11.3334 12.9888C10.3467 13.6481 9.18669 14 8 14C6.4087 14 4.88258 13.3679 3.75736 12.2426C2.63214 11.1174 2 9.5913 2 8Z" fill="black"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="footer__row">
+                <div class="footer__about">
+                    <a href="#" class="footer__logo"><img src="icons/logo-white.svg" alt="pro systemy"></a>
+                    <div class="footer__descr">Автоматизируем и сопровождаем розничную торговлю</div>
+                    <div class="footer__cr">© 2011-2022 ТОО ПРОСИСТЕМЫ</div>
+                    <div class="footer__dev">Сайт разработан <a href="https://webdigital.kz">WebDigital.kz</a></div>
+                </div>
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link">
+                        <img src="icons/instagram.png" alt="instagram">
+                    </a>
+                    <a href="#" class="footer__social-link">
+                        <img src="icons/youtube.png" alt="youtube">
+                    </a>
+                    <a href="#" class="footer__social-link">
+                        <img src="icons/facebook.png" alt="facebook">
+                    </a>
+                    <a href="#" class="footer__social-link">
+                        <img src="icons/telegram-footer.png" alt="telegram">
+                    </a>
+                    <a href="#" class="footer__social-link">
+                        <img src="icons/vk.png" alt="vk">
+                    </a>
+                </div>
+            </div>
+            <div class="footer__elem"><img src="img/footer-elem.png" alt=""></div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/case.js"></script>
+    <script src="js/1c-func.js"></script>
+    <script src="js/eqpm.js"></script>
+    <script src="js/1c-choice.js"></script>
+    <script src="js/header.js"></script>
+</body>
+</html>
