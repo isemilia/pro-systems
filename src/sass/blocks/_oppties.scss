@@ -9,6 +9,9 @@
             margin: 0 auto;
             margin-bottom: 100px;
         }
+        &_mb {
+            margin-bottom: 100px;
+        }
     }
     &__subtitle {
         font-family: 'Montserrat';
@@ -73,6 +76,13 @@
             font-size: 14px;
             line-height: 19px;
             color: #838383;
+            ul {
+                li {
+                    &:not(:last-child) {
+                        margin-bottom: 1em;
+                    }
+                }
+            }
         }
         &-title, &-descr {
             text-align: center;
