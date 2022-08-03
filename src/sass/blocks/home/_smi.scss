@@ -1,0 +1,57 @@
+.smi {
+    padding: 60px 0;
+    &__title {
+        margin-bottom: 70px;
+    }
+    &__wrapper {
+        position: relative;
+    }
+    &__item {
+        padding: 30px 25px 20px;
+        max-width: 380px;
+        min-height: 220px;
+        background: #F5F5F5;
+        border-radius: 30px;
+        display: grid;
+        grid-template-rows: 50px auto;
+        row-gap: 30px;
+        &-bottom {
+            position: relative;
+            padding-bottom: 30px;
+        }
+        &-text {
+            font-family: 'Open Sans';
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 19px;
+            color: #000000;
+        }
+        &-link {
+            position: absolute;
+            bottom: 0;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 141.68%;
+            text-decoration: underline;
+            color: #0C478B;
+        }
+    }
+    .swiper {
+        &-button {
+            &-prev {
+                right: auto;
+                left: -30px;
+            }
+            &-next {
+                left: auto;
+                right: -30px;
+            }
+            &-prev, &-next {
+                &::after {
+                    display: none;
+                }
+            }
+        }
+    }
+}
