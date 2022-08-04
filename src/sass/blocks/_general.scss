@@ -47,3 +47,38 @@
     place-content: center;
     background-color: #36AEE2;
 }
+
+@media (max-width: 1439px) {
+    .container {
+        width: 1120px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .container {
+        width: 976px;
+    }
+}
+
+@media (max-width: 1023px) {
+    .container {
+        width: 720px;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        width: 540px;
+    }
+}
+
+@media (max-width: 575px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 374px) {
+    
+}

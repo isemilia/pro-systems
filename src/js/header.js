@@ -1,6 +1,7 @@
 window.addEventListener('DOMContentLoaded', () => {
     const menuLinks = Array.from(document.querySelectorAll('[data-menu-link]'));
     const menuDropdowns = Array.from(document.querySelectorAll('[data-menu-dropdown]'));
+    const menuBackBtns = Array.from(document.querySelectorAll('[data-menu-back]'));
 
     let counter = 0;
     function resetCounter() {
@@ -32,8 +33,32 @@ window.addEventListener('DOMContentLoaded', () => {
                 }
             });
         });
+        menuBackBtns.forEach((btn, i) => {
+            btn.addEventListener('click', () => {
+                menuLinks[i].classList.remove('menu__link_active');
+                menuDropdowns[i].classList.remove('menu__dropdown_active');
+                resetCounter();
+            });
+        });
     }
-
+    
     showDropdown();
+
+    const headerMenu = document.querySelector('[data-header-menu]');
+    const headerHamb = document.querySelector('[data-header-hamburger]');
+
+    headerHamb.addEventListener('click', () => {
+        headerMenu.classList.toggle('menu_active');
+        headerHamb.classList.toggle('header__hamburger_active');
+    })
+
+/*     window.addEventListener("resize", function() {
+        if (window.matchMedia("(max-width: 1023px)").matches) {
+          console.log("Screen less than 1023")
+        } else {
+          console.log("Screen larger than 1023px")
+        }
+      }); */
+
 
 });

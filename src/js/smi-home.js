@@ -13,6 +13,10 @@ window.addEventListener('DOMContentLoaded', () => {
               slidesPerView: 3,
               spaceBetween: 20
             },
+            1200: {
+              slidesPerView: 3,
+              spaceBetween: 20
+            },
         }
     });
 });
