@@ -52,13 +52,34 @@ window.addEventListener('DOMContentLoaded', () => {
         headerHamb.classList.toggle('header__hamburger_active');
     })
 
-/*     window.addEventListener("resize", function() {
-        if (window.matchMedia("(max-width: 1023px)").matches) {
-          console.log("Screen less than 1023")
+/*     window.addEventListener('resize', function() {
+        if (window.matchMedia('(max-width: 1023px)').matches) {
+          console.log('Screen less than 1023')
         } else {
-          console.log("Screen larger than 1023px")
+          console.log('Screen larger than 1023px')
         }
       }); */
 
-
 });
+
+//footer 
+
+['resize', 'DOMContentLoaded'].forEach(e => {
+    window.addEventListener(e, () => {
+        // Declare a fragment:
+        let fragment = document.createDocumentFragment();
+        let footerRows = document.querySelectorAll('.footer__row');
+        if (window.matchMedia('(max-width: 575px)').matches) {
+            console.log('Screen less than 575')
+            // Append desired element to the fragment:
+            fragment.appendChild(document.querySelector('.footer__social'));
+            // Append fragment to desired element:
+
+            footerRows[0].appendChild(fragment);
+        } else {
+            console.log('Screen larger than 575')
+            fragment.appendChild(document.querySelector('.footer__social'));
+            footerRows[1].appendChild(fragment);
+        }
+    });
+})
