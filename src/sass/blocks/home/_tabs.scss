@@ -113,11 +113,16 @@
         }
     }
     &__prog {
-        display: grid;
-        grid-template-columns: repeat(4, 280px);
-        grid-auto-rows: minmax(216px, auto);
+        // display: grid;
+        // grid-template-columns: repeat(4, 280px);
+        // grid-auto-rows: minmax(216px, auto);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         gap: 20px;
         &-item {
+            width: 280px;
+            min-height: 216px;
             border: 2px solid #FDCE25;
             border-radius: 30px;
             padding: 14px;
