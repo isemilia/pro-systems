@@ -38,3 +38,39 @@
         margin: 0 auto;
     }
 }
+
+
+@media (max-width: 1023px) {
+    .promo {
+        &__title {
+            font-size: 34px;
+            line-height: 42px;
+        }
+        &__subtitle {
+            font-size: 20px;
+            line-height: 28px;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .promo {
+        background: url('../img/home-promo-bg-mob.jpg') center center / cover no-repeat;
+        min-height: 608px;
+        padding-top: 260px;
+        padding-bottom: 70px;
+        &::before {
+            display: none;
+        }
+        &__title {
+            font-size: 20px;
+            line-height: 24px;
+            margin-bottom: 20px;
+        }
+        &__subtitle {
+            font-size: 14px;
+            line-height: 19px;
+            margin-bottom: 40px;
+        }
+    }
+}
