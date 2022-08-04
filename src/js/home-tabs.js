@@ -21,6 +21,24 @@ window.addEventListener('DOMContentLoaded', () => {
             btn.classList.add('tabs__nav-btn_active');
             tabRemoveAll();
             tabItems[i].classList.add('tabs__tab_active');
-        })
-    })
+        });
+    });
+});
+
+['resize', 'DOMContentLoaded'].forEach(e => {
+    window.addEventListener(e, () => {
+        const tabBtns = Array.from(document.querySelectorAll('[data-tabs-btn]'));
+        const tabItems = Array.from(document.querySelectorAll('[data-tabs-tab]'));
+
+        if (window.matchMedia('(max-width: 575px)').matches) {
+            console.log('Screen less than 575');
+            
+            tabItems.forEach((item, i) => {
+                item.insertAdjacentElement('beforebegin', tabBtns[i]);
+            });
+
+        } else {
+            console.log('Screen larger than 575');
+        }
+    });
 })
