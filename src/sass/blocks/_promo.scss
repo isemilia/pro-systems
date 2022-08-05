@@ -1,4 +1,5 @@
 .promo {
+    overflow: hidden;
     position: relative;
     padding: 130px 0;
     background: url('../img/squares-gray-bg.jpg') center center / cover no-repeat;
@@ -107,6 +108,100 @@
                     margin-bottom: 30px;
                 }
             }
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+    .promo {
+        &__img {
+            top: -82px;
+            right: -81px;
+            img {
+                width: 560px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1023px) {
+    .promo {
+        &__title {
+            font-size: 44px;
+            line-height: 53px;
+            margin-bottom: 20px;
+        }
+        &__subtitle {
+            font-size: 34px;
+            line-height: 39px;
+            margin-bottom: 20px;
+        }
+        &__descr {
+            max-width: 460px;
+        }
+        &__img {
+            top: -46px;
+            right: -154px;
+            img {
+                width: 456px;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .promo {
+        &__title, &__subtitle, &__descr {
+            text-align: center;
+        }
+        &__title {
+            font-size: 32px;
+            line-height: 39px;
+            margin-bottom: 20px;
+        }
+        &__subtitle {
+            font-size: 24px;
+            line-height: 28px;
+            margin-bottom: 20px;
+        }
+        &__descr {
+            margin-bottom: 30px;
+            font-size: 18px;
+            line-height: 26px;
+        }
+        &__img {
+            position: static;
+            margin-bottom: 20px;
+            img {
+                width: unset;
+                max-width: 100%;
+            }
+        }
+        &__row {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .promo {
+        padding: 70px 0 80px;
+        &::before {
+            display: none;
+        }
+        &__title {
+            font-size: 32px;
+            line-height: 39px;
+        }
+        &__subtitle {
+            font-size: 18px;
+            line-height: 22px;
+        }
+        &__descr {
+            font-size: 14px;
+            line-height: 18px;
         }
     }
 }
