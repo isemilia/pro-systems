@@ -33,16 +33,25 @@
     &__item {
         &-icon {
             position: relative;
-            left: 50%;
+            // left: 50%;
             display: grid;
             place-content: center;
-            width: 80px;
-            height: 80px;
-            background: #0C478B;
-            border-radius: 12px;
-            transform: rotate(45deg) translateX(-50%);
+            margin-bottom: 48px;
+            // width: 80px;
+            // height: 80px;
+            // background: #0C478B;
+            // border-radius: 12px;
+            // transform: rotate(45deg) translateX(-50%);
             img {
-                transform: rotate(-45deg);
+                // transform: rotate(-45deg);
+            }
+            &::after {
+                position: absolute;
+                content: url("data:image/svg+xml,%3Csvg width='103' height='103' viewBox='0 0 103 103' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='51.5684' y='-5' width='80' height='80' rx='12.6803' transform='rotate(45 51.5684 -5)' fill='%230C478B'/%3E%3C/svg%3E%0A");
+                z-index: -1;
+                left: 50%;
+                transform: translateX(-50%);
+                top: -28px;
             }
             &_numbered {
                 position: relative;
@@ -92,4 +101,57 @@
 
 body {
     counter-reset: opptItem;
+}
+
+@media (max-width: 1199px) {
+    .oppties {
+        &__grid {
+            column-gap: 30px;
+        }
+    }
+}
+
+@media (max-width: 1023px) {
+    .oppties {
+        &__grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .oppties {
+        &__grid {
+            grid-template-columns: 1fr;
+        }
+        &__item {
+            &-descr {
+                font-size: 12px;
+                line-height: 16px;
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .oppties {
+        &_home {
+            padding: 52px 0;
+        }
+        &__title {
+            &_mb {
+                margin-bottom: 70px;
+            }
+        }
+        &__item {
+            &-title {
+                font-size: 14px;
+                line-height: 17px;
+            }
+            &-descr {
+                font-size: 12px;
+                line-height: 16px;
+            }
+        }
+    }
 }

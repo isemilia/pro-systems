@@ -54,3 +54,99 @@
         }
     }
 }
+
+@media (max-width: 1199px) {
+    .autom {
+        &__item {
+            &-img {
+                img {
+                    width: 220px;
+                    height: 220px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1023px) {
+    .autom {
+        &__row {
+            min-height: 300px;
+        }
+        &__item {
+            &-img {
+                img {
+                    width: 180px;
+                    height: 180px;
+                }
+            }
+            &:nth-child(2n) {
+                align-self: flex-end;
+                .autom__item-text {
+                    bottom: 10px;
+                    right: 135px;
+                }
+            }
+            &:nth-child(2n-1) {
+                .autom__item-text {
+                    top: 10px;
+                    left: 146px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .autom {
+        &__row {
+            min-height: 300px;
+            flex-direction: column;
+        }
+        &__item {
+            &-img {
+                img {
+                    width: 180px;
+                    height: 180px;
+                }
+            }
+            &:nth-child(2n) {
+                align-self: flex-end;
+                .autom__item-text {
+                    bottom: unset;
+                    right: 168px;  
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+            &:nth-child(2n-1) {
+                .autom__item-text {
+                    top: 50%;
+                    left: 181px;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 374px) {
+    .autom {
+        &__row {
+        }
+        &__item {
+            &:nth-child(2n) {
+                .autom__item-text {
+                    min-width: unset;
+                    word-wrap: break-word;
+                }
+            }
+            &:nth-child(2n-1) {
+                .autom__item-text {
+                    min-width: unset;
+                    word-wrap: break-word;
+                }
+            }
+        }
+    }
+}

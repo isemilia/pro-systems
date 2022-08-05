@@ -19,6 +19,9 @@
         width: 280px;
         display: grid;
         place-content: center;
+        img {
+            max-width: 100%;
+        }
     }
     &__wrapper {
         position: relative;
@@ -45,4 +48,45 @@
     }
 }
 
+@media (max-width: 1199px) {
+    .clients {
+        .swiper {
+            &-button {
+                &-prev {
+                    left: 0px;
+                }
+                &-next {
+                    right: 0px;
+                }
+            }
+        }
+    }
+}
 
+@media (max-width: 767px) {
+    .clients {
+        .swiper {
+            &-button {
+                &-prev {
+                    left: 36%;
+                }
+                &-next {
+                    right: 36%;
+                }
+                &-prev, &-next {
+                    top: unset;
+                    bottom: -45px;
+                    position: absolute;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .clients {
+        &__title {
+            margin-bottom: 40px;
+        }
+    }
+}
