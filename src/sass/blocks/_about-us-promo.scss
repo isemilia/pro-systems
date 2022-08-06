@@ -1,0 +1,104 @@
+.promo {
+    position: relative;
+    background: url('../img/about-us-bg.png') center center / cover no-repeat;
+    &::before {
+        position: absolute;
+        content: url('../img/triangle-yellow-3.png'); 
+        top: 135px;
+        left: 0;      
+    }
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 59px;
+        color: #FFFFFF !important;
+        margin-bottom: 60px;
+    }
+    &__descr {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 25px;
+        color: #FFFFFF !important;
+        &_big {
+            font-size: 24px;
+            line-height: 33px;
+            margin-bottom: 30px;
+        }
+        &_sc {
+            font-size: 20px;
+            line-height: 24px;
+        }
+    }
+    &__title, &__subtitle, &__descr {
+        color: #000000;
+        max-width: 510px;
+    }
+    &__title, &__subtitle {
+        font-family: 'Montserrat';
+        margin-bottom: 30px;
+    }
+    &__title {
+        &_fisc {
+            margin-bottom: 50px;
+        }
+    }
+    &__row {
+        position: relative;
+    }
+    &__play {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        left: 43%;
+        text-decoration: none;
+        &-icon {
+            margin-bottom: 20px;
+        }
+        &-text {
+            font-family: 'Open Sans';
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 22px;
+            color: #FFF;
+        }
+    }
+    &__text {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        color: #838383;
+        max-width: 450px;
+        margin-bottom: 90px;
+        &_sc {
+            font-size: 14px;
+            line-height: 19px;
+            margin-bottom: 40px;
+        }
+        ul {
+            list-style: none;
+            li {
+                position: relative;
+                &::before {
+                    content: url('../icons/check-orange.png');
+                    position: absolute;
+                    left: -38px;
+                    top: -2px;
+                }
+                &:not(:last-child) {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+}

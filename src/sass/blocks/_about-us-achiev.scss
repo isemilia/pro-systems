@@ -1,0 +1,50 @@
+.achieve{
+    padding-bottom: 110px;
+    &-home{
+
+    }
+    &-title{
+        font-weight: 600;
+        color: #0C478B;
+        margin-bottom: 110px;
+    }
+    &__row{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        &-item{
+            display: flex;
+            position: relative;
+            .achieve__row-info{
+                position: absolute;
+                top: -50px;
+                left: 140px;
+            }
+            &-down{
+                display: flex;
+                position: relative;
+                margin-left: 180px;
+                .achieve__row-info{
+                    position: absolute;
+                    left: -125px;
+                    bottom: 0 !important;
+                }
+            }
+        }
+        &-title{
+            font-family: 'Montserrat';
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 39px;
+            color: #0C478B;
+            margin: 0;
+            padding: 0;
+        }
+        &-span{
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 17px;
+            color: #000000;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+.member{
+    padding-bottom: 85px;
+    &__wrapper{
+        position: relative;
+    }
+    &__info{
+        position: absolute;
+        top: 100px;
+        right: 175px;
+    }
+    &__abs{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    &__btn{
+        background: #0C478B;
+    }
+    &__title{
+        font-family: 'Montserrat';
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 145.9%;
+        color: #000000;  
+        margin-bottom: 40px;  
+    }
+}

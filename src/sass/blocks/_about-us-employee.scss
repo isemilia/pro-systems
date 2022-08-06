@@ -1,0 +1,58 @@
+.employees{
+    position: relative;
+    background: #F5F5F5;
+    padding-bottom: 85px;
+    &::before {
+        position: absolute;
+        content: url('../img/triangle-yellow-top.png'); 
+        top: 0;
+        left: 80px;
+    }
+    &__title{
+        background: url('../icons/causes-bg.svg') center center / cover no-repeat;
+        padding: 75px 0 125px;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 49px;
+        text-align: right;
+        color: #FFFFFF;
+        padding-right: 130px;
+        span{
+            font-family: 'Montserrat';
+            font-weight: 600;
+            font-size: 34px;
+            line-height: 41px;
+            color: #FDCE25;
+        }
+    }
+    &__row{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        place-content: center;
+        column-gap: 60px;
+        row-gap: 40px;
+    }
+    &__item{
+        display: flex;
+        align-items: center;
+        &-title{
+            font-family: 'Montserrat';
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+            color: #0C478B;
+        }
+        &-subtitle{
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 17px;
+            color: #838383;
+        }
+    }
+    &__text{
+        margin-left: 10px;
+    }
+
+}

@@ -1,0 +1,41 @@
+.software {
+    &_home {
+        padding: 110px 0;
+    }
+    &__slider {
+        width: 100%;
+        height: auto;
+    }
+    &__slide {
+        width: 280px;
+    }
+    &__wrapper {
+        position: relative;
+    }
+    &__title {
+        margin-bottom: 110px;
+        span{
+            color: #0C478B;
+            font-weight: 600;
+        }
+    }
+    .swiper {
+        &-button {
+            &-prev {
+                right: auto;
+                left: -70px;
+            }
+            &-next {
+                left: auto;
+                right: -70px;
+            }
+            &-prev, &-next {
+                &::after {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+

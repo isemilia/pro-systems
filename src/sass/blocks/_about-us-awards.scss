@@ -1,0 +1,60 @@
+.awards {
+    background: #F5F5F5;
+    position: relative;
+    padding: 110px 0;
+    &__abs{
+        position: absolute;
+        right: 70px;
+        top: 35px;
+    }
+    &__title{
+        margin-bottom: 75px;
+    }
+    .container{
+        position: relative;
+    }
+    &__slider {
+        width: 100%;
+        height: 350px;
+    }
+    &__slide {
+        display: grid;
+        place-content: center;
+        align-self: center;
+    }
+    &__wrapper {
+        position: relative;
+        width: 100%;
+    }
+    .swiper {
+        &-slide{
+            width: 100%;
+            img{
+                opacity: 0.5;
+                width: 280px;
+            }
+        }
+        &-slide-active{
+            width: 100%;
+            img{
+                opacity: 1;
+                width: 500px;
+                height: 340px;
+                transform: scale(0.9);
+            }
+        }
+        &-button {
+            &-prev {
+                left: 0;
+            }
+            &-next {
+                right: 0;
+            }
+            &-prev, &-next {
+                &::after {
+                    display: none;
+                }
+            }
+        }
+    }
+}
