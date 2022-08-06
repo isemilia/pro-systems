@@ -1,5 +1,6 @@
 window.addEventListener('DOMContentLoaded', () => {
     const swiper = new Swiper('#clientsSlider', {
+        loop: true,
         // Navigation arrows
         navigation: {
           nextEl: '#clientsSliderNext',
