@@ -1,0 +1,14 @@
+.banner{
+    background: url('../img/man-messaging.png') center center / cover no-repeat;
+    height: 200px;
+    margin-bottom: 75px;
+    &__title{
+        text-align: left;
+        padding: 70px 0;
+        font-family: 'Montserrat';
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 59px;
+        color: #FFFFFF;
+    }
+}

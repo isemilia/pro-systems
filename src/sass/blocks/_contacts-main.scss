@@ -1,0 +1,59 @@
+.contacts{
+    a{
+        display: block;
+        text-decoration: none;
+    }
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 60px;
+    }
+    &__main{
+        display: flex;
+    }
+    &__link{
+        text-align: center;
+        margin-right: 90px;
+        &:last-child{
+            margin-right: 0;
+        }
+        &:hover{
+            p{
+                color:#0C478B;
+            }
+        }
+        p{
+            font-family: 'Montserrat';
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 17px;
+            color: #000000;
+            transition: color 0.3s;
+            margin-top: 20px;
+        }
+    }
+    &__map{
+        margin: 0 auto;
+        margin-bottom: 85px;
+    }
+    &__social{
+        p{
+            text-align: center;
+            font-family: 'Montserrat';
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 17px;
+            color: #000000;
+        }
+        &-wrapper{
+            display: flex;
+            a{
+                margin-right: 25px;
+                &:last-child{
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
