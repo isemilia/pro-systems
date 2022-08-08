@@ -28,7 +28,7 @@
         grid-template-rows: auto;
         grid-auto-rows: auto;
         column-gap: 70px;
-        row-gap: 40px;
+        row-gap: 70px;
     }
     &__item {
         &-icon {
@@ -55,6 +55,9 @@
             }
             &_numbered {
                 position: relative;
+                max-width: max-content;
+                margin: 0 auto;
+                margin-bottom: 48px;
                 &::before {
                     position: absolute;
                     counter-increment: opptItem;
@@ -65,9 +68,8 @@
                     font-size: 32px;
                     line-height: 39px;
                     color: #E9660B;
-                    transform: rotate(-45deg);
-                    top: 26px;
-                    left: -41px;
+                    top: -45px;
+                    left: -45px;
                 }
             }
         }
@@ -100,7 +102,7 @@
 }
 
 body {
-    counter-reset: opptItem;
+    counter-reset: ctr opptItem;
 }
 
 @media (max-width: 1199px) {

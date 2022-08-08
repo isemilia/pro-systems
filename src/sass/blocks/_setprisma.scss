@@ -9,6 +9,9 @@
         justify-content: end;
         justify-items: end;
     }
+    &__mob {
+        display: none;
+    }
     &__text {
         font-family: 'Open Sans';
         font-weight: 600;
@@ -32,7 +35,119 @@
         }
     }
     &__elem {
+        right: 20px;
         position: absolute;
         bottom: 0;
+    }
+}
+
+@media (max-width: 1439px) { 
+    .setprisma {
+        padding: 40px 0;
+        &__text {
+            &:nth-child(1) {
+                max-width: 340px;
+                margin-right: 349px;
+            }
+            &:nth-child(2) {
+                max-width: 400px;
+                margin-right: 155px;
+            }
+            &:nth-child(3) {
+                max-width: 450px;
+                margin-right: 0px;
+            }
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1199px) { 
+    .setprisma {
+        padding: 40px 0;
+        &__text {
+            font-size: 16px;
+            line-height: 23px;
+            &:nth-child(1) {
+                max-width: 340px;
+                margin-right: 250px;
+            }
+            &:nth-child(2) {
+                max-width: 400px;
+                margin-right: 87px;
+            }
+            &:nth-child(3) {
+                max-width: 343px;
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 1023px) { 
+    .setprisma {
+        overflow: hidden;
+        padding: 40px 0;
+        background: none;
+        min-height: auto;
+        &__bottom {
+            position: relative;
+        }
+        &__mob {
+            display: block;
+            picture {
+                max-width: 100%; 
+                img {
+                    max-width: 100%;
+                }
+            }
+        }
+        &__elem {
+            position: absolute;
+            top: 0px;
+            bottom: unset;
+            img {
+                width: 160px;
+                height: auto;
+            }
+        }
+        &__wrapper {
+            justify-items: unset;
+        }
+        &__text {
+            font-size: 16px;
+            line-height: 23px;
+            &:nth-child(1) {
+                max-width: unset;
+                margin-right: unset;
+            }
+            &:nth-child(2) {
+                max-width: unset;
+                margin-right: unset;
+            }
+            &:nth-child(3) {
+                max-width: unset;
+                margin-right: unset;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .setprisma {
+        &__elem {
+            img {
+                width: 115px;
+            }
+        }
+        &__text {
+            font-size: 14px;
+            line-height: 19px;
+            &:not(:last-child) {
+                margin-bottom: 10px;
+            }
+        }
     }
 }

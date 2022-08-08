@@ -25,6 +25,7 @@
         line-height: 22px;
         margin-bottom: 45px;
         &_big {
+            font-family: 'Montserrat';
             font-size: 24px;
             line-height: 33px;
             margin-bottom: 30px;
@@ -151,13 +152,14 @@
 
 @media (max-width: 767px) {
     .promo {
+        padding: 50px 0 70px;
         &__title, &__subtitle, &__descr {
             text-align: center;
         }
         &__title {
             font-size: 32px;
             line-height: 39px;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
         }
         &__subtitle {
             font-size: 24px;
@@ -168,6 +170,11 @@
             margin-bottom: 30px;
             font-size: 18px;
             line-height: 26px;
+        }
+        &__text {
+            margin-bottom: 15px;
+            font-size: 16px;
+            line-height: 22px;
         }
         &__img {
             position: static;
@@ -202,6 +209,14 @@
         &__descr {
             font-size: 14px;
             line-height: 18px;
+            &_big {
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+        &__text {
+            font-size: 12px;
+            line-height: 16px;
         }
     }
 }

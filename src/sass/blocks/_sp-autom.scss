@@ -16,6 +16,11 @@
         margin: 0 auto;
         margin-bottom: 95px;
     }
+    &__img {
+        img {
+            max-width: 513px;
+        }
+    }
     &__row {
         display: flex;
         justify-content: space-between;
@@ -91,5 +96,114 @@
     &__telegram {
         bottom: 112px;
         right: 27px;
+    }
+}
+
+@media (max-width: 1439px) {
+    .autom {
+        &__row {
+            column-gap: 20px;
+        }
+        &__switch {
+            grid-template-columns: 1fr 290px;
+            column-gap: 25px;
+        }
+        &__list {
+            &_reversed {
+                right: unset;
+                left: -5px; 
+            }
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+    .autom {
+        &__img {
+            img {
+                max-width: 400px;
+            }
+        }
+        &__row {
+            column-gap: 20px;
+        }
+        &__switch {
+            grid-template-columns: 1fr 290px;
+            column-gap: 25px;
+        }
+        &__list {
+            &_reversed {
+                &::after {
+                    right: unset;
+                    left: -5px; 
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1023px) {
+    .autom {
+        &::before {
+            all: unset;
+        }
+        &__img {
+            img {
+                max-width: 400px;
+            }
+        }
+        &__row {
+            row-gap: 30px;
+            justify-content: center;
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+        &__switch {
+            grid-template-columns: 1fr 300px;
+            column-gap: 25px;
+        }
+        &__title {
+            margin-bottom: 40px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .autom {
+        &__switch {
+            grid-template-columns: 1fr 230px;
+            column-gap: 25px;
+        }
+        &__list {
+            &-item {
+                font-size: 14px;
+                line-height: 16px;
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .autom {
+        &__img {
+            img {
+                width: 100%;
+            }
+        }
+        &__switch {
+            grid-template-columns: 1fr;
+        }
+        &__list {
+            grid-row: 1;
+            &::after {
+                height: 1px;
+                width: 100%;
+                right: unset;
+                left: 0;
+                bottom: -20px;
+                top: unset;
+            }
+            margin-bottom: 40px;
+        }
     }
 }

@@ -133,6 +133,9 @@
 
 @media (max-width: 575px) {
     .case {
+        &_sp {
+            padding: 50px 0 60px;
+        }
         &__item {
             grid-template-columns: 1fr;
             grid-template-rows: 165px auto;

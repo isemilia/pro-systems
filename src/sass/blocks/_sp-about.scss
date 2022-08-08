@@ -55,24 +55,24 @@
         line-height: 22px;
         color: #838383;
         ul {
-            padding-left: 70px;
+            padding-left: 4.4em;
             list-style: none;
             // list-style-type: decimal-leading-zero;
             li {
                 position: relative;
                 &:not(:last-child) {
-                    margin-bottom: 25px;
+                    margin-bottom: 1em;
                 }
                 &::before {
                     position: absolute;
-                    left: -70px;
+                    left: -2em;
                     top: -3px;
                     counter-increment: ctr;
                     content: '0.' counter(ctr);
                     font-family: 'Montserrat';
                     font-weight: 700;
-                    font-size: 32px;
-                    line-height: 39px;
+                    font-size: 2.3em;
+                    line-height: 120%;
                     color: #E9660B;
                 }
             }
@@ -81,5 +81,70 @@
 }
 
 body {
-    counter-reset: ctr;
+    counter-reset: ctr opptItem;
 }
+
+@media (max-width: 1199px) { 
+    .sp-about {
+        &__grid {
+            column-gap: 25px;
+        }
+    }
+} 
+
+@media (max-width: 1023px) { 
+    .sp-about {
+        &__grid {
+            column-gap: unset;
+            grid-template-columns: 1fr;
+            row-gap: 30px;
+        }
+    }
+} 
+
+@media (max-width: 575px) { 
+    .sp-about {
+        padding: 50px 0;
+        &__left-wrapper {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+        &__img {
+            margin-bottom: 58px;
+            img {
+                height: auto;
+                width: 230px;
+            }
+            &::before {
+                content: url("data:image/svg+xml,%3Csvg width='274' height='274' viewBox='0 0 274 274' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='136.814' y='-5' width='200.555' height='200.555' rx='12.7155' transform='rotate(45 136.814 -5)' fill='%23F5F5F5'/%3E%3C/svg%3E%0A");
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+        &__left {
+            width: 100%;
+        }
+        &__text {
+            font-size: 12px;
+            line-height: 16px;
+            margin-bottom: 0;
+            justify-content: space-between;
+            width: 100%;
+        }
+        &__item {
+            &:not(:last-child) {
+                margin-right: 0;
+            }
+        }
+        &__descr {
+            font-size: 12px;
+            line-height: 15px;
+        }
+        &__list {
+            font-size: 12px;
+            line-height: 16px;
+        }
+    }
+} 
