@@ -1,5 +1,8 @@
 .sc-key {
     padding: 10px 0;
+    &__mob {
+        display: none;
+    }
     &__row {
         padding: 90px 0 80px;
         min-height: 610px;
@@ -25,6 +28,69 @@
                 }
                 &:not(:last-child) {
                     margin-bottom: 40px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+    .sc-key {
+        &__row {
+            padding-bottom: 10px;
+            background: url('../img/sc-key-bg.png') 120% center/contain no-repeat;
+        }
+        &__text {
+            ul {
+                li {
+                    &:nth-child(n+4) {
+                        max-width: 385px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1023px) {
+    .sc-key {
+        &__mob {
+            display: flex;
+            justify-content: flex-end;
+            img {
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+        &__row {
+            min-height: unset;
+            padding-top: 50px;
+            padding-bottom: 30px;
+            background: none;
+        }
+        &__text {
+            max-width: 100%;
+            ul {
+                li {
+                    &:nth-child(n+4) {
+                        max-width: unset;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .sc-key {
+        &__text {
+            font-size: 12px;
+            line-height: 16px;
+            ul {
+                li {
+                    &:not(:last-child) {
+                        margin-bottom: 20px;
+                    }
                 }
             }
         }
