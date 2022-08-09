@@ -42,6 +42,16 @@
     }
 }
 
+@media (max-width: 1199px) {
+    .reasons {
+        &__grid {
+            &_3c {
+                column-gap: 30px;
+            }
+        }
+    }
+}
+
 @media (max-width: 1023px) {
     .reasons {
         &__grid {
@@ -55,7 +65,7 @@
 @media (max-width: 767px) {
     .reasons {
         &__grid {
-            &_4c {
+            &_4c, &_3c {
                 grid-template-columns: repeat(2, 1fr);
                 row-gap: 50px;
             }
@@ -63,7 +73,7 @@
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 575px) {
     .reasons {
         &__item {
             &-title {
@@ -72,7 +82,7 @@
             }
         }
         &__grid {
-            &_4c {
+            &_4c, &_3c {
                 grid-template-columns: repeat(2, 1fr);
                 column-gap: 20px;
                 row-gap: 50px;

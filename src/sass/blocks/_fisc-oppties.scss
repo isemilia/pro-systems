@@ -28,33 +28,16 @@
     &__item {
         &-icon {
             position: relative;
-            left: 50%;
             display: grid;
             place-content: center;
-            width: 80px;
-            height: 80px;
-            background: #0C478B;
-            border-radius: 12px;
-            transform: rotate(45deg) translateX(-50%);
-            img {
-                transform: rotate(-45deg);
-            }
-            &_numbered {
-                position: relative;
-                &::before {
-                    position: absolute;
-                    counter-increment: opptItem;
-                    content: counter(opptItem);
-                    font-family: 'Montserrat';
-                    font-style: normal;
-                    font-weight: 700;
-                    font-size: 32px;
-                    line-height: 39px;
-                    color: #E9660B;
-                    transform: rotate(-45deg);
-                    top: 26px;
-                    left: -41px;
-                }
+            margin-bottom: 48px;
+            &::after {
+                position: absolute;
+                content: url("data:image/svg+xml,%3Csvg width='103' height='103' viewBox='0 0 103 103' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='51.5684' y='-5' width='80' height='80' rx='12.6803' transform='rotate(45 51.5684 -5)' fill='%230C478B'/%3E%3C/svg%3E%0A");
+                z-index: -1;
+                left: 50%;
+                transform: translateX(-50%);
+                top: -28px;
             }
         }
         &-title {
@@ -80,4 +63,35 @@
 
 body {
     counter-reset: opptItem;
+}
+
+@media (max-width: 1199px) {
+    .oppties {
+        &__grid {
+            column-gap: 30px;
+        }
+    }
+}
+
+@media (max-width: 1023px) {
+    .oppties {
+        &__grid {
+            column-gap: 60px;
+            grid-template-columns: repeat(2,1fr);
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .oppties {
+        &__grid {
+            column-gap: 25px;
+        }
+        &__item {
+            &-title {
+                font-size: 12px;
+                line-height: 15px;
+            }
+        }
+    }
 }
