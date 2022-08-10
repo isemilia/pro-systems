@@ -8,6 +8,9 @@
         right: 0;
         top: 200px;
     }
+    &__btn-mob {
+        display: none;
+    }
     &__row {
         position: relative;
         z-index: 1;
@@ -39,6 +42,117 @@
             content: url('../img/1c-elem.png');
             top: -120px;
             left: -200px;
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+    .ic-promo {
+        &__img {
+            img {
+                height: 230px;
+                width: auto;
+            }
+            &::before {
+                position: absolute;
+                content: url('../img/1c-elem-md.png');
+                top: -106px;
+                left: -149px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1023px) {
+    .ic-promo {
+        padding: 90px 0;
+        &__title {
+            margin-bottom: 40px;
+        }
+        &__img {
+            img {
+                height: 230px;
+                width: auto;
+            }
+            &::before {
+                position: absolute;
+                content: url('../img/1c-elem-s.png');
+                top: -86px;
+                left: -138px;
+            }
+        }
+        &__elem {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .ic-promo {
+        padding: 75px 0;
+        &__title {
+            margin-bottom: 25px;
+        }
+        &__row {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+        &__img {
+            margin: 90px 0;
+            &::before {
+                position: absolute;
+                content: url('../img/1c-elem-s.png');
+                top: -86px;
+                left: -138px;
+            }
+        }
+        &__btn {
+            display: none;
+        }
+        &__btn-mob {
+            display: block;
+            max-width: fit-content;
+            margin: 0 auto;
+        }
+        &__text {
+            margin-bottom: 15px;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .ic-promo {
+        padding: 45px 0;
+        min-height: unset;
+        &__title {
+            margin-bottom: 20px;
+            font-size: 24px;
+            line-height: 29px;
+            text-align: center;
+        }
+        &__row {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+        &__img {
+            margin: 60px 0 80px;
+            img {
+                height: 152px;
+            }
+            &::before {
+                position: absolute;
+                content: url('../img/1c-elem-xs.png');
+                top: -44px;
+                left: -73px;
+            }
+        }
+        &__text {
+            margin-bottom: 15px;
+            font-size: 12px;
+            line-height: 16px;
+            text-align: center;
         }
     }
 }

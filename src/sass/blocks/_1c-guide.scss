@@ -49,3 +49,80 @@
         color: #000000;
     }
 }
+
+@media (max-width: 1439px) {
+    .ic-guide {
+        &__title {
+            margin-right: 0;
+            text-align: right;
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+    .ic-guide {
+        &__img {
+            left: -200px;
+        }
+    }
+}
+
+@media (max-width: 1023px) {
+    .ic-guide {
+        padding-bottom: 30px;
+        padding-top: 0;
+        &__img {
+            position: relative;
+            left: unset;
+            img {
+                max-width: 100%;
+            }
+        }
+        &__row {
+            padding-top: 60px;
+        }
+        &__title {
+            text-align: center;
+            margin: 0 auto;
+            margin-bottom: 30px;
+        }
+        &__text {
+            text-align: center;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .ic-guide {
+        padding-bottom: 30px;
+        &__img {
+            &::before {
+                content: url("data:image/svg+xml,%3Csvg width='99' height='73' viewBox='0 0 99 73' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='81.8672' y='38.1699' width='24' height='24' rx='3.86638' transform='rotate(45 81.8672 38.1699)' fill='%23FDCE25'/%3E%3Crect x='35.3984' y='0.742188' width='49.4973' height='49.4973' rx='8.19693' transform='rotate(45 35.3984 0.742188)' fill='%23E9660B'/%3E%3Cmask id='mask0_754_1545' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='3' y='4' width='65' height='64'%3E%3Crect x='35.3984' y='0.742188' width='49.4973' height='49.4973' rx='8.19693' transform='rotate(45 35.3984 0.742188)' fill='%23E9660B'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_754_1545)'%3E%3C/g%3E%3C/svg%3E ");
+                bottom: -41px;
+            }
+            img {
+                height: unset;
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .ic-guide {
+        padding-bottom: 30px;
+        min-height: auto;
+        &::after {
+            display: none;
+        }
+        &__title {
+            font-size: 20px;
+            line-height: 24px;
+            margin-bottom: 25px;
+        }
+        &__text {
+            font-size: 12px;
+            line-height: 16px;
+        }
+    }
+}

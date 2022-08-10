@@ -11,18 +11,19 @@
         display: grid;
         place-content: center;
         cursor: pointer;
-        & p{
+        & p, a{
             margin-top: 15px;
             font-family: 'Montserrat';
             font-weight: 600;
             font-size: 16px;
             line-height: 20px;
             text-align: center;
+            text-decoration: none;
             color: #838383;
             transition: color 0.25s;
         }
         &:hover{
-            p{
+            p, a{
                 color: #0C478B;
             }
         }
@@ -58,4 +59,37 @@
     }
 }
 
+@media (max-width: 1199px) {
+    .choice {
+        .swiper {
+            &-button {
+                &-prev {
+                    left: 0px;
+                }
+                &-next {
+                    right: 0px;
+                }
+            }
+        }
+    }
+}
 
+@media (max-width: 767px) {
+    .choice {
+        .swiper {
+            &-button {
+                &-prev {
+                    left: 36%;
+                }
+                &-next {
+                    right: 36%;
+                }
+                &-prev, &-next {
+                    top: unset;
+                    bottom: -60px;
+                    position: absolute;
+                }
+            }
+        }
+    }
+}
