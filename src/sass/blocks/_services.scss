@@ -38,3 +38,41 @@
         align-items: center;
     }
 }
+
+@media (max-width: 1023px) {
+    .services {
+        &__grid {
+            column-gap: 37px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .services {
+        &_home {
+            padding: 60px 0;
+        }
+        &__grid {
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 35px;
+            row-gap: 30px;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .services {
+        &__grid {
+            margin-bottom: 40px;
+        }
+        &__item {
+            &-img {
+                margin-bottom: 10px;
+            }
+            &-title {
+                font-size: 12px;
+                line-height: 15px;
+            }
+        }
+    }
+}

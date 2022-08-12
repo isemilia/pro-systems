@@ -1,6 +1,6 @@
 .techsupport {
     position: relative;
-    background: url('../../img/tech-support-bg.png');
+    background: url('../img/tech-support-bg.png');
     background-repeat: no-repeat;
     background-size: cover;
     &_home {
@@ -20,7 +20,7 @@
     &__item{
         display: flex;
         align-items: center;
-        &:first-child{
+        &:not(:last-child){
             margin-bottom: 50px;
         }
         &-title{
@@ -30,6 +30,39 @@
             line-height: 27px;
             color: #FFFFFF;
             margin-left: 20px;
+            max-width: 526px;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .techsupport {
+        background: url('../img/tech-support-bg-mob.png') center center / cover no-repeat;
+        min-height: unset;
+        padding: 75px 0 45px;
+        &__title {
+            font-size: 24px;
+            line-height: 29px;
+            margin-bottom: 180px;
+        }
+        &__item {
+            &:not(:last-child){
+                margin-bottom: 25px;
+            }
+            &-title {
+                font-size: 14px;
+                line-height: 19px;
+                margin-left: 15px;
+            }
+            &-icon {
+                position: relative;
+                &::before {
+                    content: url('../icons/check-orange-p2.png');
+                }
+                img {
+                    display: none;
+                }
+            }
         }
     }
 }

@@ -1,40 +1,50 @@
 .causes {
     background: #F5F5F5;
     position: relative;
+    padding: 90px 0 85px;
+    overflow: hidden;
     &::before {
         position: absolute;
         content: url('../icons/causes-triangle.svg');
-        left: 90px;
+        left: 10%;
         top: 0;
+        z-index: 3;
     }
     &__home{
         padding-bottom: 80px;
         min-height: 860px;
-    }
-    & .container{
-        position: relative;
-    }
-    &-row{
-        position: absolute;
-        top: -100px;
     }
     &__grid {
         display: grid;
         place-content: center;
         row-gap: 80px;
         &_2c {
-            grid-template-columns: repeat(2, 600px);
+            grid-template-columns: repeat(2, 1fr);
             column-gap: 65px;
         }
     }
+    &__top {
+        .svg2 {
+            display: none;
+        }
+        svg {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 0;
+            max-height: 375px;
+        }
+    }
     &__title {
-        background: url('../icons/causes-bg2.svg') center center / cover no-repeat;
-        padding: 90px 0 240px;
         font-weight: 600;
         font-size: 40px;
         line-height: 49px;
         text-align: center;
         color: #FFFFFF;
+        position: relative;
+        z-index: 2;
+        margin-bottom: 140px;
     }
     &__item{
         display: flex;
@@ -55,6 +65,78 @@
             font-size: 16px;
             line-height: 22px;
             color: #838383;
+        }
+    }
+}
+ 
+@media (max-width: 1439px) {
+    .causes {
+        &__top {
+            svg {
+                width: 100vw;
+            }
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+    .causes {
+        &__grid {
+            column-gap: 50px;
+            row-gap: 60px;
+        }
+    }
+}
+
+@media (max-width: 1023px) {
+    .causes {
+        padding-top: 50px;
+        &__title {
+            font-size: 30px;
+            line-height: 47px;
+        }
+        &__top {
+            svg {
+                max-height: 260px;
+            }
+        }
+        &__grid {
+            column-gap: 20px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .causes {
+        &__title {
+            font-size: 24px;
+            line-height: 29px;
+            margin-bottom: 95px;
+        }
+        &__top {
+            .svg1 {
+                display: none;
+            }
+            .svg2 {
+                display: block;
+            }
+            svg {
+                max-height: 170px;
+            }
+        }
+        &__grid {
+            grid-template-columns: 1fr;
+            row-gap: 30px;
+        }
+        &__item {
+            font-size: 12px;
+            line-height: 15px;
+            &.empty {
+                display: none;
+            }
+            &-title {
+                margin-bottom: .5em;
+            }
         }
     }
 }

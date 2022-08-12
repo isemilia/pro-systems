@@ -13,11 +13,31 @@
     &__wrapper{
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
+        column-gap: 95px;
+        row-gap: 40px;
         margin-top: 80px;
     }
     &__img{
-        &:nth-child(2){
-            margin: 0 100px;
+        img { 
+            max-width: 210px;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .software {
+        &__wrapper {
+            column-gap: 18px;
+        }
+        &__title {
+            font-size: 20px;
+            line-height: 24px;
+        }
+        &__img {
+            img {
+                max-width: 160px;
+            }
         }
     }
 }
