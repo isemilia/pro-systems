@@ -7,6 +7,11 @@
         position: absolute;
         bottom: 0; left: 0;
     }
+    &__el2{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
     &__title {
         color: #FFFFFF;
         margin-bottom: 74px;
@@ -75,6 +80,9 @@
 
 @media (max-width: 575px) {
     .reasons {
+        &__elem, &__el2 {
+            opacity: 0.4;
+        }
         &__item {
             &-title {
                 font-size: 12px;

@@ -8,6 +8,9 @@ p{
     &__title {
         margin-bottom: 74px;
     }
+    &__btn-mob {
+        display: none;
+    }
     &__button{
         position: absolute;
         right: 0;
@@ -30,6 +33,7 @@ p{
         display: flex;
         align-items: center;
         margin-bottom: 40px;
+        max-width: 490px;
         &:last-child{
             margin-bottom: 0;
         }
@@ -47,5 +51,105 @@ p{
     }
     &_g3{
         margin-left: 80px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .guide {
+        &-bg {
+            img {
+                height: auto;
+                width: 635px;
+            }
+        }
+        &__content {
+            top: 20px;
+            left: 510px;
+        }
+        &__item {
+            &-info {
+                font-size: 18px;
+                line-height: 23px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1023px) {
+    .guide {
+        &-bg {
+            img {
+                height: auto;
+                width: 635px;
+            }
+        }
+        &__content {
+            position: relative;
+            top: unset;
+            left: unset;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+        &-row {
+            flex-direction: column-reverse;
+            align-items: flex-start;
+            row-gap: 30px;
+        }
+        &__button {
+            display: none;
+        }
+        &_g2{
+            margin-left: 0;
+        }
+        &_g3{
+            margin-left: 0;
+            margin-bottom: 0;
+        }
+        &__btn-mob {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .guide {
+        padding: 50px 0;
+        &__title {
+            margin-bottom: 45px;
+            padding: 0 15px;
+        }
+        &-bg {
+            img {
+                height: auto;
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+        &__content {
+            padding: 0 15px;
+        }
+        &__item {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .guide {
+        &__item {
+            &-info {
+                font-size: 14px;
+                line-height: 19px;
+            }
+            &-icon {
+                img {
+                    width: 42px;
+                    height: 42px;
+                }
+            }
+        }
     }
 }
