@@ -1,7 +1,10 @@
 .case {
     position: relative;
-    &_home, &_eqpm {
+    &_home {
         padding: 10px 0 55px;
+    }
+    &_eqpm {
+        padding: 50px 0 55px;
     }
     &_main {
         padding: 60px 0 105px;
