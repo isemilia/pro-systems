@@ -1,6 +1,6 @@
 .case {
     position: relative;
-    &_home {
+    &_home, &_eqpm {
         padding: 10px 0 55px;
     }
     &_main {
@@ -133,8 +133,14 @@
 
 @media (max-width: 575px) {
     .case {
+        &_eqpm {
+            padding: 50px 0;
+        }
         &_sp {
             padding: 50px 0 60px;
+        }
+        &__title {
+            margin-bottom: 50px;
         }
         &__item {
             grid-template-columns: 1fr;

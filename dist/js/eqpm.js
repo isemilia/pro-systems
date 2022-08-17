@@ -21,8 +21,6 @@ window.addEventListener('DOMContentLoaded', () => {
       autoplay: {
         //Пауза между прокруткой
         delay: 2000,
-        //Закончить на последнем слайде
-        stopOnLastSlide: true,
         //Отключение после ручного переключения
         disableOnInteraction: false,
       },
@@ -36,3 +34,17 @@ window.addEventListener('DOMContentLoaded', () => {
       }
   });
 });
+
+['resize', 'DOMContentLoaded'].forEach(e => {
+  window.addEventListener(e, () => {
+      
+    const wrapper = document.querySelector('.promo__wrapper');
+    const title = document.querySelector('.promo__title');
+      if (window.matchMedia('(max-width: 1023px)').matches) {
+          console.log('Screen less than 1023');
+          wrapper.insertAdjacentElement('beforebegin', title);
+      } else {
+          console.log('Screen larger than 1023');
+      }
+  });
+})

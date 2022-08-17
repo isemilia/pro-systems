@@ -4,7 +4,7 @@
     }
     &__slider {
         width: 100%;
-        height: 320px;
+        height: auto;
     }
     &__slide {
         width: 250px;
@@ -20,17 +20,14 @@
             text-align: right;
             text-decoration: none;
         }
+        img {
+            max-width: 100%;
+        }
     }
     &__wrapper {
         position: relative;
     }
     &__title {
-        font-family: 'Montserrat';
-        font-weight: 500;
-        font-size: 32px;
-        line-height: 39px;
-        text-align: center;
-        color: #000000;
         margin-bottom: 74px;
     }
     .swiper {
@@ -52,4 +49,46 @@
     }
 }
 
+@media (max-width: 1199px) {
+    .choice {
+        .swiper {
+            &-button {
+                &-prev {
+                    left: 0px;
+                }
+                &-next {
+                    right: 0px;
+                }
+            }
+        }
+    }
+}
 
+@media (max-width: 767px) {
+    .choice {
+        &_home {
+            padding: 50px 0 80px;
+        }
+        &__title {
+            margin-bottom: 50px;
+        }
+        &__slide {
+            width: 100%;
+        }
+        .swiper {
+            &-button {
+                &-prev {
+                    left: 36%;
+                }
+                &-next {
+                    right: 36%;
+                }
+                &-prev, &-next {
+                    top: unset;
+                    bottom: -60px;
+                    position: absolute;
+                }
+            }
+        }
+    }
+}
