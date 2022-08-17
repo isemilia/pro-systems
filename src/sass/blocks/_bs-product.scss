@@ -9,11 +9,12 @@
         color: #838383;
     }
     &__grid {
-        display: grid;
-        grid-template-columns: repeat(4, 265px);
-        grid-auto-rows: auto;
-        column-gap: 40px;
-        place-content: center;
+        display: flex;
+        column-gap: 35px;
+        row-gap: 30px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
         margin-bottom: 45px;
     }
     &__text {
@@ -35,5 +36,29 @@
         display: block;
         max-width: fit-content;
         margin: 0 auto;
+    }
+}
+
+@media (max-width: 767px) {
+    .bs-product {
+        &__img {
+            img {
+                max-width: 100%;
+                width: 184px;
+                height: 184px;
+            }
+            &:nth-child(2n) {
+                align-self: flex-end;
+            }
+            &:not(:first-child) {
+                margin-top: -80px;
+            }
+        }
+        &__grid {
+            padding: 0 20px;
+            flex-direction: column;
+            align-items: flex-start;
+            row-gap: 0;
+        }
     }
 }
