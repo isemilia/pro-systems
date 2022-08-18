@@ -50,3 +50,38 @@
         }
     }
 }
+
+@media (max-width: 1199px) {
+    .cp-slider {
+        .swiper {
+            &-button {
+                &-prev {
+                    left: 0px;
+                }
+                &-next {
+                    right: 0px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .cp-slider {
+        .swiper {
+            &-button {
+                &-prev {
+                    left: 36%;
+                }
+                &-next {
+                    right: 36%;
+                }
+                &-prev, &-next {
+                    top: unset;
+                    bottom: -60px;
+                    position: absolute;
+                }
+            }
+        }
+    }
+}
