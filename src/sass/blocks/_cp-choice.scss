@@ -32,11 +32,6 @@
         position: relative;
     }
     &__title {
-        font-family: 'Montserrat';
-        font-weight: 500;
-        font-size: 32px;
-        line-height: 39px;
-        text-align: center;
         color: #000000;
         margin-bottom: 74px;
     }
@@ -76,6 +71,9 @@
 
 @media (max-width: 767px) {
     .choice {
+        &_home {
+            padding: 40px 0 100px;
+        }
         .swiper {
             &-button {
                 &-prev {
@@ -89,6 +87,17 @@
                     bottom: -60px;
                     position: absolute;
                 }
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .choice {
+        &__slide {
+            a, p {
+                font-size: 12px;
+                line-height: 15px;
             }
         }
     }

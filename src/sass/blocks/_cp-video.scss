@@ -1,21 +1,34 @@
 .video{
     &__home{
-        padding-top: 110px;
+        padding: 100px 0 70px;
     }
     &__title{
-        font-family: 'Montserrat';
-        font-weight: 500;
-        font-size: 32px;
-        line-height: 39px;
-        text-align: center;
         color: #0C478B;
         margin-bottom: 75px;
     }
-    &__frame{
+    iframe{
         display: block;
         margin: 0 auto;
-        width: 715px;
+        width: 100%;
+        max-width: 715px;
         height: 415px;
         border-radius: 30px 30px 30px 30px;
+    }
+}
+
+@media (max-width: 767px){
+    .video {
+        &__wrap {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9, for an aspect ratio of 1:1 change to this value to 100% */ 
+
+        }
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
     }
 }

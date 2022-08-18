@@ -1,6 +1,7 @@
 .manufacturer{
+    overflow: hidden; 
     &__home{
-        padding-top: 110px;
+        padding: 50px 0 70px;
     }
     &__wrapper{
         display: flex;

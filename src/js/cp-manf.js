@@ -18,6 +18,29 @@ window.addEventListener('DOMContentLoaded', () => {
               slidesPerView: 3,
               spaceBetween: 45
             },
+            768: {
+              slidesPerView: 3,
+              spaceBetween: 45
+            },
+            320: {
+              slidesPerView: 3,
+              spaceBetween: 10
+            },
         }
     });
+
 });
+
+['resize', 'DOMContentLoaded'].forEach(e => {
+  window.addEventListener(e, () => {
+      
+    const pic = document.querySelector('.manufacturer__pic');
+    const title = document.querySelector('.manufacturer__title');
+      if (window.matchMedia('(max-width: 1023px)').matches) {
+          console.log('Screen less than 1023');
+          title.insertAdjacentElement('afterend', pic);
+      } else {
+          console.log('Screen larger than 1023');
+      }
+  });
+})
