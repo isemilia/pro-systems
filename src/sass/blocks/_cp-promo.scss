@@ -390,4 +390,17 @@ i {
             }
         }
     }
+    .table {
+        &__cell {
+            &-info, &-title {
+                font-size: 10px;
+                line-height: 14px;
+            }
+        }
+        &__tr {
+            td {
+                padding: 10px 0;
+            }
+        }
+    }
 }
