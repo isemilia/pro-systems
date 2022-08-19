@@ -389,6 +389,21 @@ i {
                 line-height: 12px;
             }
         }
+        &__buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__download {
+            font-size: 14px;
+            line-height: 145.9%;
+            text-align: center;
+            &-btn {
+                margin-top: 20px;
+                font-size: 14px;
+                line-height: 145.9%;
+            }
+        }
     }
     .table {
         &__cell {
