@@ -1,7 +1,7 @@
 .about {
     position: relative;
     &__home{
-        padding: 40px 0 0;
+        padding: 40px 0 50px;
     }
     .container{
         position: relative;
@@ -23,7 +23,9 @@
         font-size: 16px;
         line-height: 20px;
         text-align: center;
+        margin: 0 auto;
         color: #000000;
+        max-width: 930px;
     }
     &__slider {
         width: 100%;
@@ -60,3 +62,36 @@
         }
     }
 }
+
+@media (max-width: 575px) {
+    .about {
+        padding-top: 0px;
+        &__wrapper {
+            padding: 25px 0;
+        }
+        &__title {
+            font-size: 16px;
+            line-height: 20px;
+            margin-bottom: 25px;
+        }
+        &__text {
+            font-size: 12px;
+            line-height: 141.7%;
+        }
+        .swiper {
+            &-button {
+                &-prev {
+                    left: 36%;
+                }
+                &-next {
+                    right: 36%;
+                }
+                &-prev, &-next {
+                    top: unset;
+                    bottom: -20px;
+                    position: absolute;
+                }
+            }
+        }
+    }
+} 
