@@ -74,9 +74,13 @@
     }
     &__vid {
         clip-path: url(#promoClipPath1);
+        cursor: pointer;
+        position: absolute;
+        right: -80px;
         iframe, video {
-            height: 540px;
-            width: 540px;
+            height: 500px;//540
+            width: 620px;//540
+            object-fit: cover;
         }
     }
     &__svg {
