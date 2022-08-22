@@ -44,6 +44,7 @@
             // transform: rotate(45deg) translateX(-50%);
             img {
                 // transform: rotate(-45deg);
+                max-width: 44px;
             }
             &::after {
                 position: absolute;

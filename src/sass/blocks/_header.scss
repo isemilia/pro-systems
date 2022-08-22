@@ -119,12 +119,16 @@
             line-height: 22px;
             color: #FFFFFF;
             text-decoration: none;
-            max-width: 290px;
+            max-width: 294px;
+            opacity: .7;
+            transition: all .2s;
             &:hover {
+                opacity: 1;
                 color: #FFFFFF;
             }
             img {
                 margin-right: 10px;
+                max-width: 36px;
             }
         }
     }
