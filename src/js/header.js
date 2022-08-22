@@ -2,6 +2,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const menuLinks = Array.from(document.querySelectorAll('[data-menu-link]'));
     const menuDropdowns = Array.from(document.querySelectorAll('[data-menu-dropdown]'));
     const menuBackBtns = Array.from(document.querySelectorAll('[data-menu-back]'));
+    const menuDDGrids = Array.from(document.querySelectorAll('.menu__dropdown-grid'));
 
     let counter = 0;
     function resetCounter() {
@@ -27,6 +28,7 @@ window.addEventListener('DOMContentLoaded', () => {
                     menuDropdowns[i].classList.add('menu__dropdown_active');
                     counter += 1;
                 } else if (counter > 0) {
+                    hideAll();
                     link.classList.remove('menu__link_active');
                     menuDropdowns[i].classList.remove('menu__dropdown_active');
                     resetCounter();
@@ -39,6 +41,15 @@ window.addEventListener('DOMContentLoaded', () => {
                 menuDropdowns[i].classList.remove('menu__dropdown_active');
                 resetCounter();
             });
+        });
+        window.addEventListener('mouseup', function(e) {
+            menuDropdowns.forEach((item, i) => {
+                if (e.target != item && e.target != menuDDGrids[i]) {
+                    menuLinks[i].classList.remove('menu__link_active');
+                    menuDropdowns[i].classList.remove('menu__dropdown_active');
+                    resetCounter();
+                }
+            })
         });
     }
     
