@@ -698,6 +698,15 @@
         </div>
     </footer>
 
+    <script>
+        const svgRect = document.querySelector('.promo__svg rect');
+
+        if (window.matchMedia('(max-width: 575px)').matches) {
+            svgRect.style.rx = '30';
+        }
+
+    </script>
+
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/case.js"></script>
     <script src="js/header.js"></script>

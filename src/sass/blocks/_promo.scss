@@ -221,6 +221,12 @@
                 height: 350px;
             }
         }
+        &__popup {
+            &-close {
+                top: -60px;
+                right: -65px;
+            }
+        }
     }
 }
 
@@ -258,6 +264,12 @@
             rect {
                 width: 300px;
                 height: 300px;
+            }
+        }
+        &__popup {
+            &-close {
+                top: -40px;
+                right: 0px;
             }
         }
     }
@@ -306,8 +318,12 @@
             position: relative;
             top: unset;
             right: unset;
+            &::before {
+                right: 69px;
+            }
         }
         &__vid {
+            position: static;
             iframe, video {
                 height: 380px;
             }
@@ -341,21 +357,34 @@
             font-size: 12px;
             line-height: 16px;
         }
-    }
-}
-
-@media (max-width: 374px) {
-    .promo {
-        &__svg {
-            rect {
-                width: 260px;
-                height: 260px;
+        &__vid-wrap {
+            &::before {
+                content: url('../img/promo-img-elem-mob.png');
+                right: 125px;
+                bottom: 13px;
+                top: unset;
             }
         }
         &__vid {
-            iframe, video {
-                height: 320px;
+            video {
+                position: relative;
+                top: -17px;
+                height: 230px;
+                width: 560px;
+            }
+        }
+        &__popup {
+            &-vid-wrap {
+                height: auto;
+            }
+        }
+        &__svg {
+            rect {
+                width: 173px;
+                height: 173px;
+                rx: 30;
             }
         }
     }
-} 
+}
+
