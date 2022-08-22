@@ -284,9 +284,32 @@
                     <div class="promo__descr promo__descr_sc">Обслуживание клиентов быстрее, <br> прибыли больше!</div>
                     <div class="promo__vid-wrap">
                         <div class="promo__vid">
-                            <video width="320" height="240" controls autoplay loop data-video>
+                            <video width="320" height="240" preload loop autoplay data-promo-video>
                                 <source src="media/video.mp4" type="video/mp4">
                             </video>
+                        </div>
+                    </div>
+                    <div class="promo__popup" data-video-popup>
+                        <div class="promo__popup-wrap">
+                            <div class="promo__popup-vid">
+                                <button class="promo__popup-close" data-video-close>
+                                    <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M32.841 9.22084L22.0005 20.0613L11.16 9.22084C10.8993 8.98224 10.5566 8.85345 10.2032 8.86128C9.84989 8.8691 9.5132 9.01296 9.26329 9.26286C9.01339 9.51277 8.86954 9.84946 8.86171 10.2028C8.85388 10.5561 8.98267 10.8989 9.22127 11.1596L20.0563 22.0001L9.21852 32.8378C9.08611 32.964 8.98027 33.1154 8.9072 33.2831C8.83414 33.4508 8.79534 33.6313 8.79307 33.8142C8.79081 33.9971 8.82513 34.1786 8.89401 34.3481C8.9629 34.5175 9.06496 34.6714 9.1942 34.8009C9.32344 34.9303 9.47725 35.0326 9.64659 35.1017C9.81593 35.1708 9.99738 35.2054 10.1803 35.2034C10.3632 35.2014 10.5438 35.1628 10.7116 35.09C10.8794 35.0172 11.0309 34.9116 11.1573 34.7793L22.0005 23.9416L32.841 34.7821C33.1017 35.0207 33.4445 35.1495 33.7978 35.1416C34.1511 35.1338 34.4878 34.99 34.7377 34.7401C34.9876 34.4902 35.1315 34.1535 35.1393 33.8001C35.1472 33.4468 35.0184 33.1041 34.7798 32.8433L23.9393 22.0028L34.7798 11.1596C34.9122 11.0334 35.018 10.882 35.0911 10.7143C35.1641 10.5467 35.2029 10.3661 35.2052 10.1832C35.2075 10.0003 35.1732 9.8188 35.1043 9.64937C35.0354 9.47993 34.9333 9.32598 34.8041 9.19656C34.6748 9.06713 34.521 8.96485 34.3517 8.89572C34.1824 8.8266 34.0009 8.79202 33.818 8.79403C33.6351 8.79603 33.4545 8.83458 33.2867 8.9074C33.1189 8.98023 32.9674 9.08586 32.841 9.21809V9.22084Z" fill="white"/>
+                                    </svg>         
+                                </button>
+                                <div class="promo__popup-vid-wrap">
+                                    <video width="320" height="240" controls data-popup-video>
+                                        <source src="media/video.mp4" type="video/mp4">
+                                    </video>
+                                    <div class="promo__popup-play" data-play-btn>
+                                        <button>
+                                            <svg width="82" height="82" viewBox="0 0 82 82" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M55.3705 41L25.625 23.7442V58.2559L55.3705 41ZM59.4295 37.433C60.0578 37.7928 60.58 38.3121 60.9431 38.9385C61.3063 39.5648 61.4975 40.276 61.4975 41C61.4975 41.7241 61.3063 42.4352 60.9431 43.0616C60.58 43.688 60.0578 44.2073 59.4295 44.567L26.8191 63.4885C24.1541 65.0363 20.5 63.2682 20.5 59.9215V22.0785C20.5 18.7319 24.1541 16.9638 26.8191 18.5115L59.4295 37.433Z" fill="white"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="promo__text promo__text_sc">
@@ -678,6 +701,7 @@
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/case.js"></script>
     <script src="js/header.js"></script>
+    <script src="js/promo-video-player.js"></script>
     <script src="js/autom.js"></script>
     <script src="js/sc-variants.js"></script>
     <script src="js/clients.js"></script>
