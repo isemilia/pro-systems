@@ -38,8 +38,12 @@ window.addEventListener('DOMContentLoaded', () => {
     icfuncMore.forEach((item, i) => {
         item.addEventListener('click', (e) => {
             e.preventDefault();
-            item.style.display = 'none';
-            icfuncTextMore[i].classList.add('ic-func__text-more_visible');
+            if (item.innerText == 'Подробнее') {
+                item.innerText = 'Свернуть';
+            } else {
+                item.innerText = 'Подробнее'
+            }
+            icfuncTextMore[i].classList.toggle('ic-func__text-more_visible');
         })
     })
 })
