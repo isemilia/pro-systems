@@ -22,23 +22,28 @@
         // justify-content: flex-end;
         // align-items: center;
         transition: background .3s ease;
+        position: relative;
         &:nth-child(1) {
-            margin-right: 230px;
+            margin-right: 190px;
         }
         &:nth-child(2) {
             position: absolute;
-            top: 180px;
-            left: 260px;
+            top: 215px;
+            left: 266px;
+            .ic-service__item-title {
+                transform: translate(-36px,-5px);
+            }
         } 
         &:nth-child(4) {
             position: absolute;
-            top: 180px;
+            top: 215px;
             right: 0;
         } 
         &:hover {
             // background:  left center / contain no-repeat;
         }
         &-title {
+            transform: translate(14px, -5px);
             font-family: 'Montserrat';
             font-weight: 600;
             font-size: 16px;

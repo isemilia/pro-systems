@@ -14,7 +14,7 @@
         row-gap: 40px;
     }
     &__title {
-        margin-bottom: 74px;
+        margin-bottom: 124px;
     }
     &__item {
         // background:  left center / contain no-repeat;
@@ -25,10 +25,15 @@
         // justify-content: flex-end;
         // align-items: center;
         transition: background .3s ease;
+        position: relative;
         &:hover {
-            // background:  left center / contain no-repeat;
+            color: #000000;
         }
         &-title {
+            transform: translateX(10px);
+            position: absolute;
+            top: -55px;
+            left: 175px;
             font-family: 'Montserrat';
             font-weight: 600;
             font-size: 16px;
@@ -105,6 +110,7 @@
             min-width: unset;
             min-height: unset;
             &-title {
+                left: unset;
                 min-width: 130px;
                 font-size: 12px;
                 line-height: 15px;

@@ -1,8 +1,13 @@
 .ic-other {
     padding: 85px 0 280px;
+    background: #F5F5F5;
     &__row {
         position: relative;
         display: flex;
+        z-index: 1;
+    }
+    &__title {
+        margin-bottom: 135px;
     }
     &__item {
         // background:  left center / contain no-repeat;
@@ -13,8 +18,13 @@
         // justify-content: flex-end;
         // align-items: center;
         transition: background .3s ease;
+        position: relative;
+        font-family: 'Montserrat';
+        &:hover {
+            color: #000000; 
+        }
         &:nth-child(1) {
-            margin-right: 230px;
+            margin-right: 185px;
         }
         &:nth-child(2) {
             position: absolute;
@@ -30,6 +40,9 @@
             // background:  left center / contain no-repeat;
         }
         &-title {
+            position: absolute;
+            left: 194px;
+            top: -58px;
             font-family: 'Montserrat';
             font-weight: 600;
             font-size: 16px;
@@ -160,6 +173,8 @@
             min-width: unset;
             min-height: unset;
             &-title {
+                position: static;
+                left: unset;
                 min-width: 130px;
                 font-size: 12px;
                 line-height: 15px;
@@ -198,7 +213,7 @@
                         position: absolute;
                         top: 50%;
                         transform: translateY(-50%);
-                        right: 150px;
+                        right: 130px;
                     }
                 }
             }
