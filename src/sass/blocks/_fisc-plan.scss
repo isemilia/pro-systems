@@ -1,0 +1,58 @@
+.fisc-plan {
+    padding: 110px 0 60px;
+    &__title {
+        max-width: 660px;
+        margin: 0 auto 100px;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    &__item {
+        padding: 60px 45px 45px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #F5F5F5;
+        border-radius: 30px;
+        position: relative;
+        max-width: 380px;
+        &.profit {
+            &::before {
+                content: url('../img/fisc-plan-elem.svg');
+                position: absolute;
+                top: -32px;
+                left: 0;
+            }
+        } 
+        &-title {
+            font-family: 'Montserrat';
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 39px;
+            text-align: center;
+            color: #0C478B;
+            margin-bottom: 0.625em;
+        }
+        &-descr {
+            font-family: 'Open Sans';
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 25px;
+            text-align: center;
+            color: #838383;
+            margin-bottom: 3.35em;
+        }
+        &-price {
+            font-family: 'Open Sans';
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 33px;
+            text-align: center;
+            color: #0C478B;
+            margin-bottom: 2.5em;
+        }
+    }
+}
