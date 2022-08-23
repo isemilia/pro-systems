@@ -2,6 +2,13 @@
     overflow: hidden;
     position: relative;
     padding: 70px 0 100px;
+    &::before {
+        position: absolute;
+        content: url('../icons/causes-triangle.svg');
+        left: 90px;
+        top: 0;
+        z-index: 3;
+    }
     &__top {
         position: absolute;
         z-index: -1;
@@ -149,6 +156,10 @@
 @media (max-width: 767px) {
     .fisc-cash {
         padding: 40px 0 70px;
+        &::before {
+            content: url("data:image/svg+xml,%3Csvg width='182' height='20' viewBox='0 0 182 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M134.297 0L151.762 17.4645C155.142 20.8452 160.624 20.8452 164.004 17.4645L181.469 0L134.297 0Z' fill='%23FDCE25'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M67.1482 0L84.6127 17.4645C87.9934 20.8452 93.4746 20.8452 96.8553 17.4645L114.32 0L67.1482 0Z' fill='%23FDCE25'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M-0.000667572 0L17.4638 17.4645C20.8445 20.8452 26.3257 20.8452 29.7064 17.4645L47.1709 0L-0.000667572 0Z' fill='%23FDCE25'/%3E%3C/svg%3E%0A");
+            left: 10%;
+        }
         &__title {
             margin-bottom: 25px;
         }
