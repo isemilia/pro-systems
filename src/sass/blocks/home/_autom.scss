@@ -9,6 +9,14 @@
         top: 0;
         left: 0;
     }
+    // &__img {
+    //     img {
+    //         display: none;
+    //         &.autom__img_active {
+    //             display: block;
+    //         }
+    //     }
+    // }
     &::after {
         content: url('../img/home-autom-el-2.png');
         position: absolute;
@@ -132,8 +140,6 @@
 
 @media (max-width: 374px) {
     .autom {
-        &__row {
-        }
         &__item {
             &:nth-child(2n) {
                 .autom__item-text {

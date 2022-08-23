@@ -23,7 +23,6 @@ window.addEventListener('DOMContentLoaded', () => {
             link.addEventListener('click', (e) => {
                 e.preventDefault();
                 if (counter == 0) {
-                    hideAll();
                     link.classList.add('menu__link_active');
                     menuDropdowns[i].classList.add('menu__dropdown_active');
                     counter += 1;
