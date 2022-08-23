@@ -42,6 +42,9 @@
     &__btn {
         background: #0C478B;
         justify-self: center;
+        &_orange {
+            background: #E9660B;
+        }
     }
     &__wrapper {
         display: grid;
