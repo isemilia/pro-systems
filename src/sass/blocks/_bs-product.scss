@@ -41,6 +41,14 @@
 
 @media (max-width: 767px) {
     .bs-product {
+        &__title {
+            font-size: 20px;
+            line-height: 24px;
+        }
+        &__subtitle {
+            font-size: 14px;
+            line-height: 17px;
+        }
         &__img {
             img {
                 max-width: 100%;
