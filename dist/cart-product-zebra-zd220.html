@@ -300,7 +300,24 @@
                             <div class="tabs__item" id="tab_1">
                                 <div class="tabs__wrapp">
                                     <div class="promo__img">
-                                        <img src="img/cp-zebrazd220-img.png" alt="">
+                                        <!-- Slider main container -->
+                                        <div class="swiper promo__slider" id="promoSlider">
+                                            <!-- Additional required wrapper -->
+                                            <div class="swiper-wrapper">
+                                                <!-- Slides -->
+                                                <div class="swiper-slide promo__slide">
+                                                    <img src="img/cp-zebrazd220-img.png" alt="">
+                                                </div>
+                                                <div class="swiper-slide promo__slide">
+                                                    <img src="img/cp-zebrazd220-img.png" alt="">
+                                                </div>
+                                                <div class="swiper-slide promo__slide">
+                                                    <img src="img/cp-zebrazd220-img.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-pagination">
+                                        </div>
                                     </div>
                                     <div class="promo__row">
                                         <div class="promo__switch">
@@ -435,7 +452,9 @@
         <section class="video video__home">
             <div class="container">
                 <h2 class="title video__title">Настольный принтер этикеток ZEBRA ZD220</h2>
-                <iframe class="video__frame" src="https://www.youtube.com/embed/YXXE8uOpyr4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="video__wrap">
+                    <iframe src="https://www.youtube.com/embed/YXXE8uOpyr4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
                 <!-- <div class="video__wrp">
                     <video class="video__frame" src="senor1.mp4" controls loop></video>
                 </div> -->
