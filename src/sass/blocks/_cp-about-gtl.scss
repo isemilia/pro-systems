@@ -72,6 +72,11 @@
             font-size: 12px;
             line-height: 141.7%;
         }
+        &__slide {
+            img {
+                max-width: 230px;
+            }
+        }
         .swiper {
             &-button {
                 &-prev {
