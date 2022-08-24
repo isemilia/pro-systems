@@ -143,5 +143,20 @@
             font-size: 14px;
             line-height: 145.9%;
         }
+        .swiper {
+            &-button {
+                &-prev {
+                    left: 36%;
+                }
+                &-next {
+                    right: 36%;
+                }
+                &-prev, &-next {
+                    top: unset;
+                    bottom: -10px;
+                    position: absolute;
+                }
+            }
+        }
     }
 }
