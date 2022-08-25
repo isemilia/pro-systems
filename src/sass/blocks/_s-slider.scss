@@ -32,6 +32,9 @@
     }
     &__img {
         position: relative;
+        img {
+            max-width: 100%;
+        }
     }
     &__swiper-slide {
         transition: all .3s;
@@ -68,3 +71,46 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .s-slider {
+        padding: 60px 0;
+        &__wrapper {
+            padding: 25px 0;
+        }
+        &__title {
+            margin-bottom: 25px;
+        }
+        &__subtitle {
+            font-size: 12px;
+            line-height: 141.7%;
+            margin-bottom: 0;
+        }
+        &__img {
+            display: grid;
+            place-content: center;
+            img {
+                max-width: 230px;
+            }
+        }
+        &__slider {
+            padding: 0;
+            min-height: auto;
+        }
+        .swiper {
+            &-button {
+                &-prev {
+                    left: 36%;
+                }
+                &-next {
+                    right: 36%;
+                }
+                &-prev, &-next {
+                    top: unset;
+                    bottom: -20px;
+                    position: absolute;
+                }
+            }
+        }
+    }
+} 
