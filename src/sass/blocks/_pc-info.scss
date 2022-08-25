@@ -14,4 +14,32 @@
         margin: 0 auto;
         margin-bottom: 8px;
     }
+    &__graph {
+        img {
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+    &__text-mob {
+        display: none;
+    }
+}
+@media (max-width: 767px) {
+    .pc-info {
+        padding: 40px 0 80px;
+        &__graph {
+            img {
+                max-width: 450px;
+            }
+        }
+        &__text-mob {
+            display: block;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 600;
+            font-size: clamp(12px, 2vw, 16px);
+            line-height: 15px;
+            color: #0C478B;
+        }
+    }
 }
