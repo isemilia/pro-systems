@@ -23,6 +23,10 @@
         font-size: 48px;
         line-height: 59px;
         max-width: 10.625em;
+        &_dct {
+            margin-bottom: 45px;
+            max-width: 750px;
+        }
     }
     &__descr {
         font-family: 'Open Sans';
@@ -32,6 +36,11 @@
         margin-top: 65px;
         margin-bottom: 30px;
         max-width: 510px;
+        &_dct {
+            font-size: 18px;
+            line-height: 25px;
+            color: #000000;
+        }
     }
     &__title, &__descr {
         color: #000000;
@@ -83,6 +92,23 @@
     }
     .swiper-pagination-bullet-active {
     background-color: #0C478B;
+    }
+}
+
+@media (max-width: 1439px) {
+    .promo {
+        &__title {
+            &_dct {
+                max-width: 10.5em;
+            }
+        }
+        .swiper{
+            &-pagination{
+                &_dct {
+                    bottom: 70px;
+                }
+            }
+        }
     }
 }
 

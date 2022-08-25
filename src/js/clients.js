@@ -34,7 +34,7 @@ window.addEventListener('DOMContentLoaded', () => {
     });
   } else if (typeof(document.querySelector('#clientsSlider2row')) != 'undefined' && document.querySelector('#clientsSlider2row') != null){
     const swiper = new Swiper('#clientsSlider2row', {
-      loop: true,
+      loop: false,
       // Navigation arrows
       navigation: {
         nextEl: '#clientsSliderNext',
