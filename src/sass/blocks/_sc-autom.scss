@@ -130,9 +130,13 @@
             align-items: center;
         }
         &__switch {
+            display: none;
             margin-bottom: 40px;
             grid-template-columns: 285px 1fr;
             column-gap: 30px;
+        }
+        &__img, &__telegram {
+            display: none;
         }
     }
 }
