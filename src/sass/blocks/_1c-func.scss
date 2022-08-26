@@ -74,19 +74,19 @@
     }
     &__slider {
         margin-bottom: 30px;
-    }
-    .swiper {
-        width: 650px;
-        &-pagination {
-            bottom: 0px;
-            &-bullet {
-                width: 10px;
-                height: 10px;
-                border: 1px solid #FFFFFF;
-                background: transparent;
-                opacity: 1;
-                &-active {
-                    background: #FFF;
+        .swiper {
+            width: 650px;
+            &-pagination {
+                bottom: 0px;
+                &-bullet {
+                    width: 10px;
+                    height: 10px;
+                    border: 1px solid #FFFFFF;
+                    background: transparent;
+                    opacity: 1;
+                    &-active {
+                        background: #FFF;
+                    }
                 }
             }
         }
@@ -118,15 +118,17 @@
                 left: -10px;
             }
         }
-        .swiper {
-            width: 400px;
-            &-pagination {
-                bottom: -4px;
+        &__slider {
+            .swiper {
+                width: 400px;
+                &-pagination {
+                    bottom: -4px;
+                }
             }
         }
         &__img {
             img {
-                max-width: 100%;
+                max-width: 100% !important;
                 width: 100%;
             }
         }
@@ -141,7 +143,7 @@
         &__row {
             grid-template-columns: 1fr;
         }
-        &__right {
+        &__right { 
             grid-row: 1;
         }
         &__list {
@@ -155,9 +157,14 @@
             }
             margin-bottom: 40px;
         }
-        .swiper {
-            max-width: 400px;
-            width: unset;
+        &__slider {
+            .swiper {
+                max-width: 400px;
+                width: unset;
+            }
+        }
+        &__left, &__right {
+            display: none;
         }
     }
 }
@@ -170,15 +177,17 @@
 
 @media (max-width: 450px) {
     .ic-func {
-        .swiper {
-            max-width: calc(100vw - 20px);
-            width: unset;
-            &-pagination {
-                bottom: -3px;
-                &-bullet {
-                    width: 6px;
-                    height: 6px;
-                    margin: 0 var(--swiper-pagination-bullet-horizontal-gap,2px);
+        &__slider {
+            .swiper {
+                max-width: calc(100vw - 20px);
+                width: unset;
+                &-pagination {
+                    bottom: -3px;
+                    &-bullet {
+                        width: 6px;
+                        height: 6px;
+                        margin: 0 var(--swiper-pagination-bullet-horizontal-gap,2px);
+                    }
                 }
             }
         }
