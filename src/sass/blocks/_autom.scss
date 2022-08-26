@@ -111,6 +111,8 @@
 
 @media (max-width: 1023px) {
     .autom {
+        min-height: auto;
+        padding-bottom: 60px;
         &__title {
             margin-bottom: 40px;
         }
@@ -121,9 +123,13 @@
             align-items: center;
         }
         &__switch {
+            display: none;
             margin-bottom: 40px;
             grid-template-columns: 285px 1fr;
             column-gap: 30px;
+        }
+        &__img {
+            display: none;
         }
     }
 }
@@ -159,6 +165,9 @@
                 top: unset;
             }
             margin-bottom: 40px;
+        }
+        &__telegram {
+            display: none;
         }
     }
 }
