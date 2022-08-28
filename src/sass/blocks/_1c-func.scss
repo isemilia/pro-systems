@@ -142,6 +142,8 @@
         }
         &__row {
             grid-template-columns: 1fr;
+            justify-content: center;
+            justify-items: center;
         }
         &__right { 
             grid-row: 1;
