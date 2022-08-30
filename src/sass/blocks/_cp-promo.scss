@@ -285,6 +285,9 @@ i {
         }
     }
     .promo {
+        &__switch {
+            display: none;
+        }
         &__table {
             margin: 0;
         }
