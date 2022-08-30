@@ -6,6 +6,7 @@ window.addEventListener('DOMContentLoaded', () => {
             prevEl: '#mobSwitchPrev',
             nextEl: '#mobSwitchNext',
         },
+        autoHeight: true
       
       });
 })

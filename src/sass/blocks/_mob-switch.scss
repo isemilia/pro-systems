@@ -60,7 +60,24 @@
                 display: block;
                 max-width: 60%;
                 margin: 0 auto;
+                object-fit: cover;
             }
+            &_p3 {
+                height: 185px;
+                width: 100%;
+                img {
+                    height: 100%;
+                    width: 100vw;
+                    max-width: 100%;
+                    border-radius: 30px;
+                }
+            }
+        }
+        &__btn {
+            display: block;
+            max-width: max-content;
+            margin: 0 auto;
+            margin-bottom: 25px;
         }
         &__nav {
             display: flex;
