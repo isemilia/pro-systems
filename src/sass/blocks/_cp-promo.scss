@@ -64,7 +64,7 @@
         &-pagination{
             position: absolute;
             width: 350px;
-            bottom: -25px;
+            bottom: -15px; //-25
             text-align: center;
         }
         &-pagination2{
@@ -281,7 +281,7 @@ i {
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            gap: 50px;
+            gap: 15px;
         }
     }
     .promo {
