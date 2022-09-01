@@ -34,9 +34,6 @@
             text-align: right;
             text-decoration: none;
         }
-        &-img {
-            
-        }
     }
 }
 
@@ -128,10 +125,12 @@
                 height: 180px;
             }
             &-title {
-                position: absolute;
-                left: 220px;
-                top: 50%;
-                transform: translateY(-50%);
+                &_side {
+                    position: absolute;
+                    left: 220px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
             }
         }
     }
