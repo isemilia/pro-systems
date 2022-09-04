@@ -12,3 +12,15 @@
         color: #FFFFFF;
     }
 }
+@media(max-width:550px){
+    .banner{
+        margin-bottom: 20px;
+        background: url('../img/blog-mini.png') center center / cover no-repeat;
+        height: 150px;
+        padding: 40px 0;
+        &__title{
+            text-align: center;
+            padding: 0;
+        }
+    }
+}
