@@ -30,5 +30,22 @@
     &__img img{
         display: block;
         margin: 0 auto;
+        z-index: 50;
+        position: relative;
+    }
+}
+@media(max-width:780px){
+    .geography{
+        &__img{
+            img{
+                width: 100%;
+            }
+        }
+    }
+    .geography__abs1{
+        left: -100px;
+    }
+    .geography__abs2{
+        display: none;
     }
 }
