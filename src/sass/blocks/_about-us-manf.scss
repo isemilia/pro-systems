@@ -16,12 +16,13 @@
         display: flex;
         justify-content: center;
         &:first-child{
-            .manf__item:nth-child(2){
-                margin: 0 1310px 0 0;
-            }
+            
         }
     }
     &__item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
         width: 280px;
         height: 280px;
         margin-right: 120px;
@@ -46,5 +47,86 @@
             img{
             }
         }
+    }
+}
+@media(max-width:1200px){
+    .manf{
+        .manf__item-img {
+            background: url(../../img/whitebg.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            transition: all .3s;
+            height: 230px;
+            width: 230px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+@media(max-width:990px){
+    .manf{
+        &__title{
+            br{
+                display: none;
+            }
+        }
+        .manf__item-img {
+            background: url(../../img/whitebg.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            transition: all .3s;
+            height: 200px;
+            width: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &:nth-child(3){
+                img{
+                    width: 70px;
+                }
+            }
+            img{
+                width: 120px;
+            }
+        }
+        &__item{
+            margin-right: 30px;
+            &:nth-child(3){
+                .manf__item-img{
+                    img{
+                        width: 90px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width:650px){
+    .manf{
+        position: relative;
+        &__rows{
+            position: relative;
+        }
+        &__item{
+            width: 200px;
+        }
+        &__row{
+            flex-direction: column;
+            &:last-child{
+                .manf__item{
+                    margin-right: 0;
+                    margin-bottom: 0;
+                }
+                position: absolute;
+                top: calc(50% - 280px);right: 0;
+            }
+        }
+    }
+}
+@media(max-width:425px){
+    .manf__title{
+        font-size: 16px;
+        line-height: 184%;
     }
 }
