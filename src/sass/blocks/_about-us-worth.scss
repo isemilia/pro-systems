@@ -35,3 +35,28 @@
         }
     }
 }
+@media(max-width:1200px){
+    .worth__wrapper {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto;
+        grid-auto-rows: auto;
+        -moz-column-gap: 20px;
+        column-gap: 20px;
+    }
+    .worth-item__info{
+        br{
+            display: none;
+        }
+    }
+}
+@media(max-width:500px){
+    .worth__wrapper {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto;
+        grid-auto-rows: auto;
+        -moz-column-gap: 20px;
+        column-gap: 20px;
+    }
+}
