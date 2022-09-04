@@ -1,4 +1,7 @@
 .achieve{
+    .hidden{
+        display: none;
+    }
     padding-bottom: 110px;
     &-home{
 
@@ -45,6 +48,35 @@
             font-size: 13px;
             line-height: 17px;
             color: #000000;
+        }
+    }
+}
+@media(max-width:1250px){
+    .achieve{
+        &__row{
+            grid-template-columns: repeat(1, 340px);
+        }
+        &-rowss{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+@media(max-width:780px){
+    .achieve{
+        .hidden{
+            display: block;
+            margin-top: 0;
+            margin-bottom: 100px;
+        }
+        &-rowss{
+            flex-direction: column;
+            align-items: center;
+        }
+        &__row{
+            &:last-child{
+                display: none;
+            }
         }
     }
 }
