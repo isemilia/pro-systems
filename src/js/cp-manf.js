@@ -36,7 +36,7 @@ window.addEventListener('DOMContentLoaded', () => {
 ['resize', 'DOMContentLoaded'].forEach(e => {
   window.addEventListener(e, () => {
       
-    const pic = document.querySelector('.manufacturer__pic');
+    const pic = document.querySelector('.manufacturer__pic wow animate__animated animate__fadeIn');
     const title = document.querySelector('.manufacturer__title');
       if (window.matchMedia('(max-width: 1023px)').matches) {
           console.log('Screen less than 1023');
