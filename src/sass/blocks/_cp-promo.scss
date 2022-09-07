@@ -44,6 +44,9 @@
     }
     &__img{
         position: relative;
+        img {
+            max-width: 332px;
+        }
     }
     /**slider*/
     &__slider {
