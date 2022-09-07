@@ -7,6 +7,7 @@ window.addEventListener('DOMContentLoaded', () => {
         },
         centerInsufficientSlides: true,
         slidesPerView: 1,
+        loop: true,
         breakpoints: {
             // when window width is >= 1440px
             1440: {
