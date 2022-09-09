@@ -8,6 +8,11 @@
     }
     &__item {
         text-align: right;
+        color: #000000; 
+        text-decoration: none;
+        &:hover {
+            color: #000000;
+        }
         &-img{
             background: url("data:image/svg+xml,%3Csvg width='273' height='273' viewBox='0 0 273 273' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='136.421' y='-5' width='200' height='200' rx='12.6803' transform='rotate(45 136.421 -5)' fill='%23F5F5F5'/%3E%3C/svg%3E%0A") center center / contain no-repeat;
             max-width: 340px;
@@ -25,10 +30,8 @@
             font-weight: 600;
             font-size: 16px;
             line-height: 20px;
-            color: #000000; 
-            text-decoration: none;
             &:hover {
-                color: currentColor;
+                color: #000000;
             }
         }
     }
