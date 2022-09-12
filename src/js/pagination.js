@@ -44,8 +44,8 @@ $(function(){
         return true;
     }
     $('.pagination').append(
-        $('<li>').addClass('page-item').addClass('previous-page').append($('<img>').addClass('page-link').attr({src:'../../icons/Vectorleft.png'})),
-        $('<li>').addClass('page-item').addClass('next-page').append($('<img>').addClass('page-link').attr({src:'../icons/Vector.png'}))
+        $('<li>').addClass('page-item').addClass('previous-page').append($('<img>').addClass('page-link').attr({src:'icons/Vectorleft.png'})),
+        $('<li>').addClass('page-item').addClass('next-page').append($('<img>').addClass('page-link').attr({src:'icons/Vector.png'}))
     );
     $('.card-content').show();
     showPage(1);
