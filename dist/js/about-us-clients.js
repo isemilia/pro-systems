@@ -2,7 +2,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const swiper = new Swiper('#clientSlider', {
         // Optional parameters
         direction: 'horizontal',
-        loop: false,
+        loop: true,
         // Navigation arrows
         navigation: {
           nextEl: '#clientSliderNext',
