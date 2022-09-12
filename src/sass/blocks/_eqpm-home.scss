@@ -2,10 +2,15 @@
     position: relative;
     padding: 110px 0 70px 0;
     overflow: hidden;
-    &:before {
+    &::before {
         position: absolute;
         content: url('../img/triangle-blue.png');  
         left: 0;      
+    }
+    &_yellow {
+        &::before {
+            content: url('../img/triangle-yellow-3.svg');
+        }
     }
     &__bg{
         position: absolute;
