@@ -13,8 +13,9 @@
         }
     }
     &__title{
-        span{
+        span {
             color: #0C478B;
+            font-weight: 600;
         }
     }
     &__benefit{
@@ -157,7 +158,7 @@
     }
     &__btn {
         position: absolute;
-        bottom: 0;
+        bottom: -50px;
     }
     /**table**/
     &__table{
