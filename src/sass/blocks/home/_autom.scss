@@ -4,7 +4,7 @@
     min-height: 620px;
     position: relative;
     &::before {
-        content: url('../img/home-autom-el-1.png');
+        content: url('../img/home-autom-el-1.svg');
         position: absolute;
         top: 0;
         left: 0;
@@ -18,7 +18,7 @@
     //     }
     // }
     &::after {
-        content: url('../img/home-autom-el-2.png');
+        content: url('../img/home-autom-el-2.svg');
         position: absolute;
         bottom: 0;
         right: 0;

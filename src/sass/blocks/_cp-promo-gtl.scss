@@ -9,7 +9,9 @@
         img{
             position: absolute;
             right: 0;
-            top: 0;
+            top: auto;
+            bottom: 0;
+            width: 132px;
         }
     }
     &__title{
@@ -59,8 +61,7 @@
     }
     &__slide {
         img{
-            width: 330px;
-            height: 330px;
+            max-width: 335px;
         }
     }
     .swiper{
@@ -236,7 +237,7 @@ i {
 }
 .tabs__nav-btn {
     color:#838383;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 20px;
     border:none;
     border-top: 2px solid #838383;

@@ -34,7 +34,7 @@
             width: 100%;
             img{
                 opacity: 0.5;
-                transform: scale(.5);
+                transform: scale(.4);
                 transition: all .3s;
             }
         }
@@ -43,7 +43,6 @@
             img{
                 opacity: 1;
                 width: 500px;
-                height: 340px;
                 transform: scale(1);
             }
         }

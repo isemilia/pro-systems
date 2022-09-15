@@ -2,6 +2,9 @@
     position: relative;
     padding: 110px 0 70px 0;
     overflow: hidden;
+    @media (min-width: 1024px) {
+        min-height: 600px;
+    }
     &::before {
         position: absolute;
         content: url('../img/triangle-blue.png');  
@@ -31,6 +34,12 @@
         &_dct {
             margin-bottom: 45px;
             max-width: 750px;
+        }
+        &_mb45 {
+            margin-bottom: 1em;
+        }
+        &_mxw100 {
+            max-width: 100%;
         }
     }
     &__descr {

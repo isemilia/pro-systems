@@ -24,6 +24,10 @@
         line-height: 24px;
         color: #000000;
     }
+    &__title {
+        max-width: 785px;
+        margin: 0 auto;
+    }
     &__subtitle, &__text {
         max-width: 620px;
         margin: 0 auto;

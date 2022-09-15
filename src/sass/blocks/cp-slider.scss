@@ -7,9 +7,15 @@
         margin-bottom: 70px;
     }
     &__item {
-        text-align: right;
+        @media (max-width: 575px) {
+            text-align: right;
+        }
         color: #000000; 
         text-decoration: none;
+        @media (min-width: 576px) {
+            position: relative;
+            padding-top: 40px;
+        }
         &:hover {
             color: #000000;
         }
@@ -30,6 +36,11 @@
             font-weight: 600;
             font-size: 16px;
             line-height: 20px;
+            @media (min-width: 576px) {
+                position: absolute;
+                left: 54%;
+                top: 0px;
+            }
             &:hover {
                 color: #000000;
             }

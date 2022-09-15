@@ -57,6 +57,9 @@
 
 @media (max-width: 767px) { 
     .offer {
+        &__wrapper {
+            justify-self: center;
+        }
         &__grid {
             column-gap: unset;
             row-gap: 40px;
