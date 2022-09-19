@@ -7,6 +7,7 @@
     &__wrapper{
         padding-top: 110px;
         position: relative;
+        max-width: 1440px;
         img{
             position: absolute;
             top: -3px;
@@ -32,6 +33,7 @@
         font-size: 16px;
         line-height: 22px;
         color: #000000;
+        max-width: 560px;
     }
     &__sb1{
         position: relative;
@@ -41,29 +43,36 @@
         position: relative;
         right: 175px;
         top: 15px;
+        max-width: 530px;
     }
 }
-@media(max-width:1320px){
+@media(max-width:1370px){
     .mission{
-        overflow: hidden;
         &__wrapper{
             padding-top: 50px;
+            max-width: 1024px;
             img{
-                width: 500px;
-
+                left: -50px;
+                max-width: 600px;
             }
         }
         &__subtitle{
             display: flex;
             justify-content: flex-end;
-            position: static;
         }
-        &__absolute{
-            display: none;
+        &__sb1 {
+            right: 60px;
+        }
+        &__sb2 {
+            right: 0px;
+        }
+        &__absolute {
+            right: 0;
+            bottom: 50px;
         }
     }
 }
-@media(max-width:950px){
+@media(max-width:1023px){
     .mission{
         &__wrapper{
             img{
@@ -80,9 +89,6 @@
         &__subtitle{
             justify-content: flex-start;
             width: 100%;
-            br{
-                display: none;
-            }
         }
         &__info{
             padding: 0 12px;

@@ -258,12 +258,12 @@
                         консультантов, 1 С программистов, менеджеров.<br>
                         Присоединяйтесь к нашей команде!
                     </div>
-                    <button class="btn promo-btn wow animate__animated animate__fadeInUp">Отправить резюме</button>
+                    <button class="btn promo-btn wow animate__animated animate__fadeInUp" data-popup-open>Отправить резюме</button>
                 </div>
                 <div class="promo__img promo__img_home wow animate__animated animate__fadeIn">
                     <img src="img/career-promo-img.svg" alt="">
                 </div>
-                <button class="btn promo-btn promo-show wow animate__animated animate__fadeInUp">Отправить резюме</button>
+                <button class="btn promo-btn promo-show wow animate__animated animate__fadeInUp" data-popup-open>Отправить резюме</button>
             </div>
         </section>
 
@@ -402,7 +402,7 @@
                                 </ul>
                             </div>
                             <button class="vakansii-more" id="more">Подробнее</button>
-                            <button class="btn vakansii__btn">Отправить резюме</button>
+                            <button class="btn vakansii__btn" data-popup-open>Отправить резюме</button>
                         </div>
                         <div class="vakansii__descr" data-switch-descr>
 
@@ -662,11 +662,30 @@
                 <div class="member__info">
                     <p class="member__title wow animate__animated animate__fadeInUp">Твоя команда ждет тебя!<br>
                         Присоединяйся</p>
-                    <a href="#" class="btn member__btn wow animate__animated animate__fadeInUp">Отправить резюме</a>
+                    <a href="#" class="btn member__btn wow animate__animated animate__fadeInUp" data-popup-open>Отправить резюме</a>
                 </div>
                 <img src="img/member-triangle.png" alt="triangle" class="member__abs">
             </div>
         </section>
+
+        <div class="popup" data-popup>
+            <div class="popup__overlay" data-popup-overlay></div>
+            <div class="popup__card">
+                <form class="popup__form">
+                    <input required class="popup__form-text-inp" type="text" name="role" placeholder="Должность">
+                    <input required class="popup__form-text-inp" type="email" name="email" placeholder="Email">
+                    <input required class="popup__form-text-inp" type="text" name="name" placeholder="Имя">
+                    <input required class="popup__form-text-inp" type="tel" name="tel" placeholder="Телефон">
+                    <div class="popup__form-warning">Все поля обязательны для заполнения</div>
+                    <label>
+                        Прикрепить резюме:
+                        <button id="fileInputBtn">Загрузить файл</button>
+                    </label>
+                    <input required id="fileInputElem" style="display: none;" name="file" type="file">
+                    <input class="btn" type="submit" value="Отправить резюме">
+                </form>
+            </div>
+        </div>
     </main>
 
     <footer class="footer">
@@ -794,6 +813,7 @@
     <script src="js/career-gallery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script src="js/wow-init.js"></script>
+    <script src="js/popup.js"></script>
 </body>
 
 </html>
