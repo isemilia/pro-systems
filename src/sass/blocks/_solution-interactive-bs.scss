@@ -40,6 +40,9 @@
             .solution__item-title {
                 left: 58%;
             }
+            .solution__item-title_rp4 {
+                left: 50%;
+            }
         } 
         &:hover {
             // background:  left center / contain no-repeat;
@@ -62,6 +65,15 @@
             white-space: nowrap;
             &:hover {
                 color: #000000;
+            }
+            &_bs1 {
+                left: 57%;
+            }
+            &_rp1 {
+                left: 58%;
+            }
+            &_rp3 {
+                left: 57%;
             }
         }
         &-img {

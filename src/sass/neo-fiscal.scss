@@ -1,0 +1,252 @@
+@import "libs/bootstrap-reboot.min";
+
+@import "base/variables";
+@import "base/mixins";
+
+@import "blocks/general";
+@import "blocks/header";
+@import "blocks/promo";
+
+@import "blocks/sc-autom";
+@import "blocks/mob-switch";
+@import "blocks/sc-variants";
+@import "blocks/sc-key";
+@import "blocks/reasons";
+@import "blocks/clients";
+
+@import "blocks/case";
+@import "blocks/offer";
+@import "blocks/footer";
+
+@import "blocks/about-us-geography";
+@import "blocks/about-us-manf";
+@import "blocks/fisc-plan";
+@import "blocks/fisc-solution";
+
+.neo-fiscal-convenience {
+  background-image: url("../img/neo-fiscal-wideBg.jpg");
+  background-size: cover;
+  padding: 110px 0;
+  &__title {
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 2.75rem;
+    line-height: 54px;
+
+    color: #fdce25;
+    margin-bottom: 70px;
+  }
+  &__list {
+    position: relative;
+    font-family: "Open Sans";
+    font-weight: 600;
+    font-size: 1em;
+    line-height: 22px;
+    padding-left: 55px;
+
+    color: #ffffff;
+    margin-bottom: 30px;
+    &::before {
+      content: "";
+      width: 45px;
+      height: 45px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: url("../img/neo-fiscal-tick.svg");
+      background-size: cover;
+    }
+  }
+}
+
+section.neo-fiscal-photo-slider {
+  padding-top: 110px;
+  h2 {
+    margin-bottom: 80px;
+  }
+  #scvNext::after,
+  #scvPrev::after {
+    content: "";
+  }
+}
+
+section.neo-fiscal-video-slider {
+  padding: 100px 0;
+  background: #f5f5f5;
+  h2 {
+    margin-bottom: 70px;
+  }
+  #scvNext {
+    right: 30%;
+  }
+  #scvPrev {
+    left: 30%;
+  }
+  #scvNext::after,
+  #scvPrev::after {
+    content: "";
+  }
+  .neo-fiscal__video {
+    margin-bottom: 20px;
+    video {
+      border-radius: 30px;
+    }
+  }
+  .swiper-slide.neo-fiscal__swiper-slide {
+    opacity: 0.7;
+    transform: scale(0.7);
+    transition: 0.3s ease;
+  }
+  .swiper-slide-active.neo-fiscal__swiper-slide {
+    opacity: 1;
+    transform: scale(1);
+  }
+  .neo-fiscal__video {
+    position: relative;
+    img {
+      border: none;
+      background: none;
+      outline: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: 0.2s ease;
+      cursor: pointer;
+    }
+    img.hidden {
+      visibility: hidden;
+      opacity: 0;
+    }
+  }
+}
+
+.neo-fiscal__swiper-slide {
+  align-items: stretch;
+}
+
+.neo-fiscal__item {
+  text-align: center;
+  .neo-fiscal__img {
+    margin-bottom: 20px;
+    height: auto;
+    img {
+      height: 455px;
+    }
+  }
+}
+
+.neo-fiscal-rongta {
+  background: none;
+  padding: 105px 0 50px;
+  flex-wrap: wrap;
+  &__flex {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    img {
+      flex: 3 1;
+      width: 100%;
+      min-width: 300px;
+      object-fit: cover;
+      max-height: 466px;
+      max-width: 505px;
+    }
+  }
+  &__wrapper {
+    flex: 4;
+    min-width: 160px;
+  }
+  &__descr {
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+
+    color: #000000;
+    margin-bottom: 50px;
+  }
+  &__title {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 39px;
+
+    color: #000000;
+    margin-bottom: 30px;
+  }
+  &__list-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    ul {
+      padding-left: 15px;
+      margin-right: auto;
+      li {
+        font-family: "Open Sans";
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        color: #838383;
+        margin-bottom: 25px;
+      }
+    }
+  }
+}
+
+.neo-fiscal-trust {
+  padding: 50px 0;
+  &__flex,
+  &__flex-column {
+    display: flex;
+  }
+  &__flex-column {
+    flex-direction: column;
+    gap: 10px;
+  }
+  &__flex {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .neo-fiscal-rongta__flex {
+    flex-direction: column;
+  }
+  section.neo-fiscal-video-slider {
+    #scvNext {
+      right: 10%;
+    }
+    #scvPrev {
+      left: 10%;
+    }
+  }
+}
+
+@media screen and (max-width: 440px) {
+  section.neo-fiscal-video-slider {
+    #scvNext {
+      right: 5%;
+    }
+    #scvPrev {
+      left: 5%;
+    }
+  }
+  .neo-fiscal-convenience__title {
+    font-size: 1.875rem;
+  }
+  #dn430 {
+    display: none;
+  }
+  .neo-fiscal-rongta__title {
+    font-size: 1.625rem;
+  }
+  .geography__wrapper.manf {
+    .manf__item {
+      margin: 10px 0;
+    }
+  }
+}

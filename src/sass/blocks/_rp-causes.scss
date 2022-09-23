@@ -51,7 +51,7 @@
         }
         &-logo{
             position: absolute;
-            background: url('../img/rp-causes-logo.png') center center no-repeat;
+            background: url('../img/rp-causes-logo.svg') center center no-repeat;
             background-size: 100% 100%;
             height: 245px;
             width: 245px;
@@ -60,7 +60,8 @@
             transition: background 0.2s;
             z-index: 3;
             &:hover{
-                background: url('../img/rp-causes-logo-hover.png') center center / cover no-repeat;
+                background: url('../img/rp-causes-logo-hover.svg') center center / cover no-repeat;
+                background-size: 100% 100%;
             }
         }
     }

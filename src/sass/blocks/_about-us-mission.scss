@@ -64,7 +64,7 @@
             right: 60px;
         }
         &__sb2 {
-            right: 0px;
+            right: -40px;
         }
         &__absolute {
             right: 0;
@@ -75,6 +75,7 @@
 
 @media(max-width:1023px){
     .mission{
+        min-height: 455px;
         &__texts{
             position: static;
         }
@@ -95,7 +96,7 @@
         }
         &__absolute{
             display: block;
-            bottom: 150px; 
+            bottom: 100px; 
             right: 0;
         }
     }

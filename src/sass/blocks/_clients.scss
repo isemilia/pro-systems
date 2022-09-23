@@ -80,6 +80,9 @@
                 }
             }
         }
+        .swiper-grid>.swiper-wrapper {
+            flex-wrap: nowrap;
+        }
     }
 }
 

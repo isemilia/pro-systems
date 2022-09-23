@@ -56,6 +56,22 @@ body {
     background-color: #36AEE2;
 }
 
+.widget {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    z-index: 100;
+    &__link {
+        display: block;
+        width: 60px;
+        height: 60px;
+        border-radius: 100%;
+        display: grid;
+        place-content: center;
+        background-color: #36AEE2;
+    }
+}
+
 @media (max-width: 1439px) { // from 1200
     .container {
         width: 1120px;

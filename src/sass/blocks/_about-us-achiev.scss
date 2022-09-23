@@ -3,9 +3,6 @@
         display: none;
     }
     padding-bottom: 110px;
-    &-home{
-
-    }
     &-title{
         font-weight: 600;
         color: #0C478B;
@@ -48,21 +45,18 @@
             font-size: 14px;
             line-height: 19px;
             color: #000000;
+            max-width: 215px;
         }
     }
 }
 @media(max-width:1250px){
     .achieve{
         &__row{
-            grid-template-columns: repeat(1, 340px);
-        }
-        &-rowss{
-            display: flex;
-            justify-content: space-between;
+            grid-template-columns: repeat(3, 1fr);
         }
     }
 }
-@media(max-width:780px){
+@media(max-width:1023px){
     .achieve{
         .hidden{
             display: block;
@@ -70,12 +64,22 @@
             margin-bottom: 100px;
         }
         &-rowss{
+            display: flex;
+            justify-content: space-between;
             flex-direction: column;
             align-items: center;
         }
         &__row{
+            grid-template-columns: repeat(1, 340px);
             &:last-child{
                 display: none;
+            }
+            &-item {
+                &-down {
+                    .achieve__row-info {
+                        max-width: 180px;
+                    }
+                }
             }
         }
     }

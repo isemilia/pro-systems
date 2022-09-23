@@ -71,6 +71,14 @@
     }
 }
 
+@media (max-width: 1439px) {
+    .product__shop {
+        &-grid {
+            column-gap: 100px;
+        }
+    }
+}
+
 @media (max-width: 1023px) {
     .product__shop {
         &-grid {
