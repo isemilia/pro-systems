@@ -15,6 +15,11 @@
             content: url('../img/triangle-yellow-3.svg');
         }
     }
+    @media (max-width: 575px) {
+        &::before {
+            display: none;
+        }
+    }
     &__bg{
         position: absolute;
         z-index: -1;
@@ -82,6 +87,9 @@
             font-size: 14px;
             line-height: 19px;
             color: #838383;
+            @media(min-width: 1200px) {
+                max-width: 520px;
+            }
         }
     }
     &__img{
@@ -91,11 +99,25 @@
     }
     &__slide {
         max-width: 100%;
+        img {
+            height: 100%;
+            max-height: 420px;
+            max-width: 100%;
+        }
     }
     &__slider {
         width: 430px;
+        height: 100%;
+        max-height: 500px;
+        @media (max-width: 1023px) {
+            height: 315px;
+            width: 315px;
+        }
     }
     .swiper{
+        &-wrapper {
+            height: 100%;
+        }
         &-pagination{
             width: 100%;
             bottom: 0;
@@ -215,7 +237,7 @@
         &__img {
             margin-bottom: 15px;
             img {
-                max-width: 60%;
+                max-height: 220px;
             }
         }
         &__slide {
@@ -225,6 +247,7 @@
             padding: 0 0 30px;
         }
         &__slider {
+            height: 250px;
             width: auto;
         }
         .swiper-pagination {

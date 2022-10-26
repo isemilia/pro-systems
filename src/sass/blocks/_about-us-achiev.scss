@@ -3,6 +3,9 @@
         display: none;
     }
     padding-bottom: 110px;
+    @media (max-width: 1023px) {
+        padding-bottom: 30px;
+    }
     &-title{
         font-weight: 600;
         color: #0C478B;
@@ -27,6 +30,7 @@
                     position: absolute;
                     left: -125px;
                     bottom: 0 !important;
+                    max-width: 174px;
                 }
             }
         }

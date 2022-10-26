@@ -13,6 +13,13 @@
         &__slider {
             max-width: calc(100vw - 24px);
             height: auto;
+            &_auto {
+                .swiper {
+                    &-wrapper {
+                        height: auto !important;
+                    }
+                }
+            }
         }
         &__item {
             max-width: 425px;

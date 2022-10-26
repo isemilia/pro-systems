@@ -74,6 +74,18 @@
     .awards .swiper-slide-active img {
         width: 450px;
     }
+    .awards {
+        .swiper {
+            &-slide {
+                img {
+                    transition: unset;
+                    transform: unset;
+                    max-width: 100%;
+                    opacity: 1;
+                }
+            }
+        }
+    }
 }
 
 @media(max-width:685px){

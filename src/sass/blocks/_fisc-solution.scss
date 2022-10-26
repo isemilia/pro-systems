@@ -68,15 +68,14 @@
                 max-width: 250px;
             }
             &:nth-child(2n) {
-                align-self: flex-end;
+                // align-self: flex-end;
             }
             &:not(:first-child) {
-                margin-top: -50px;
+                // margin-top: -50px;
             }
         }
         &__grid {
-            display: flex;
-            flex-direction: column;
+            grid-template-columns: repeat(2, 1fr);
         }
         &__subtitle {
             font-size: 14px;

@@ -30,8 +30,13 @@
 }
 
 .card{
-    display: flex;
-    max-width: 550px;
+    // display: flex; // old
+    // max-width: 550px; // old
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 260px auto;
+    column-gap: 22px;
+    justify-items: center;
     &-content{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -43,6 +48,19 @@
     &__item{
         &-img{
             margin-right: 20px;
+            width: 180px;
+            @media (max-width: 1023px) {
+                width: 100%;
+            }
+            flex-shrink: 0;
+            img {
+                border-radius: 10px;
+                width: 100%;
+                height: 100%;
+                // object-fit: cover;
+                object-fit: contain;
+                object-position: top;
+            }
         }
         &-title{
             margin-bottom: 5px;
@@ -51,6 +69,11 @@
             font-size: 18px;
             line-height: 22px;
             color: #000000;
+            display: block;
+            text-decoration: none;
+            &:hover {
+                color: #0C478B;
+            }
         }
         &-date{
             margin-bottom: 21px;
@@ -177,6 +200,7 @@
         row-gap: 70px;
         flex-wrap: wrap;
         margin-top: 65px;
+        justify-items: flex-start;
     }
     &__item{
         &-img{
@@ -225,12 +249,15 @@
     margin: 30px 30px 60px;
     user-select: none;
 }
-.pagination2 li{
-    display: inline-block;
+.pagination2 a, .pagination2 span{
+    display: inline-grid;
+    place-content: center;
     margin: 5px;
+    --d: 35px;
+    height: var(--d);
+    width: var(--d);
 }
-.pagination2 li a{
-    display: block;
+.pagination2 a, .pagination2 span{
     padding: 10px 15px !important;
     font-family: 'Montserrat';
     font-weight: 600;
@@ -256,8 +283,9 @@
     border-radius: 50%;
     cursor: pointer;
 }
-.active3{
+.current {
     background: #FDCE25;
+    border-radius: 100%;
 }
 
 .hash{
@@ -326,13 +354,13 @@
 }
 @media(max-width:765px){
     .card{
-        width: 340px;
+        max-width: 100%;
         img{
             width: 100%;
         }
     }
     .card2{
-        width: 340px;
+        max-width: 100%;
         img{
             width: 100%;
         }
@@ -352,7 +380,6 @@
         display: grid;
         grid-template-columns: repeat(1,1fr);
         -moz-column-gap: 20px;
-        justify-items: center;
         column-gap: 20px;
         row-gap: 40px;
         flex-wrap: wrap;

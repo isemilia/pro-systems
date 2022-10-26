@@ -62,10 +62,17 @@
     }
     &__slide {
         img{
+            width: 100%;
             max-width: 335px;
+            max-height: 100%;
+            object-fit: contain;
         }
     }
     .swiper{
+        &-wrapper {
+            // height: 250px;
+            height: 280px;
+        }
         &-pagination{
             position: absolute;
             width: 350px;

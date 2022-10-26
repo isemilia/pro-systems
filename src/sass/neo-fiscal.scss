@@ -127,11 +127,18 @@ section.neo-fiscal-video-slider {
 
 .neo-fiscal__item {
   text-align: center;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: clamp(16px, 2vw, 18px);
+  line-height: 1.2em;
+  text-align: center;
+  color: #000000;
   .neo-fiscal__img {
     margin-bottom: 20px;
     height: auto;
     img {
-      height: 455px;
+      // height: 455px;
+      max-width: 100%;
     }
   }
 }
@@ -179,7 +186,8 @@ section.neo-fiscal-video-slider {
   }
   &__list-wrapper {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    gap: 30px;
     ul {
       padding-left: 15px;
       margin-right: auto;
@@ -247,6 +255,68 @@ section.neo-fiscal-video-slider {
   .geography__wrapper.manf {
     .manf__item {
       margin: 10px 0;
+    }
+  }
+}
+
+.promo__popup-vid-wrap_neo {
+  @media (min-width: 1200px) {
+    video, .promo__popup-play {
+      height: 120%;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .manf.geography__wrapper .manf__row {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    .manf__item {
+      font-size: 14px;
+      line-height: 1.2em;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .promo__popup-vid-wrap {
+    height: 415px;
+  }
+}
+
+@media (max-width: 780px) {
+  .geography__abs1 {
+    left: -68px;
+    opacity: .6;
+  }
+  .geography__abs2 {
+    display: block;
+    opacity: .5;
+  }
+}
+
+@media (max-width: 575px) {
+  .promo {
+    &__vid {
+      inset: unset;
+      position: relative;
+      &::before {
+        content: '';
+        position: absolute;
+        background-image: url("data:image/svg+xml,%3Csvg width='82' height='82' viewBox='0 0 82 82' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M55.3705 41L25.625 23.7442V58.2559L55.3705 41ZM59.4295 37.433C60.0578 37.7928 60.58 38.3121 60.9431 38.9385C61.3063 39.5648 61.4975 40.276 61.4975 41C61.4975 41.7241 61.3063 42.4352 60.9431 43.0616C60.58 43.688 60.0578 44.2073 59.4295 44.567L26.8191 63.4885C24.1541 65.0363 20.5 63.2682 20.5 59.9215V22.0785C20.5 18.7319 24.1541 16.9638 26.8191 18.5115L59.4295 37.433Z' fill='white'%3E%3C/path%3E%3C/svg%3E");
+        --size: 60px;
+        width: var(--size);
+        height: var(--size);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        top: 41%;
+        left: 49%;
+        transform: translate(-50%, -50%);
+        z-index: 20;
+        pointer-events: none;
+      }
     }
   }
 }

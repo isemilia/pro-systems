@@ -16,3 +16,63 @@
 @import 'blocks/case';
 @import 'blocks/offer';
 @import 'blocks/footer';
+
+@media (max-width: 475px) {
+    .solution {
+        padding: 60px 0;
+        &__row {
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            row-gap: 90px;
+            column-gap: 36px;
+        }
+        &__item {
+            position: relative;
+            min-width: unset;
+            width: 100%;
+            max-width: 140px;
+            min-height: 130px;
+            text-decoration: none;
+            &-title {
+                max-width: 112px;
+                font-size: 12px;
+                line-height: 15px;
+                // position: relative;
+                // transform: unset;
+                // inset: auto;
+                white-space: normal;
+                top: -40px;
+                left: 40%;
+            }
+            &-img {
+                img {
+                    max-width: 135px;
+                }
+                &::before {
+                    content: url("data:image/svg+xml,%3Csvg width='155' height='154' viewBox='0 0 155 154' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='77.5684' y='-5' width='116' height='116' rx='12.6803' transform='rotate(45 77.5684 -5)' fill='%23F5F5F5'/%3E%3C/svg%3E%0A");
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    left: 50%;
+                }
+                &::after {
+                    content: url("data:image/svg+xml,%3Csvg width='154' height='154' viewBox='0 0 154 154' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='77.0244' y='-5' width='116' height='116' rx='12.6803' transform='rotate(45 77.0244 -5)' fill='%23FDCE25'/%3E%3C/svg%3E%0A");
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    left: 50%;
+                }
+            }
+            &:nth-child(2n) {
+                align-self: unset;
+            }
+            &:nth-child(1) {
+                .solution__item-title {
+                    left: 40%;
+                }
+            }
+        }
+    }
+}

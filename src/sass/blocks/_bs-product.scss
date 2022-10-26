@@ -74,3 +74,34 @@
         }
     }
 }
+
+@media (max-width: 575px) {
+    .bs-product {
+        &__img {
+            img {
+                max-width: 250px;
+            }
+        }
+        &__grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        &__subtitle {
+            font-size: 14px;
+            line-height: 17px;
+        }
+        &__title {
+            font-size: 16px;
+            line-height: 20px;
+            span {
+                display: block;
+                font-size: 24px;
+                line-height: 29px;
+                margin-bottom: .5em;
+            }
+        }
+        &__text {
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+}

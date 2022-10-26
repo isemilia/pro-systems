@@ -9,6 +9,9 @@
     margin: 0;
     padding: 0;
 }
+main {
+    padding-top: 103px;
+}
 
 body {
     min-width: 320px;
@@ -88,6 +91,9 @@ body {
     .container {
         width: 720px;
     }
+    main {
+        padding-top: 80px;
+    }
 }
 
 @media (max-width: 767px) { // from 576
@@ -119,4 +125,23 @@ body {
 
 @media (max-width: 374px) { // from 320
     
+}
+
+.l-hidden {
+    @media (min-width: 768px) {
+        display: none;
+    }
+}
+
+.s-hidden {
+    @media (max-width: 767px) {
+        display: none;
+    }
+}
+
+.swiper-pagination.swiper-pagination-mob {
+    bottom: -30px;
+    .swiper-pagination-bullet.swiper-pagination-bullet-active {
+        background-color: #0C478B;
+    }
 }

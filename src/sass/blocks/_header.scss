@@ -1,8 +1,9 @@
 .header {
     background: #FFFFFF;
     box-shadow: 0px 4px 10px rgba(152, 152, 152, 0.08);
-    position: relative;
     z-index: 99999;
+    position: fixed;
+    width: 100%;
     &__hamburger {
         display: none;
     }
@@ -155,7 +156,6 @@
 @media (max-width: 1023px) {
     .header {
         height: 80px;
-        position: relative;
         &__flex {
             padding: 17px 0;
             position: unset;

@@ -16,6 +16,13 @@
         color: #FFFFFF;
         margin-bottom: 74px;
     }
+    &__flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: clamp(20px,9vw,170px);
+        row-gap: clamp(30px, 3vw, 60px);
+    }
     &__grid {
         display: grid;
         place-content: center;
@@ -36,6 +43,7 @@
         display: grid;
         justify-content: center;
         justify-items: center;
+        align-content: baseline;
         &-icon {
             margin-bottom: 25px;
         }
@@ -46,6 +54,15 @@
             line-height: 22px;
             text-align: center;
             color: #FFFFFF;
+            &_neo {
+                max-width: 280px;
+                @media (max-width: 767px) {
+                    max-width: 170px;
+                }
+                @media (max-width: 465px) {
+                    max-width: 140px;
+                }
+            }
         }
     }
 }

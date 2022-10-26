@@ -2,6 +2,9 @@
     background: #F5F5F5;
     padding: 85px 0 35px;
     position: relative;
+    &.overflow-hid {
+        overflow: hidden;
+    }
     &__abs1{
         position: absolute;
         left: 0;
@@ -43,7 +46,8 @@
         }
     }
     .geography__abs1{
-        left: -100px;
+        left: -165px;
+        opacity: .7;
     }
     .geography__abs2{
         display: none;
