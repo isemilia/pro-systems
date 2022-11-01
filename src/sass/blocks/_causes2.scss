@@ -53,19 +53,25 @@
         }
         &-title{
             font-weight: 600;
-            font-size: 16px;
-            line-height: 20px;
+            font-size: 18px;
+            line-height: 1.2em;
             color: #000000;
             margin-bottom: 20px;
+            @media (max-width: 575px) {
+                font-size: 16px;
+            }
         }
         &-txt{
             font-family: 'Open Sans';
             font-style: normal;
             font-weight: 400;
             font-size: 16px;
-            line-height: 22px;
+            line-height: 1.3em;
             color: #838383;
             max-width: 450px;
+            @media (max-width: 575px) {
+                font-size: 14px;
+            }
         }
     }
 }

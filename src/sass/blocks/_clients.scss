@@ -18,9 +18,13 @@
     &__slide {
         width: 280px;
         display: grid;
+        grid-auto-rows: 120px; //new
         place-content: center;
         img {
             max-width: 100%;
+            width: 95%; //new
+            height: 95%; //new
+            object-fit: contain; //new
         }
     }
     &__wrapper {
@@ -88,6 +92,9 @@
 
 @media (max-width: 575px) {
     .clients {
+        &__slide {
+            grid-auto-rows: 96px;
+        }
         &__title {
             margin-bottom: 40px;
         }

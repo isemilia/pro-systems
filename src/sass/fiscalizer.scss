@@ -19,3 +19,14 @@
 @import 'blocks/case';
 @import 'blocks/offer';
 @import 'blocks/footer';
+
+@media (min-width: 576px) {
+    .promo__text {
+        margin-bottom: 40px;
+    }
+}
+
+.promo__img {
+    top: -50px;
+    right: -95px;
+}
