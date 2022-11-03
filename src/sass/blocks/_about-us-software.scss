@@ -10,9 +10,16 @@
         height: auto;
     }
     &__slide {
-        width: 280px;
+        // width: 280px;
+        max-width: 100%;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        justify-items: center;
         img {
-            max-width: 100%;
+            // max-width: 100%;
+            max-width: 250px;
         }
     }
     &__wrapper {

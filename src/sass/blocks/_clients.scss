@@ -16,10 +16,13 @@
         height: auto;
     }
     &__slide {
-        width: 280px;
+        max-width: 280px;
+        width: fit-content;
         display: grid;
         grid-auto-rows: 120px; //new
         place-content: center;
+        justify-items: center;
+        align-items: center;
         img {
             max-width: 100%;
             width: 95%; //new
