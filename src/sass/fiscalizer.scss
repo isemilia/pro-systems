@@ -30,3 +30,9 @@
     top: -50px;
     right: -95px;
 }
+
+@media (max-width: 575px) {
+    .promo__btn {
+        margin-top: 16px;
+    }
+}

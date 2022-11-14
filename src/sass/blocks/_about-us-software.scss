@@ -18,8 +18,10 @@
         align-content: center;
         justify-items: center;
         img {
-            // max-width: 100%;
-            max-width: 250px;
+            max-width: 100%;
+            @media (min-width: 1024px) {
+                max-width: 250px;
+            }
         }
     }
     &__wrapper {

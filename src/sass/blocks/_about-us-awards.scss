@@ -37,7 +37,7 @@
                 // max-width: 200px;
                 width: 100%;
                 opacity: 0.5;
-                transform: scale(.8);
+                transform: scale(.7);
                 transition: all .3s;
             }
         }
@@ -47,7 +47,7 @@
                 opacity: 1;
                 width: 100%;
                 // max-width: 120%;
-                transform: scale(1.2);
+                transform: scale(1);
             }
         }
         &-button {
@@ -109,6 +109,7 @@
 @media(max-width:576px){
     .awards .swiper-slide-active img {
         max-width: 100%;
+        max-height: 395px;
     }
 }
 

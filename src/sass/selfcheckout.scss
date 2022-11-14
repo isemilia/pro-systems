@@ -21,7 +21,7 @@
 .promo {
   &__vid {
     // inset: unset;
-    position: relative;
+    // position: relative;
     &::before {
       content: '';
       position: absolute;
@@ -58,5 +58,8 @@
         left: 49%;
       }
     }
+  }
+  .offer_home {
+    padding: 95px 0;
   }
 }

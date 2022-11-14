@@ -16,7 +16,7 @@
         height: auto;
     }
     &__slide {
-        max-width: 280px;
+        max-width: 100%; //280
         width: fit-content;
         display: grid;
         grid-auto-rows: 120px; //new
